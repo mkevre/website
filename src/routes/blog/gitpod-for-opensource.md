@@ -5,6 +5,7 @@ excerpt: We're launching our open source program to help you build great things 
 slug: gitpod-for-opensource
 subtitle:
 teaserImage: teaser.png
+image: teaser.png
 title: Introducing Gitpod for Open Source
 ---
 
