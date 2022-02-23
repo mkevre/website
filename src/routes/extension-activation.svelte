@@ -42,32 +42,27 @@
     description: "The browser extension has been installed.",
     title: "Extension Activation",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod for {currentBrowser} is Now Active"
-  text="The browser extension has been installed."
-/>
+  text="The browser extension has been installed." />
 
 <Feature {feature} />
 
 <Config />
 
 <section
-  class="flex items-center lg:items-stretch flex-col lg:flex-row sm:pb-huge space-y-small lg:space-y-0 lg:space-x-xx-small"
->
+  class="flex flex-col items-center space-y-small sm:pb-huge lg:flex-row lg:items-stretch lg:space-y-0 lg:space-x-xx-small">
   {#each features as feature}
     <div
-      class="text-center py-small px-xx-small bg-gray-100 rounded-4xl lg:w-1/3 max-w-md"
-    >
+      class="max-w-md rounded-4xl bg-gray-100 py-small px-xx-small text-center lg:w-1/3">
       <div>
         <!-- svelte-ignore a11y-missing-attribute -->
         <img
           src={feature.icon}
           role="presentation"
-          class="mx-auto mb-xx-small h-28 w-28"
-        />
+          class="mx-auto mb-xx-small h-28 w-28" />
         <h2 class="h3">{feature.title}</h2>
         <p>{feature.description}</p>
       </div>

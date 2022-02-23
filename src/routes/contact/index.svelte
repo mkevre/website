@@ -13,16 +13,14 @@
   data={{
     title: "Contact",
     description: "Get in touch and let us know how we can help.",
-  }}
-/>
+  }} />
 
 <Header
   title="How can we help you?"
   text="Get in touch and let us know how we can help."
   tight={true}
-  fullWidth={true}
->
-  <div slot="content" class="flex flex-wrap justify-around mt-small">
+  fullWidth={true}>
+  <div slot="content" class="mt-small flex flex-wrap justify-around">
     {#each contactActions as action}
       <Action {action} width="19rem" />
     {/each}

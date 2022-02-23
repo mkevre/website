@@ -14,13 +14,13 @@
 </script>
 
 <Section>
-  <div class="text-center max-w-3xl mx-auto">
+  <div class="mx-auto max-w-3xl text-center">
     <h2>{title}</h2>
     <p class="text-large">
       {@html text}
     </p>
   </div>
-  <div class="max-w-7xl mx-auto mt-small">
+  <div class="mx-auto mt-small max-w-7xl">
     <PostPreview {post} type="blog" layout="row" isMostRecent={true} />
   </div>
 </Section>

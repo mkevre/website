@@ -9,6 +9,5 @@
   <h3>{title}</h3>
   <p class="py-x-small text-p-large">{text}</p>
   <LinkButton variant="secondary" size="medium" href="/blog/{slug}"
-    >Read blog post</LinkButton
-  >
+    >Read blog post</LinkButton>
 </div>

@@ -26,18 +26,17 @@
   class:pointer-events-none={!availability}
   tabindex={!availability && -1}
   class:bg-sand-dark={!isMostRecent}
-  class="flex flex-col max-w-sm lg:max-w-none group {layout === 'column'
+  class="group flex max-w-sm flex-col lg:max-w-none {layout === 'column'
     ? ''
     : 'lg:flex-row lg:max-w-6xl mx-auto'} rounded-xl bg-off-white transition-all duration-200 {availability &&
     'hover:shadow-normal focus:shadow-normal'}"
-  data-analytics={`{"context":"grid","variant":"preview"}`}
->
+  data-analytics={`{"context":"grid","variant":"preview"}`}>
   {#if isMostRecent}
     <div>
       <div
         role="img"
         aria-label={`${type === "blog" ? "Blog post" : "Guide"}: ${post.title}`}
-        class="object-cover m-auto overflow-hidden rounded-t-xl bg-center bg-cover w-full {teaserHeightClass} {layout ===
+        class="m-auto w-full overflow-hidden rounded-t-xl bg-cover bg-center object-cover {teaserHeightClass} {layout ===
         'column'
           ? ''
           : 'lg:rounded-l-xl lg:rounded-t-none lg:w-60 lg:h-full'}"
@@ -45,15 +44,13 @@
           post.isNotAnActualPost
             ? post.image
             : `/images/${type}/${post.slug}/${post.image}`
-        });`}
-      />
+        });`} />
     </div>
   {/if}
   <div
     class="{layout === 'column'
       ? 'flex-col h-full flex-nowrap'
-      : 'flex-wrap'} flex lg:justify-between p-xx-small pt-x-small"
-  >
+      : 'flex-wrap'} flex p-xx-small pt-x-small lg:justify-between">
     <div>
       {#if !availability}
         <Pill text="soon" />
@@ -61,14 +58,12 @@
       <div class:mt-micro={!availability}>
         {#if headlineOrder === "h3"}
           <h3
-            class="text-h4 text-black group-focus:underline group-hover:underline"
-          >
+            class="text-h4 text-black group-hover:underline group-focus:underline">
             {post.title}
           </h3>
         {:else}
           <h2
-            class="text-h4 text-black group-focus:underline group-hover:underline"
-          >
+            class="text-h4 text-black group-focus:underline group-hover:underline">
             {post.title}
           </h2>
         {/if}
@@ -81,11 +76,10 @@
           <Avatars
             usernames={post.author}
             socialMediaLinks={authorSocialMediaLinks}
-            socialMediaLinkClasses="hover:drop-shadow"
-          />
+            socialMediaLinkClasses="hover:drop-shadow" />
         {/if}
         {#if post.date}
-          <span class="date text-p-small ml-macro">
+          <span class="date ml-macro text-p-small">
             {new Date(Date.parse(post.date)).toLocaleDateString(undefined, {
               year: "numeric",
               month: "short",

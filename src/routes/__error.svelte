@@ -22,16 +22,14 @@
   data={{
     description: "404 Oh, no! Something went wrong on our side.",
     title: "Page Not Found",
-  }}
-/>
+  }} />
 
 <div class="text-center">
   <Section>
     <img
       src="/images/illustration-large.jpg"
       alt="The Gitpod cube set up as a remote workspace"
-      class="mx-auto mb-8 w-96 grayscale-[60%]"
-    />
+      class="mx-auto mb-8 w-96 grayscale-[60%]" />
     <h1>{status}</h1>
     <p class="mb-8">Oh, no! Something went wrong on our side.</p>
 
@@ -48,16 +46,14 @@
     </p>
     <p class="mb-8">
       <LinkButton variant="cta" size="medium" href="https://www.gitpod.io"
-        >Go Home</LinkButton
-      >
+        >Go Home</LinkButton>
     </p>
   </Section>
 </div>
 
 {#if dev && error.stack}
   <article
-    class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white"
-  >
+    class="rounded-2xl bg-off-white p-xx-small sm:py-small sm:px-x-small md:p-medium">
     <pre>{error.stack}</pre>
   </article>
 {/if}

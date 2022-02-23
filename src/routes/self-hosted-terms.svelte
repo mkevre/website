@@ -35,17 +35,16 @@
   data={{
     description: "Gitpod Self-Hosted terms of service.",
     title: "Self-Hosted Terms",
-  }}
-/>
-<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
+  }} />
+<article class="mx-auto mt-20 mb-8 max-w-[94vw] leading-7 lg:w-[50rem]">
   <h1>
     Gitpod Self-Hosted Free License Terms and Gitpod Enterprise Source Code
     License
   </h1>
-  <ol class="toc ol-decimal list-inside space-y-4 mb-4">
-    <li class="mb-4 my-small">
+  <ol class="toc ol-decimal mb-4 list-inside space-y-4">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Preamble</h2>
-      <ol class="ol-decimal list-inside space-y-4 mb-4">
+      <ol class="ol-decimal mb-4 list-inside space-y-4">
         <li>
           These Software Licensing Terms (“Terms”) provide the terms and
           conditions that govern usage of the Software Gitpod Self-Hosted Free
@@ -56,9 +55,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Scope of Terms</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           These Terms apply to the usage of the Software, which is designed to
           be used for business purposes.
@@ -74,9 +73,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">License Fees</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           The use of the Software as described in Sec. 2 is free of charge. It
           is however limited to the features that are accessible without a
@@ -90,9 +89,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Granting of Rights</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           Permission is hereby granted to obtain a copy of the Software and
           their accompanying documentation to use, reproduce and execute the
@@ -146,9 +145,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Telemetry</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           Gitpod intends to collect certain statistical data on the use of the
           Software on an anonymized basis in the future with a future version of
@@ -158,9 +157,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Warranty and Liability</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           THE SOFTWARE IS PROVIDED FREE OF CHARGE ON AN “AS IS” BASIS, WITHOUT
           WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -180,9 +179,9 @@
         </li>
       </ol>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline">Third-party Components</h2>
-      <ol class="list-inside space-y-4 mb-4">
+      <ol class="mb-4 list-inside space-y-4">
         <li>
           The Software contains third-party components including open source
           software (“Third-Party Components“). Parts of such Third-Party

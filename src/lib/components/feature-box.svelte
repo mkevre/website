@@ -23,7 +23,6 @@
 </style>
 
 <div
-  class="feature-box bg-off-white py-small px-xx-small sm:p-small lg:p-16 rounded-5xl shadow-normal max-w-7xl mx-auto"
->
+  class="feature-box mx-auto max-w-7xl rounded-5xl bg-off-white py-small px-xx-small shadow-normal sm:p-small lg:p-16">
   <Feature feature={{ ...feature, showTheMediaFirstOnMobile: true }} />
 </div>

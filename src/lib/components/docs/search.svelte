@@ -89,8 +89,7 @@
 <svelte:head>
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.css"
-  />
+    href="https://cdn.jsdelivr.net/npm/docsearch.js@{docSearchJSVersion}/dist/cdn/docsearch.min.css" />
   <script
     on:load={processDocSearchScriptLoadEvent}
     bind:this={docSearchScript}
@@ -102,20 +101,17 @@
 <div
   class={`input-container relative bg-white rounded-xl w-full shadow-normal mb-12 ${
     $topicsState || isSupportPage ? "topics-active" : ""
-  } ${containerClasses}`}
->
+  } ${containerClasses}`}>
   <label for={docSearchInputSelector} class="sr-only">Search</label>
   <img
-    class="absolute top-1/2 left-3 -translate-y-1/2 pointer-events-none h-xx-small w-xx-small lef {iconClasses}"
+    class="lef pointer-events-none absolute top-1/2 left-3 h-xx-small w-xx-small -translate-y-1/2 {iconClasses}"
     src="/svg/mag-glass.svg"
     alt="Search"
-    aria-hidden="true"
-  />
+    aria-hidden="true" />
   <input
     bind:this={docSearchInput}
     type="search"
     {placeholder}
     id={docSearchInputSelector}
-    class="box-border block w-full text-p-medium h-small pl-11 pr-3 py-2 border border-transparent leading-5 text-gray-600 placeholder-gray-500 focus:outline-none focus:bg-none focus:border-white focus:ring-white focus:text-gray-900 {clazz}"
-  />
+    class="box-border block h-small w-full border border-transparent py-2 pl-11 pr-3 text-p-medium leading-5 text-gray-600 placeholder-gray-500 focus:border-white focus:bg-none focus:text-gray-900 focus:outline-none focus:ring-white {clazz}" />
 </div>

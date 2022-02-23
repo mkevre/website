@@ -28,12 +28,11 @@
     description:
       "Explore the documentation to learn more about Gitpod.io and Gitpod Self-Hosted.",
     title: title ? title : "Gitpod Documentation",
-  }}
-/>
+  }} />
 <AnnouncementBanner />
 <EditInGitpod />
 <div class="flex">
-  <div class="content-docs prose max-w-none flex-auto min-w-0 xl:w-2/3">
+  <div class="content-docs prose min-w-0 max-w-none flex-auto xl:w-2/3">
     <slot />
   </div>
   <OnThisPageNav class="mt-20" />

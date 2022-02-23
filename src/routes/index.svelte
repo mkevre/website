@@ -30,8 +30,7 @@
     title: "Gitpod: Always ready to code.",
     keywords:
       "cloud dev environment, remote development, open-source, integration, coding, developer experience, automation",
-  }}
-/>
+  }} />
 
 <svelte:head>
   <!-- Preloading the IDE screenshots so that the IDE switcher works swiftly -->
@@ -51,8 +50,7 @@
 <SectionScreenshot />
 <UsedBy
   title="Used by 500k+ developers"
-  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
-/>
+  class="rounded-2xl bg-off-white pt-small pb-9 shadow-normal" />
 <Features features={otherFeatures} />
 <Section>
   <Resources {cards} headingLevel="h2" />
@@ -61,7 +59,6 @@
   title="Putting developer experience first"
   text=" Bring back joy and speed to your workflows."
   class="-mb-20"
-  {testimonials}
-/>
+  {testimonials} />
 <GetStarted />
 <SpinUp />

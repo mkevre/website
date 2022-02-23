@@ -2,12 +2,11 @@
   import Section from "../section.svelte";
 </script>
 
-<Section class="max-w-md mx-auto text-center">
+<Section class="mx-auto max-w-md text-center">
   <img
     src="/images/community/kumquat.png"
     alt="Kumquat"
-    class="mx-auto h-20 mb-x-small"
-  />
+    class="mx-auto mb-x-small h-20" />
   <h2 class="h3">Community love</h2>
   <p class="text-large my-x-small">
     The Gitpod community is a place where everyone should feel welcomed,

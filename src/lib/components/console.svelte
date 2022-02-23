@@ -462,8 +462,7 @@
     class:dark
     class:shadowGrey={shadow === "grey"}
     class:shadowBrand={shadow === "brand"}
-    bind:this={wrapper}
-  >
+    bind:this={wrapper}>
     <div class="titlebar" />
     <canvas bind:this={canvas} />
     {#if alt}

@@ -13,7 +13,7 @@
   }
 
   .kumquat-left {
-    @apply h-16 lgx:h-32 lgx:w-36 top-24 -left-12 lgx:-left-24 -z-10;
+    @apply top-24 -left-12 -z-10 h-16 lgx:-left-24 lgx:h-32 lgx:w-36;
 
     @media (max-width: 800px) {
       @apply hidden;
@@ -21,7 +21,7 @@
   }
 
   .kumquat-right {
-    @apply h-20 lgx:h-36 lgx:w-44 -right-16 lgx:-right-32 -z-10 bottom-0 lgx:-bottom-10;
+    @apply -right-16 bottom-0 -z-10 h-20 lgx:-right-32 lgx:-bottom-10 lgx:h-36 lgx:w-44;
 
     @media (max-width: 800px) {
       @apply hidden;
@@ -30,16 +30,14 @@
 </style>
 
 <div
-  class="flex items-start relative text-left shadow-xl bg-white md:mx-auto rounded-5xl py-x-small px-micro sm:p-small max-w-4xl {clazz}"
->
+  class="relative flex max-w-4xl items-start rounded-5xl bg-white py-x-small px-micro text-left shadow-xl sm:p-small md:mx-auto {clazz}">
   <img
     src="/images/startups/kumquat-left.png"
     alt="Gitpod Kumquat"
-    class="kumquat-left"
-  />
+    class="kumquat-left" />
   <img src="/svg/quotation-mark.svg" alt="Left Quotation Mark" />
   <div class="mt-x-small">
-    <p class="h3 text-black font-bold">
+    <p class="h3 font-bold text-black">
       {@html quote}”
     </p>
     <p class="mt-x-small">
@@ -51,6 +49,5 @@
   <img
     src="/images/startups/kumquat-right.png"
     alt="Gitpod Kumquat"
-    class="kumquat-right"
-  />
+    class="kumquat-right" />
 </div>

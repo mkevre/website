@@ -19,17 +19,15 @@
       "Browse our collection of helpful articles, videos, guides and tutorials and find answers to your questions quickly. Or contact our team for individual support requests.",
     title: "Gitpod Support - We’re here to help",
     keywords: "help, support, question, contact, customer service",
-  }}
-/>
+  }} />
 
 <Header title="Need help?">
   <Search
     slot="content"
     placeholder="Search Documentation"
-    class="text-left py-7 sm:pl-medium h-14"
+    class="h-14 py-7 text-left sm:pl-medium"
     containerClasses="roun max-w-lg mx-auto shadow rounded-xl"
-    iconClasses="h-6 w-6 left-4 sm:left-5"
-  />
+    iconClasses="h-6 w-6 left-4 sm:left-5" />
 </Header>
 <Cta />
 <SectionCommon title="Helpful Resources">

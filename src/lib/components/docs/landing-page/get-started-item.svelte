@@ -5,14 +5,12 @@
 </script>
 
 <div
-  class="text-center bg-off-white rounded-4xl shadow-normal p-8 flex flex-col"
->
+  class="flex flex-col rounded-4xl bg-off-white p-8 text-center shadow-normal">
   <div class="flex justify-center">
     <img
       src={getStartedItem.icon.path}
       style={`transform: ${getStartedItem.icon.transform}`}
-      alt={getStartedItem.title}
-    />
+      alt={getStartedItem.title} />
   </div>
   <div class="flex flex-col">
     <h4 class="mt-4">{getStartedItem.title}</h4>
@@ -23,7 +21,6 @@
       variant="cta"
       size="medium"
       class="mb-2"
-      href={getStartedItem.path}>{getStartedItem.buttonLabel}</LinkButton
-    >
+      href={getStartedItem.path}>{getStartedItem.buttonLabel}</LinkButton>
   </div>
 </div>

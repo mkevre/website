@@ -112,8 +112,7 @@
     description: "Request a License Key for Gitpod Self-Hosted.",
     title: "Enterprise License",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Header tight={true}>
   <div slot="content">
@@ -123,12 +122,11 @@
 </Header>
 
 <section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-32 sm:mx-8"
->
+  class="mb-32 rounded-2xl bg-off-white p-xx-small shadow-xl sm:mx-8 sm:py-small sm:px-x-small md:p-medium">
   <form on:submit|preventDefault={handleSubmit} novalidate>
     <h2 class="h4 title">Customer Information</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-small">
+    <div class="grid grid-cols-1 gap-y-4 gap-x-small sm:grid-cols-2">
       <div>
         <Input
           label="First Name*"
@@ -141,8 +139,7 @@
             formData.firstName.valid =
               formData.firstName.value && formData.firstName.el.checkValidity();
           }}
-          autocomplete="given-name"
-        />
+          autocomplete="given-name" />
       </div>
       <div>
         <Input
@@ -156,8 +153,7 @@
             formData.lastName.valid =
               formData.lastName.value && formData.lastName.el.checkValidity();
           }}
-          autocomplete="family-name"
-        />
+          autocomplete="family-name" />
       </div>
       <div>
         <Input
@@ -171,8 +167,7 @@
             formData.email.valid =
               formData.email.value && formData.email.el.checkValidity();
           }}
-          autocomplete="email"
-        />
+          autocomplete="email" />
       </div>
       <div>
         <Input
@@ -186,8 +181,7 @@
               formData.company.value && formData.company.el.checkValidity();
           }}
           type="text"
-          autocomplete="organization"
-        />
+          autocomplete="organization" />
       </div>
       <div>
         <Select
@@ -203,8 +197,7 @@
           class="option"
           autocomplete="country"
           options={countryList}
-          placeholder="Select..."
-        />
+          placeholder="Select..." />
       </div>
       <div>
         <Select
@@ -219,8 +212,7 @@
             formData.noOfDevelopers.valid =
               formData.noOfDevelopers.value &&
               formData.noOfDevelopers.el.checkValidity();
-          }}
-        />
+          }} />
       </div>
     </div>
     <div class="mt-4">
@@ -231,18 +223,16 @@
         rows="4"
         bind:value={formData.message.value}
         bind:element={formData.message.el}
-        name="message"
-      />
+        name="message" />
       <div class="mt-4">
         <Button
           variant="primary"
           size="large"
           type="submit"
-          disabled={isFormDirty && !isFormValid}>Install Now</Button
-        >
+          disabled={isFormDirty && !isFormValid}>Install Now</Button>
       </div>
       {#if isFormDirty && !isFormValid}
-        <legend class="text-xs text-error block mt-1 mb-2">
+        <legend class="mt-1 mb-2 block text-xs text-error">
           Please fill out all required fields above
         </legend>
       {/if}
@@ -254,8 +244,7 @@
       <p>
         <a href="/docs/self-hosted/latest"
           >Skip the 10 extra users and just go directly to the installation
-          guides.</a
-        >
+          guides.</a>
       </p>
     </div>
   </div>

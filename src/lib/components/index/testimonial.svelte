@@ -35,23 +35,20 @@
   data-analytics={`{"variant":"social_media","context":"socialproof","label":"` +
     name +
     `"}`}
-  class="my-2 text-small"
-  rel="noreferrer"
->
+  class="text-small my-2"
+  rel="noreferrer">
   <div
-    class="testimonial w-96 p-xx-small overflow-hidden rounded-2xl bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-  >
+    class="testimonial w-96 overflow-hidden rounded-2xl bg-white p-xx-small transition-shadow duration-300 ease-in-out hover:shadow-xl">
     <div>{@html text}</div>
     <div class="mt-4 flex">
       <img
         src={`/images/avatars/${avatar}`}
         alt={name}
-        class="w-12 h-12 rounded-full"
+        class="h-12 w-12 rounded-full"
         width="48"
-        height="48"
-      />
+        height="48" />
       <div class="ml-3">
-        <p class="mb-0 font-semibold text-small leading-6">{name}</p>
+        <p class="text-small mb-0 font-semibold leading-6">{name}</p>
         <p class="role">{role} {@html org}</p>
       </div>
     </div>

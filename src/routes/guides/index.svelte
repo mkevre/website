@@ -21,18 +21,15 @@
     description: "Follow these guides to use Gitpod with any project",
     title: "Guides",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Header
   title="Guides"
   text="Follow these guides to use Gitpod with any project"
-  tight={true}
-/>
+  tight={true} />
 
 <div
-  class="grid justify-items-center grid-cols-1 md:grid-cols-2 max-w-4xl m-auto lg:max-w-full lg:grid-cols-1 gap-xx-small"
->
+  class="m-auto grid max-w-4xl grid-cols-1 justify-items-center gap-xx-small md:grid-cols-2 lg:max-w-full lg:grid-cols-1">
   {#each guides as guide}
     <PostPreview post={guide} layout="row" type="guides" isMostRecent />
   {/each}

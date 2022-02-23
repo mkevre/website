@@ -33,15 +33,13 @@
         "The latest news, articles, and opinions around developer experience and remote development in the cloud.",
       title: "Gitpod Blog - News, ideas and background stories",
       keywords: "blog, tutorial, news, articles",
-    }}
-  />
+    }} />
   <Section>
     <h1 class="text-center">Blog</h1>
     <div
-      class="grid m-auto max-w-7xl w-full gap-6 grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3"
-    >
+      class="m-auto grid w-full max-w-7xl grid-cols-none justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
       {#each posts.slice(0, 6) as post}
-        <div class="flex justify-center min-w-[20rem] max-w-sm">
+        <div class="flex min-w-[20rem] max-w-sm justify-center">
           <PostPreview {post} type="blog" isMostRecent />
         </div>
       {/each}
@@ -51,10 +49,9 @@
   <Section>
     <h2 class="mb-small text-center">Previous posts</h2>
     <div
-      class="previous grid m-auto max-w-7xl w-full gap-6 grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3"
-    >
+      class="previous m-auto grid w-full max-w-7xl grid-cols-none justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
       {#each posts.slice(6) as post}
-        <div class="flex justify-center min-w-[20rem] max-w-sm">
+        <div class="flex min-w-[20rem] max-w-sm justify-center">
           <PostPreview {post} type="blog" />
         </div>
       {/each}

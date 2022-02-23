@@ -11,14 +11,13 @@
   const href = `${BASE_PATH}${currentPage}.md`;
 </script>
 
-<div class="flex justify-end mb-micro">
+<div class="mb-micro flex justify-end">
   <a
     {href}
     target="_blank"
-    class="inline-flex py-macro px-4 items-center justify-center bg-white rounded-2xl text-btn-small text-black shadow-sm font-semibold hover:bg-off-white focus:bg-off-white"
+    class="inline-flex items-center justify-center rounded-2xl bg-white py-macro px-4 text-btn-small font-semibold text-black shadow-sm hover:bg-off-white focus:bg-off-white"
     rel="noopener"
-    data-analytics={`{"variant":"open_in_gitpod"}`}
-  >
+    data-analytics={`{"variant":"open_in_gitpod"}`}>
     <span>
       <LogoTextless />
     </span> <span class="ml-macro">Edit in Gitpod</span>

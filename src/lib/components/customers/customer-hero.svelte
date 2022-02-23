@@ -28,11 +28,10 @@
 </style>
 
 <header
-  class="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto mt-small mb-x-large md:my-x-large lg:my-xx-large"
->
-  <div class="lg:mr-small mb-small lg:mb-0">
+  class="mx-auto mt-small mb-x-large flex max-w-7xl flex-col items-center justify-between md:my-x-large lg:my-xx-large lg:flex-row">
+  <div class="mb-small lg:mr-small lg:mb-0">
     <header class={textMaxWClass}>
-      <p class="h5 font-bold text-light-grey mb-xx-small">Customer story</p>
+      <p class="h5 mb-xx-small font-bold text-light-grey">Customer story</p>
       <h1 class="h1">{@html title}</h1>
     </header>
     <p class="text-large max-w-3xl">{text}</p>

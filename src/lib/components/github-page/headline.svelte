@@ -4,7 +4,7 @@
 </script>
 
 <Section>
-  <h2 class="text-center m-auto max-w-5xl">
+  <h2 class="m-auto max-w-5xl text-center">
     {text}
   </h2>
 </Section>

@@ -27,11 +27,11 @@
 
 <style lang="postcss">
   .tooltip {
-    @apply w-auto text-off-white bg-[#565252] text-xs py-macro px-2.5 rounded-xl normal-case font-normal z-50;
+    @apply z-50 w-auto rounded-xl bg-[#565252] py-macro px-2.5 text-xs font-normal normal-case text-off-white;
 
     &::before {
       content: "";
-      @apply absolute block h-10 left-0 w-full -z-10;
+      @apply absolute left-0 -z-10 block h-10 w-full;
       bottom: -60%;
     }
   }
@@ -41,7 +41,7 @@
   }
   .arrow,
   .arrow::before {
-    @apply absolute w-3 h-3 bg-inherit;
+    @apply absolute h-3 w-3 bg-inherit;
   }
 
   .arrow {
@@ -58,8 +58,7 @@
 <span
   on:mouseleave={() => {
     isRendered = false;
-  }}
->
+  }}>
   <button
     on:mouseover={() => (isRendered = true)}
     on:focus={() => {
@@ -68,16 +67,14 @@
     on:blur={() => {
       isRendered = false;
     }}
-    class={clazz}
-  >
+    class={clazz}>
     <slot />
 
     <img
       use:popperRef
       src="/svg/question-mark.svg"
       alt="Tooltip"
-      class="h-5 w-5"
-    />
+      class="h-5 w-5" />
   </button>
 
   {#if isRendered}

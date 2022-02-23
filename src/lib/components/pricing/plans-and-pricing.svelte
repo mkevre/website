@@ -40,8 +40,7 @@
     labelRight="Self-hosted"
     on:change={handleChange}
     isInversed={$page.url.pathname.includes("self-hosted")}
-    checked={toggled}
-  />
+    checked={toggled} />
   <PricingBoxes {pricingPlans} />
   <p class="mt-micro text-center">
     Can’t find the answer here? <a href="/contact/sales">Contact sales</a>

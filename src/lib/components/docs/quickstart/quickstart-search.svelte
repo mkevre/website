@@ -7,7 +7,7 @@
 <div class="mb-12">
   <QuickstartSearchinput />
 </div>
-<div class="grid grid-cols-2 text-center md:text-left md:grid-cols-4 gap-4">
+<div class="grid grid-cols-2 gap-4 text-center md:grid-cols-4 md:text-left">
   {#each $remainingQuickstarts as item}
     <QuickstartSearchItem path={item.path} title={item.title} />
   {/each}
@@ -23,7 +23,6 @@
   <p>
     Also note that you are free to install any tools you need for your specific
     use case. Please refer to the <a target="_blank" href="/docs/config-docker"
-      >custom docker image</a
-    > documentation for more details.
+      >custom docker image</a> documentation for more details.
   </p>
 {/if}

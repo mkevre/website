@@ -19,8 +19,7 @@
       class="mr-2"
       src={definition.image.path}
       alt={definition.image.alt}
-      width="24"
-    />
+      width="24" />
     {definition.text}
   {/if}
 </div>

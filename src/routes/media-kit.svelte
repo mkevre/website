@@ -15,19 +15,16 @@
   data={{
     description: "We’ve put together some assets to help you use our brand.",
     title: "Media kit",
-  }}
-/>
+  }} />
 
 <Header
   title="Media kit"
-  text="We’ve put together some assets to help you use our brand."
->
+  text="We’ve put together some assets to help you use our brand.">
   <img
     slot="content"
     src="/images/media-kit/media-kit.png"
     alt="Gitpod Illustration"
-    class="mt-small rounded-4xl w-full"
-  />
+    class="mt-small w-full rounded-4xl" />
 </Header>
 
 <LogoSection />

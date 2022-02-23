@@ -49,16 +49,14 @@
 
 {#if isOpen}
   <div
-    class="modal fixed top-0 left-0 w-full h-screen z-50 flex justify-center items-center"
-    on:click={closeModal}
-  >
-    <div class="flex justify-center items-center relative">
+    class="modal fixed top-0 left-0 z-50 flex h-screen w-full items-center justify-center"
+    on:click={closeModal}>
+    <div class="relative flex items-center justify-center">
       <button
-        class="absolute right-6 top-6 z-10 h-10 w-10 md:h-5 md:w-5 flex items-center justify-center"
+        class="absolute right-6 top-6 z-10 flex h-10 w-10 items-center justify-center md:h-5 md:w-5"
         bind:this={closeEl}
         aria-label="close this popup"
-        on:click={closeModal}
-      >
+        on:click={closeModal}>
         <img alt="Close" role="presentation" src="/x.svg" class="h-3 w-3" />
       </button>
       <slot />

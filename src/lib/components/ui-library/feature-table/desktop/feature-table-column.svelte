@@ -9,21 +9,19 @@
   const shadow = featureData.isHighlighted ? "shadow-brand" : "shadow-normal";
 </script>
 
-<div class="p-4 bg-[#f9f9f9] {shadow} rounded-3xl">
+<div class="bg-[#f9f9f9] p-4 {shadow} rounded-3xl">
   <FeatureTableHeader headerData={featureData.header} />
   <section
-    class="grid grid-cols-1 auto-rows-[3.75rem] border-t-2 border-divider pt-4 inner-grid-desktop"
-  >
+    class="inner-grid-desktop grid auto-rows-[3.75rem] grid-cols-1 border-t-2 border-divider pt-4">
     {#each featureData.items as item}
       <FeatureTableItem definition={item} />
     {/each}
     {#if featureData.link}
-      <div class="flex justify-center items-start">
+      <div class="flex items-start justify-center">
         <LinkButton
           variant={featureData.isHighlighted ? "primary" : "cta"}
           size="large"
-          href={featureData.link.href}>{featureData.link.label}</LinkButton
-        >
+          href={featureData.link.href}>{featureData.link.label}</LinkButton>
       </div>
     {/if}
   </section>

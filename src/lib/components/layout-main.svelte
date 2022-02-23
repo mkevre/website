@@ -8,7 +8,6 @@
 </style>
 
 <main
-  class="pt-14 w-full lg:w-11/12 mx-auto py-macro px-micro md:px-x-small lg:px-0"
->
+  class="mx-auto w-full py-macro px-micro pt-14 md:px-x-small lg:w-11/12 lg:px-0">
   <slot />
 </main>

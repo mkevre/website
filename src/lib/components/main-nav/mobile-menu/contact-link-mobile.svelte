@@ -3,7 +3,7 @@
 </script>
 
 <div class="w-full px-4">
-  <div class="border-t border-solid border-divider text-center pt-micro w-full">
+  <div class="w-full border-t border-solid border-divider pt-micro text-center">
     <ContactLink on:click />
   </div>
 </div>

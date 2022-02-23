@@ -20,15 +20,13 @@
       "Gitpod is always free for 50h/month. Upgrade to unlock more hours and features. SaaS and Self-Hosted. Contact Sales.",
     title: "Plans and Pricing - Gitpod",
     keywords: "Pricing Gitpod, costs, free, saas, fees, self-hosted",
-  }}
-/>
+  }} />
 <PlansAndPricing {pricingPlans} />
 <UsedBy title="Used by 500k+ developers" />
 <SectionCommon
   title="Compare features"
   text="Choose the plan that's fits your needs. You can always start for free."
-  textClassNames="mb-xx-small"
->
+  textClassNames="mb-xx-small">
   <FeatureTable slot="content" tableData={pricingTable} />
 </SectionCommon>
 <Empower />

@@ -15,7 +15,7 @@
 
   li::before {
     content: "—";
-    @apply text-orange-800 mr-micro;
+    @apply mr-micro text-orange-800;
   }
 </style>
 
@@ -24,12 +24,11 @@
   <p class="text-large">
     {text}
   </p>
-  <ul class="text-left mx-auto my-x-small" style="max-width: {ulMaxWidth}">
+  <ul class="mx-auto my-x-small text-left" style="max-width: {ulMaxWidth}">
     {#each list as li}
       <li>{li}</li>
     {/each}
   </ul>
   <LinkButton variant="primary" size="large" target="_blank" href={link.href}
-    >{link.text}</LinkButton
-  >
+    >{link.text}</LinkButton>
 </Section>

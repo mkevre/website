@@ -188,27 +188,23 @@
   data={{
     description: "We’d love to talk about how we can work together.",
     title: "Contact Sales",
-  }}
-/>
+  }} />
 
 <Header
   title="Contact Sales"
   text=" We’d love to talk about how we can work together."
-  tight={true}
-/>
+  tight={true} />
 
 <Section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-32 sm:mx-8"
+  class="mb-32 rounded-2xl bg-off-white p-xx-small shadow-xl sm:mx-8 sm:py-small sm:px-x-small md:p-medium"
   id="form"
-  style="margin-top: 0"
->
+  style="margin-top: 0">
   <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     {#if isEmailSent}
       <SubmissionSuccess
         title="Thank you for your message"
         text="We received your message. Our team will take a look and get back to you as
-      soon as possible."
-      />
+      soon as possible." />
     {:else}
       <form on:submit|preventDefault={handleSubmit} novalidate>
         <h2 class="h3 text-center">Send us a message</h2>
@@ -230,11 +226,9 @@
                           formData.selectedSubject.el.validity.valid;
                       }}
                       value={subject}
-                      name="subject"
-                    />
+                      name="subject" />
                     <label for="subject-{index}" class="font-medium"
-                      >{subject}</label
-                    >
+                      >{subject}</label>
                   </li>
                 {/each}
               </ul>
@@ -254,8 +248,7 @@
                       e.target.validity.valid;
                   }}
                   options={cloudPlatforms}
-                  placeholder="Which cloud infrastructure do you use?"
-                />
+                  placeholder="Which cloud infrastructure do you use?" />
               </div>
             </li>
           {/if}
@@ -272,8 +265,7 @@
                   formData.name.value && formData.name.el.checkValidity();
               }}
               type="text"
-              autocomplete="name"
-            />
+              autocomplete="name" />
           </li>
           <li>
             <Input
@@ -289,8 +281,7 @@
                   formData.workEmail.el.checkValidity();
               }}
               type="email"
-              autocomplete="email"
-            />
+              autocomplete="email" />
           </li>
           <li>
             <Input
@@ -306,8 +297,7 @@
                   formData.companyWebsite.el.checkValidity();
               }}
               type="text"
-              autocomplete="organization"
-            />
+              autocomplete="organization" />
           </li>
           <li>
             <Select
@@ -321,8 +311,7 @@
                   formData.noOfEngineers.value &&
                   formData.noOfEngineers.el.checkValidity();
               }}
-              options={noOfEngineers}
-            />
+              options={noOfEngineers} />
           </li>
           <li>
             <Textarea
@@ -337,8 +326,7 @@
                   formData.message.value && formData.message.el.validity.valid;
               }}
               cols="30"
-              rows="10"
-            />
+              rows="10" />
           </li>
           <li>
             <Checkbox
@@ -350,8 +338,7 @@
                 formData.consent.valid =
                   formData.consent.checked &&
                   formData.consent.el.validity.valid;
-              }}
-            />
+              }} />
           </li>
           <li>
             <Button
@@ -359,8 +346,7 @@
               size="medium"
               on:click={handleClick}
               type="submit"
-              disabled={isFormDirty && !isFormValid}>Send message</Button
-            >
+              disabled={isFormDirty && !isFormValid}>Send message</Button>
             {#if isFormDirty && !isFormValid}
               <legend class="text-xs text-error block mt-1 mb-2">
                 Please fill out all required fields above

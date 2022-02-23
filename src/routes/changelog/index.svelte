@@ -31,7 +31,7 @@
 
 <style lang="postcss">
   .changelog-entry {
-    @apply flex flex-col md:flex-row last:pb-x-large md:last:pb-xx-large;
+    @apply flex flex-col last:pb-x-large md:flex-row md:last:pb-xx-large;
 
     & + .changelog-entry {
       @apply pt-x-large md:pt-xx-large;
@@ -47,8 +47,7 @@
     type: "website",
     keywords:
       "updates, product, changes, features, releases, bugs, fixes, version, updates, improvements",
-  }}
-/>
+  }} />
 
 <div class="flex">
   <div class="hidden w-4/12 md:block" />
@@ -56,39 +55,33 @@
     title="Changelog"
     text="Gitpod product improvements and updates"
     class="w-full"
-    textAlign="left"
-  >
+    textAlign="left">
     <div
       slot="content"
-      class="flex justify-start items-center flex-wrap space-x-4 pt-x-small"
-    >
+      class="flex flex-wrap items-center justify-start space-x-4 pt-x-small">
       <TwitterFollowButton variant="primary" />
       <LinkButton
         target="_blank"
         data-analytics={`{"context":"dashboard"}`}
         href="https://gitpod.io/notifications"
         variant="secondary"
-        size="medium">Signup for the Newsletter</LinkButton
-      >
+        size="medium">Signup for the Newsletter</LinkButton>
     </div>
   </Header>
 </div>
 
 <div
-  class="flex flex-col space-y-x-large md:space-y-xx-large divide-y divide-gray-300"
->
+  class="flex flex-col space-y-x-large divide-y divide-gray-300 md:space-y-xx-large">
   {#each changelogEntries as { date, title, content, image, alt }}
     <div class="changelog-entry">
       <ChangelogDate
         date={formatDate(date)}
-        href={`/changelog/${stringToBeautifiedFragment(title)}`}
-      />
+        href={`/changelog/${stringToBeautifiedFragment(title)}`} />
       <Wrapper class="content-changelog w-full md:w-8/12">
         <img src="/images/changelog/{image}" class="rounded-3xl" {alt} />
         <h2>
           <ChangelogLink
-            href={`/changelog/${stringToBeautifiedFragment(title)}`}
-          >
+            href={`/changelog/${stringToBeautifiedFragment(title)}`}>
             {title}
           </ChangelogLink>
         </h2>

@@ -13,7 +13,7 @@
   setContext(faqsKey, writable(null));
 </script>
 
-<div class="max-w-6xl mx-auto">
+<div class="mx-auto max-w-6xl">
   <h1 class="text-center">{faq.headline}</h1>
   <div class="space-y-xx-small">
     {#each faq.items as item}

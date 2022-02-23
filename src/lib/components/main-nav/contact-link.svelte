@@ -6,5 +6,4 @@
   navItem={{
     href: "/contact",
     label: "Contact",
-  }}
-/>
+  }} />

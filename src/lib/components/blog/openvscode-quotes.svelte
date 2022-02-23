@@ -23,15 +23,14 @@
   <Carousel class="mb-small pr-44">
     {#each quotes as { text, author, jobTitle, companyLogo }}
       <div
-        class="text-black text-base w-96 p-x-small overflow-hidden rounded-2xl shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out mb-micro"
-      >
+        class="mb-micro w-96 overflow-hidden rounded-2xl bg-white p-x-small text-base text-black shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl">
         <p class="mb-small">{text}</p>
         <div>
           <span class="font-semibold">{author}</span>
           <br />
           <span>{jobTitle}</span>
         </div>
-        <img src={companyLogo.src} alt={companyLogo.alt} class="h-6 mt-micro" />
+        <img src={companyLogo.src} alt={companyLogo.alt} class="mt-micro h-6" />
       </div>
     {/each}
   </Carousel>

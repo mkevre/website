@@ -11,14 +11,12 @@
 </style>
 
 <div
-  class="grid justify-center gap-y-medium gap-x-5 m-x-small px-5"
-  data-analytics={`{"context":"grid"}`}
->
+  class="m-x-small grid justify-center gap-y-medium gap-x-5 px-5"
+  data-analytics={`{"context":"grid"}`}>
   {#each screencasts as screencast}
     <Screencast
       {screencast}
       screencastNumber={screencast.nextScreencast ||
-        screencast.screencastNumber}
-    />
+        screencast.screencastNumber} />
   {/each}
 </div>

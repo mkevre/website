@@ -14,49 +14,43 @@
   }
 
   .square {
-    @apply max-w-[50%] md:max-w-[65%] rounded-3xl;
+    @apply max-w-[50%] rounded-3xl md:max-w-[65%];
   }
 </style>
 
 <div
-  class="quotes bg-off-white shadow-normal rounded-2xl sm:rounded-5xl pt-micro px-0 sm:px-xx-small sm:pt-x-small sm:pb-micro lg:p-small mx-auto {clazz}"
->
-  <div class="flex justify-around flex-wrap max-w-3xl mx-auto">
+  class="quotes mx-auto rounded-2xl bg-off-white px-0 pt-micro shadow-normal sm:rounded-5xl sm:px-xx-small sm:pt-x-small sm:pb-micro lg:p-small {clazz}">
+  <div class="mx-auto flex max-w-3xl flex-wrap justify-around">
     {#each quotes as quote}
       <button
-        class="flex justify-center py-3 group mx-xx-small sm:mx-micro"
+        class="group mx-xx-small flex justify-center py-3 sm:mx-micro"
         on:mouseenter={() => (selectedQuote = quote)}
-        on:click={() => (selectedQuote = quote)}
-      >
+        on:click={() => (selectedQuote = quote)}>
         <img
           src={quote.companyLogo.src}
           alt={quote.companyLogo.alt}
-          class="h-7 w-20 sm:h-9 sm:w-28 transition group-hover:opacity-100 group-focus:opacity-100 group-focus:filter-none group-hover:filter-none"
+          class="h-7 w-20 transition group-hover:opacity-100 group-hover:filter-none group-focus:opacity-100 group-focus:filter-none sm:h-9 sm:w-28"
           class:opacity-60={selectedQuote !== quote}
-          class:grayscale={selectedQuote !== quote}
-        />
+          class:grayscale={selectedQuote !== quote} />
       </button>
     {/each}
   </div>
   <div
-    class="items-center justify-center mt-xx-small text-center md:text-left flex-wrap md:flex h-auto md:h-[400px]"
-  >
+    class="mt-xx-small h-auto flex-wrap items-center justify-center text-center md:flex md:h-[400px] md:text-left">
     <div class="w-full md:w-1/2">
       <img
         src={selectedQuote.img.src}
         alt={selectedQuote.img.alt}
         class:square={selectedQuote.img.square}
-        class="w-full sm:rounded-3xl mx-auto"
-      />
+        class="mx-auto w-full sm:rounded-3xl" />
     </div>
     <div
-      class="text flex w-full md:w-1/2 justify-center flex-col flex-1 py-xx-small px-xx-small sm:pl-x-small lg:pl-small lg:pr-0"
-    >
+      class="text flex w-full flex-1 flex-col justify-center py-xx-small px-xx-small sm:pl-x-small md:w-1/2 lg:pl-small lg:pr-0">
       <p class="text-large">
         &ldquo;{selectedQuote.text}&rdquo;
       </p>
 
-      <p class="font-bold mt-xx-small">
+      <p class="mt-xx-small font-bold">
         {selectedQuote.author}, {selectedQuote.jobTitle}
       </p>
 
@@ -65,8 +59,7 @@
           <LinkButton
             href={selectedQuote.link.href}
             variant="tertiary"
-            size="medium">{selectedQuote.link.text}</LinkButton
-          >
+            size="medium">{selectedQuote.link.text}</LinkButton>
         </div>
       {/if}
     </div>

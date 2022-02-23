@@ -34,7 +34,7 @@
 
   li::before {
     content: url("/tick.svg");
-    @apply absolute inline-block -left-7 sm:-left-9;
+    @apply absolute -left-7 inline-block sm:-left-9;
     height: 1.375rem;
     width: 1.375rem;
 
@@ -53,21 +53,20 @@
 
   :global(.price-small),
   :global(.crossed-out) {
-    @apply text-gray-800 text-h4 mr-macro;
+    @apply mr-macro text-h4 text-gray-800;
   }
 </style>
 
 <div
   class={`box flex flex-col justify-between items-center bg-gray-100 pt-small px-0 mt-0 mx-macro 2xl:mx-micro mb-x-small rounded-2xl shadow-normal text-center transition-all duration-200 hover:shadow-brand ${
     spiced ? "spiced shadow-brand" : ""
-  }`}
->
-  <div class="min-h-full flex flex-col">
+  }`}>
+  <div class="flex min-h-full flex-col">
     <h2 class="h4">{title}</h2>
-    <div class="h1 font-bold text-black flex items-center justify-center">
+    <div class="h1 flex items-center justify-center font-bold text-black">
       {@html price}
     </div>
-    <div class="text-dark-grey font-semibold">
+    <div class="font-semibold text-dark-grey">
       {#if duration}
         {duration}
       {:else}
@@ -76,8 +75,7 @@
     </div>
     {#if features}
       <ul
-        class="inline-flex flex-col ml-x-small mt-xx-small space-y-micro text-left"
-      >
+        class="ml-x-small mt-xx-small inline-flex flex-col space-y-micro text-left">
         {#each features as feature}
           <li class="relative inline-flex text-black">
             {#if typeof feature !== "string"}
@@ -90,7 +88,7 @@
       </ul>
     {/if}
     {#if learnMoreHref}
-      <div class="flex flex-1 justify-center items-center">
+      <div class="flex flex-1 items-center justify-center">
         <a href={learnMoreHref} class="learn-more">Learn More</a>
       </div>
     {/if}
@@ -101,10 +99,9 @@
       size="large"
       href={btnHref}
       data-analytics={`{"context":"` + trackingName + `","position":"hero"}`}
-      >{btnText}</LinkButton
-    >
+      >{btnText}</LinkButton>
   {/if}
   {#if footnote}
-    <div class="text-p-xsmall px-small text-gray-800">{footnote}</div>
+    <div class="px-small text-p-xsmall text-gray-800">{footnote}</div>
   {/if}
 </div>

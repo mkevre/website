@@ -3,6 +3,6 @@
   export { clazz as class };
 </script>
 
-<div class="content-docs prose prose-h3:mb-6 max-w-none {clazz}">
+<div class="content-docs prose max-w-none prose-h3:mb-6 {clazz}">
   <slot />
 </div>

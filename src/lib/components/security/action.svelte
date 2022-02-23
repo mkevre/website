@@ -14,6 +14,5 @@
     {description}
   </p>
   <LinkButton variant="primary" size="medium" href={link.href}
-    >{link.text}</LinkButton
-  >
+    >{link.text}</LinkButton>
 </div>

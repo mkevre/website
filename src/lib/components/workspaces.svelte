@@ -114,8 +114,7 @@
 <figure
   class="aspect"
   style="--width: {wrapper_width}; --height: {wrapper_height};"
-  bind:this={wrapper}
->
+  bind:this={wrapper}>
   <div class="container">
     {#each items as { Component, top, left, width, id } (id)}
       <div
@@ -129,8 +128,7 @@
           factor: 1.015,
           easing: cubicIn,
         }}
-        on:outroend={shuffle}
-      >
+        on:outroend={shuffle}>
         <svelte:component this={Component} />
       </div>
     {/each}

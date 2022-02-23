@@ -6,8 +6,7 @@
 
 <Section>
   <div
-    class="flex flex-col md:flex-row items-center md:items-start justify-between max-w-3xl mx-auto space-y-medium md:space-y-0"
-  >
+    class="mx-auto flex max-w-3xl flex-col items-center justify-between space-y-medium md:flex-row md:items-start md:space-y-0">
     {#each [thanksAction, reportAction] as action}
       <Action {action} />
     {/each}

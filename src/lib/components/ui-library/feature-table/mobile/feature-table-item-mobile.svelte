@@ -5,8 +5,8 @@
 
 {#if definition.list}
   <div class="flex flex-col justify-center px-8">
-    <div class="font-bold uppercase mb-macro">{definition.term}</div>
-    <ul class="list-disc list-outside text-left">
+    <div class="mb-macro font-bold uppercase">{definition.term}</div>
+    <ul class="list-outside list-disc text-left">
       {#each definition.list as item}
         <li>
           {@html item}

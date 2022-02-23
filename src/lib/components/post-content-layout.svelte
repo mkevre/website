@@ -89,15 +89,13 @@
     image: `images/${imagesDirectoryName}/${slug}/${image}`,
     imageTwitter: `images/${imagesDirectoryName}/${slug}/${image}`,
     norobots: norobots,
-  }}
-/>
-<div class="flex justify-center mt-small mb-8">
-  <div class="w-full lg:w-[50rem] leading-[177.7%]">
+  }} />
+<div class="mt-small mb-8 flex justify-center">
+  <div class="w-full leading-[177.7%] lg:w-[50rem]">
     <img
       src="/images/{imagesDirectoryName}/{slug}/{teaserImage || image}"
       alt={`${title}`}
-      class="max-h-[540px] rounded-tl-2xl rounded-tr-[1.3rem]"
-    />
+      class="max-h-[540px] rounded-tl-2xl rounded-tr-[1.3rem]" />
     <p class="mt-[1.875rem] mb-6 text-dark-grey">{dateDisplay}</p>
     <h1 class="mb-6 text-h3">{title}</h1>
     <p>
@@ -107,19 +105,15 @@
           displayNames={authorDisplayNames}
           socialMediaLinks={authorSocialMediaLinks}
           socialMediaLinkClasses="inline-flex mr-2 px-2 bg-white rounded-xl text-dark-grey focus:bg-off-white focus:text-black hover:bg-off-white hover:text-black"
-          socialMediaImgClasses="mr-2 h-6 w-6 place-self-center"
-        /></span
-      >
+          socialMediaImgClasses="mr-2 h-6 w-6 place-self-center" /></span>
     </p>
     <div
-      class="content-blog prose prose-img:rounded-tl-2xl prose-img:rounded-tr-[1.3rem] max-w-none mt-10"
-    >
+      class="content-blog prose mt-10 max-w-none prose-img:rounded-tl-2xl prose-img:rounded-tr-[1.3rem]">
       <slot />
     </div>
     <Share
       text="Share this post"
       {shareLinks}
-      class="border-t border-solid border-divider pt-xx-small md:pt-micro mt-small"
-    />
+      class="mt-small border-t border-solid border-divider pt-xx-small md:pt-micro" />
   </div>
 </div>

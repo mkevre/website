@@ -12,7 +12,7 @@
 
 <style lang="postcss">
   .othercompanies span {
-    @apply px-2 py-[0.3rem] rounded-xl bg-orange-700;
+    @apply rounded-xl bg-orange-700 px-2 py-[0.3rem];
   }
 </style>
 
@@ -20,8 +20,7 @@
   data={{
     description: "On a mission to make developers' lives easier!",
     title: "About Gitpod",
-  }}
-/>
+  }} />
 
 <Header tight={true}>
   <div slot="content">
@@ -33,22 +32,21 @@
   </div>
 </Header>
 
-<div class="max-w-[50rem] mt-small mx-auto mb-auto my-small lg:my-x-huge">
-  <h2 class="h4 pl-7 border-l-orange-800 border-l-[0.25rem]">
+<div class="mx-auto my-small mt-small mb-auto max-w-[50rem] lg:my-x-huge">
+  <h2 class="h4 border-l-[0.25rem] border-l-orange-800 pl-7">
     Remove all friction from the developer experience to be always ready-to-code
     and make software engineering more collaborative, joyful, and secure.
   </h2>
 </div>
 
-<ul class="flex basis-1/4 my-8 mx-auto justify-center space-x-4">
+<ul class="my-8 mx-auto flex basis-1/4 justify-center space-x-4">
   <li>
     <img
       class="w-full rounded-2xl"
       src="/images/about/team-2.jpg"
       alt="A female Gitpod team member"
       height="310"
-      width="310"
-    />
+      width="310" />
   </li>
   <li>
     <img
@@ -57,8 +55,7 @@
       alt="A laptop and office chair in a tent"
       height="310"
       width="310"
-      role="presentation"
-    />
+      role="presentation" />
   </li>
   <li>
     <img
@@ -67,8 +64,7 @@
       alt="Gitpod team members on the beach"
       height="310"
       width="310"
-      role="presentation"
-    />
+      role="presentation" />
   </li>
   <li>
     <img
@@ -76,12 +72,11 @@
       src="/images/about/about-5.png"
       alt="4 kumquats on a table"
       height="310"
-      width="310"
-    />
+      width="310" />
   </li>
 </ul>
 
-<div class="max-w-4xl my-small lg:my-x-huge mx-auto">
+<div class="my-small mx-auto max-w-4xl lg:my-x-huge">
   <h2>Obsessed with developer experience</h2>
   <p class="text-p-large">
     We have built developer tools, created programming languages and
@@ -93,15 +88,13 @@
   </p>
   <p class="mt-4 text-p-large">
     <LinkIconExternal href="https://www.gitpod.io/direction" icon="🗺️"
-      >Gitpod's Direction</LinkIconExternal
-    >
+      >Gitpod's Direction</LinkIconExternal>
     <LinkIconExternal href="https://www.gitpod.io/roadmap" icon="🛣"
-      >Gitpod's Roadmap</LinkIconExternal
-    >
+      >Gitpod's Roadmap</LinkIconExternal>
   </p>
 </div>
 
-<div class="max-w-4xl my-small lg:my-x-huge mx-auto">
+<div class="my-small mx-auto max-w-4xl lg:my-x-huge">
   <h2>Built on shared principles</h2>
   <p class="text-p-large">
     Values are important to us. We are developer-led and aim for a frictionless
@@ -113,12 +106,11 @@
   </p>
   <p class="mt-4 text-p-large">
     <LinkIconExternal href="https://www.gitpod.io/values" icon="✨"
-      >Brand &amp; Values</LinkIconExternal
-    >
+      >Brand &amp; Values</LinkIconExternal>
   </p>
 </div>
 
-<div class="max-w-4xl my-small lg:my-x-huge mx-auto">
+<div class="my-small mx-auto max-w-4xl lg:my-x-huge">
   <h2>Backed by great investors</h2>
   <p class="text-p-large">
     Gitpod Inc. was founded in 2020 and in early 2021 we raised $13m from
@@ -147,7 +139,7 @@
   </p>
 </div>
 
-<div class="max-w-4xl my-small lg:my-x-huge mx-auto">
+<div class="my-small mx-auto max-w-4xl lg:my-x-huge">
   <h2>Find out more. We are open</h2>
   <p class="text-p-large">
     We have always built in the open. If you want to learn skim through some of
@@ -156,12 +148,10 @@
   <p class="mt-4 text-p-large">
     <LinkIconExternal
       href="https://www.notion.so/gitpod/How-we-work-0f9159f282d24f9d9776372e0c7dbab4"
-      icon="💻">How we work</LinkIconExternal
-    >
+      icon="💻">How we work</LinkIconExternal>
     <LinkIconExternal
       href="https://www.notion.so/gitpod/Architecture-0e39e570b10f4e8ba7b259629ee3cb74"
-      icon="🏗">Architecture</LinkIconExternal
-    >
+      icon="🏗">Architecture</LinkIconExternal>
   </p>
 </div>
 
@@ -173,82 +163,69 @@
       text: "See openings",
       href: "https://www.gitpod.io/careers",
     },
-  }}
-/>
+  }} />
 
-<div class="header max-w-4xl my-small lg:my-x-huge mx-auto">
+<div class="header my-small mx-auto max-w-4xl lg:my-x-huge">
   <h2>Gitpod in the news</h2>
-  <ul class="flex flex-row flex-wrap justify-center mt-x-small">
+  <ul class="mt-x-small flex flex-row flex-wrap justify-center">
     <li
-      class="p-4 flex-grow-0 flex-shrink-0 basis-1/2 min-w-[300px] text-center mb-0"
-    >
+      class="mb-0 min-w-[300px] flex-shrink-0 flex-grow-0 basis-1/2 p-4 text-center">
       <a
-        class="p-4 block bg-white rounded-2xl"
+        class="block rounded-2xl bg-white p-4"
         href="https://www.theregister.com/2020/08/25/gitpod_open_sources_cloud_development_platform/"
         target="_blank"
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         <img
           class="inline"
           src="/images/about/TheRegister.svg"
           alt="The Register"
           height="40"
-          width=""
-        />
+          width="" />
       </a>
     </li>
     <li
-      class="p-4 flex-grow-0 flex-shrink-0 basis-1/2 min-w-[300px] text-center mb-0"
-    >
+      class="mb-0 min-w-[300px] flex-shrink-0 flex-grow-0 basis-1/2 p-4 text-center">
       <a
-        class="p-4 block bg-white rounded-2xl"
+        class="block rounded-2xl bg-white p-4"
         href="https://www.infoq.com/articles/cloud-based-development/"
         target="_blank"
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         <img
           class="inline"
           src="/images/about/InfoQ.svg"
           alt="Info Q"
           height="40"
-          width=""
-        />
+          width="" />
       </a>
     </li>
     <li
-      class="p-4 flex-grow-0 flex-shrink-0 basis-1/2 min-w-[300px] text-center mb-0"
-    >
+      class="mb-0 min-w-[300px] flex-shrink-0 flex-grow-0 basis-1/2 p-4 text-center">
       <a
-        class="p-4 block bg-white rounded-2xl"
+        class="block rounded-2xl bg-white p-4"
         href="https://devops.com/gitpod-open-sources-automated-local-development-environment/"
         target="_blank"
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         <img
           class="inline"
           src="/images/about/DevOpsDotCom.svg"
           alt="DevOps.com"
           height="40"
-          width=""
-        />
+          width="" />
       </a>
     </li>
     <li
-      class="p-4 flex-grow-0 flex-shrink-0 basis-1/2 min-w-[300px] text-center mb-0"
-    >
+      class="mb-0 min-w-[300px] flex-shrink-0 flex-grow-0 basis-1/2 p-4 text-center">
       <a
-        class="p-4 block bg-white rounded-2xl"
+        class="block rounded-2xl bg-white p-4"
         href="https://thenewstack.io/gitpod-open-sources-a-holistic-ide/"
         target="_blank"
-        rel="noreferrer"
-      >
+        rel="noreferrer">
         <img
           class="inline"
           src="/images/about/TheNewStack.svg"
           alt="The New Stack"
           height="40"
-          width=""
-        />
+          width="" />
       </a>
     </li>
   </ul>

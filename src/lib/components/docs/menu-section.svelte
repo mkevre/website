@@ -18,24 +18,22 @@
 
 <style lang="postcss">
   .isActiveSection {
-    @apply py-6 bg-white rounded-2xl shadow-normal;
+    @apply rounded-2xl bg-white py-6 shadow-normal;
   }
 </style>
 
 <li data-analytics={`{"position":"sidebar"}`}>
   <div
     class:isActiveSection
-    class="px-6 inline-block text-p-large leading-x-small"
-  >
-    <MenuLink href={menuItem.path} class="text-large">{menuItem.title}</MenuLink
-    >
+    class="inline-block px-6 text-p-large leading-x-small">
+    <MenuLink href={menuItem.path} class="text-large"
+      >{menuItem.title}</MenuLink>
     {#if menuItem.subMenu && isActiveSection}
       <ul class="ml-4 mt-4 text-p-medium leading-x-small">
         {#each menuItem.subMenu as sub}
           <li
             class="flex flex-row items-center"
-            data-analytics={`{"context":"submenu"}`}
-          >
+            data-analytics={`{"context":"submenu"}`}>
             <MenuLink href={sub.path}>{sub.title}</MenuLink>
             {#if sub.status}
               <Pill text={sub.status} class="ml-1.5" />

@@ -14,7 +14,6 @@
       variant="primary"
       size="large"
       target="_blank"
-      href="https://gitpod.io/plans">Claim Offer</LinkButton
-    >
+      href="https://gitpod.io/plans">Claim Offer</LinkButton>
   </div>
 </Header>

@@ -20,13 +20,11 @@
 </script>
 
 <Section
-  class="flex flex-col max-w-2xl mx-auto lg:max-w-none lg:flex-row items-center bg-off-white shadow-normal px-micro py-small sm:px-small sm:py-medium lg:space-x-small xl:py-24 xl:px-20 xl:space-x-20 rounded-5xl"
->
+  class="mx-auto flex max-w-2xl flex-col items-center rounded-5xl bg-off-white px-micro py-small shadow-normal sm:px-small sm:py-medium lg:max-w-none lg:flex-row lg:space-x-small xl:space-x-20 xl:py-24 xl:px-20">
   <div class="mb-x-small lg:mb-0">
     <img
       src="/images/index/gitpod-browser-extension.png"
-      alt="Open in Gitpod button added via the Gitpod Browser Extension"
-    />
+      alt="Open in Gitpod button added via the Gitpod Browser Extension" />
   </div>
   <div>
     <h3 class="h3">Spin up developer environments with a single click.</h3>
@@ -35,22 +33,20 @@
       Bitbucket projects to easily spin up a dev environment with a single
       click.
     </p>
-    <div class="flex justify-center items-center flex-wrap space-x-4 fl">
+    <div class="fl flex flex-wrap items-center justify-center space-x-4">
       {#each buttons as { href, icon, text }}
         <LinkButton
           variant="white"
           size="medium"
           {href}
           target="_blank"
-          rel="noopener"
-        >
+          rel="noopener">
           <img
-            class="inline-block h-6 w-6 mr-2"
+            class="mr-2 inline-block h-6 w-6"
             src={`/${icon}`}
             alt={text}
             width="24"
-            height="24"
-          />
+            height="24" />
           {text}
         </LinkButton>
       {/each}

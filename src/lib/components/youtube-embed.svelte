@@ -126,11 +126,9 @@
     height="315"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  />
+    allowfullscreen />
 </div>
 <Share
   text="Share this video"
   {shareLinks}
-  class="share justify-end mx-auto mt-xx-small"
-/>
+  class="share mx-auto mt-xx-small justify-end" />

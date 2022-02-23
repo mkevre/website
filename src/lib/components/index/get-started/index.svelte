@@ -21,13 +21,13 @@
     @apply flex;
 
     @media (max-width: 944px) {
-      @apply flex-col mx-auto;
+      @apply mx-auto flex-col;
       max-width: 600px;
     }
   }
 
   .card {
-    @apply p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-white text-center;
+    @apply rounded-2xl bg-white p-xx-small text-center sm:py-small sm:px-x-small md:p-medium;
     flex: 0 0 49%;
 
     @media (max-width: 1140px) {
@@ -50,13 +50,11 @@
     on:change={handleChange}
     {checked}
     class="mb-x-small"
-    id="saas-self-hosted"
-  />
+    id="saas-self-hosted" />
   <div
     class="cards-container"
     class:justify-center={checked}
-    class:justify-between={!checked}
-  >
+    class:justify-between={!checked}>
     {#if checked}
       <div class="card shadow-normal">
         <HostGitpodYourself />

@@ -19,23 +19,20 @@
     title: "Community Heroes",
     description:
       "The Gitpod Community Heroes program recognises developers that go above and beyond to contribute to Gitpod.",
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod Community Heroes"
   text="Our program recognises developers that go above and beyond to contribute to
   Gitpod."
-  textClassNames="max-w-xl text-large mx-auto"
->
+  textClassNames="max-w-xl text-large mx-auto">
   <LinkButton
     variant="primary"
     size="large"
     slot="content"
     href="https://forms.gle/hPSZ2Bws9rpqE7M4A"
     target="_blank"
-    class="mt-x-small">Join the mission</LinkButton
-  >
+    class="mt-x-small">Join the mission</LinkButton>
 </Header>
 
 <HeartOfGitpod />
@@ -52,8 +49,7 @@
     "Enjoy helping the Gitpod community 🧡",
   ]}
   link={{ href: "https://forms.gle/hPSZ2Bws9rpqE7M4A", text: "Apply now" }}
-  ulMaxWidth="580px"
-/>
+  ulMaxWidth="580px" />
 
 <MeetTheHeros />
 

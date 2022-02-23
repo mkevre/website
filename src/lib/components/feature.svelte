@@ -32,7 +32,7 @@
   }
 
   .feature :global(code) {
-    @apply py-1 px-2 rounded-xl bg-orange-700;
+    @apply rounded-xl bg-orange-700 py-1 px-2;
     white-space: break-spaces;
   }
 
@@ -42,24 +42,22 @@
 
   li::before {
     content: url("/tick.svg");
-    @apply block h-6 w-6 mr-micro;
+    @apply mr-micro block h-6 w-6;
     flex: 0 0 1.5rem;
   }
 
   .buttons-wrapper {
-    @apply flex justify-center items-center flex-wrap space-x-4;
+    @apply flex flex-wrap items-center justify-center space-x-4;
   }
 </style>
 
 <Section class="feature-container-section">
   <div
-    class="feature md:grid justify-center items-center md:grid-cols-2 lg:gap-32 md:gap-small flex {showTheMediaFirstOnMobile
+    class="feature flex items-center justify-center md:grid md:grid-cols-2 md:gap-small lg:gap-32 {showTheMediaFirstOnMobile
       ? 'flex-col-reverse'
-      : 'flex-col'}"
-  >
+      : 'flex-col'}">
     <div
-      class="{showTheMediaFirstOnMobile ? 'mt-x-small' : 'mb-x-small'} md:my-0"
-    >
+      class="{showTheMediaFirstOnMobile ? 'mt-x-small' : 'mb-x-small'} md:my-0">
       <div class="text-large">
         {#if headingLevel === "h3"}
           <h3 class="h3">{@html title}</h3>
@@ -69,12 +67,11 @@
         <p
           class="mt-micro"
           class:mb-xx-small={moreButton || secondaryButton}
-          class:md:mb-x-small={moreButton || secondaryButton}
-        >
+          class:md:mb-x-small={moreButton || secondaryButton}>
           {@html paragraph}
         </p>
         {#if featureList}
-          <ul class="space-y-3 mt-micro">
+          <ul class="mt-micro space-y-3">
             {#each featureList as f}
               <li class="flex">{f}</li>
             {/each}
@@ -83,8 +80,7 @@
       </div>
       <div
         class:buttons-wrapper={moreButton && secondaryButton}
-        class:hidden={!moreButton && !secondaryButton}
-      >
+        class:hidden={!moreButton && !secondaryButton}>
         {#if moreButton}
           <LinkButton
             href={moreButton.href}
@@ -100,33 +96,29 @@
             href={secondaryButton.href}
             target={isAnExternalLink(secondaryButton.href)
               ? "_blank"
-              : undefined}>{secondaryButton.text}</LinkButton
-          >
+              : undefined}>{secondaryButton.text}</LinkButton>
         {/if}
       </div>
     </div>
     <div
-      class="preview w-full col-start-1 row-start-1 md:col-start-auto md:row-start-auto"
-    >
+      class="preview col-start-1 row-start-1 w-full md:col-start-auto md:row-start-auto">
       {#if terminal}
         <Console
           source={terminal.source}
           dark={terminal.dark}
           narrow={terminal.narrow}
           shadow={terminal.shadow}
-          skipToEnd={terminal.skipToEnd}
-        />
+          skipToEnd={terminal.skipToEnd} />
       {/if}
       {#if image}
         <img
           src={image.src}
           alt={image.alt}
           class="{image.classNames} mx-auto"
-          style={image.styles}
-        />
+          style={image.styles} />
       {/if}
       {#if footnote}
-        <p class="fine-print mt-x-small max-w-md mx-auto">{@html footnote}</p>
+        <p class="fine-print mx-auto mt-x-small max-w-md">{@html footnote}</p>
       {/if}
       {#if previewComponent}
         <svelte:component this={previewComponent} />

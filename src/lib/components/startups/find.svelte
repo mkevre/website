@@ -54,8 +54,7 @@
         {#each organisationsLists as orgs}
           <OrganisationsEntry
             from={orgs.from}
-            organisations={orgs.organisations}
-          />
+            organisations={orgs.organisations} />
         {/each}
       {/if}
     </div>

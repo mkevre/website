@@ -10,7 +10,7 @@
   }
 </style>
 
-<ul class="min-w-min mb-xx-small space-y-macro md:mb-0">
+<ul class="mb-xx-small min-w-min space-y-macro md:mb-0">
   <li class="font-semibold text-black">{title}</li>
   <slot />
 </ul>

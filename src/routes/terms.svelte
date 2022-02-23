@@ -34,9 +34,8 @@
   data={{
     description: "Gitpod's terms of service.",
     title: "Terms",
-  }}
-/>
-<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
+  }} />
+<article class="mx-auto mt-20 mb-8 max-w-[94vw] leading-7 lg:w-[50rem]">
   <h1>Gitpod Terms of Service</h1>
 
   <p class="mb-4">
@@ -52,8 +51,7 @@
   <p class="mb-4">
     The use of the scope of Services provided by us and used by our registered
     customers in form of individuals and businesses (each a <strong
-      >"Customer"</strong
-    >
+      >"Customer"</strong>
     or <strong>"you/your"</strong>) is determined by the following general terms
     of service (<strong>"Terms of Service"</strong> or
     <strong>"Agreement"</strong>).
@@ -74,7 +72,7 @@
     of the contract, unless we explicitly and in writing agree that these
     provisions shall be valid.
   </p>
-  <ol class="toc ol-alpha list-inside space-y-4 mb-4">
+  <ol class="toc ol-alpha mb-4 list-inside space-y-4">
     <li class="my-small">
       <h2 class="inline">
         Creating an Account and Conclusion of the Agreement
@@ -171,8 +169,7 @@
         Depending on the time of using the Service and subscription plan
         available on the Website chosen by Customer Gitpod demands from the
         Customer a fee for using its Service based on <strong
-          >"Gitpod-Hours (GPh)"</strong
-        >
+          >"Gitpod-Hours (GPh)"</strong>
         which is our internal unit to express amounts, credits and debits of Service
         use (the
         <strong>"Fee"</strong>). The description, options and total amount of
@@ -207,7 +204,7 @@
     <li>
       <h2 class="inline">Liability</h2>
       <p class="mb-4">We are liable without limitation for</p>
-      <ol class="ol-alpha list-inside space-y-4 mb-4">
+      <ol class="ol-alpha mb-4 list-inside space-y-4">
         <li>
           damages caused deliberately or due to gross negligence by Gitpod;
         </li>
@@ -274,7 +271,7 @@
     </li>
     <li>
       <h2 class="inline">Customer's General Obligations</h2>
-      <ol class="ol-decimal list-inside space-y-4 mb-4">
+      <ol class="ol-decimal mb-4 list-inside space-y-4">
         <li>
           <strong>True Data and Fair use:</strong> You must fill in all required
           fields in the sign-up sheet truthfully and completely. You must respect
@@ -317,7 +314,7 @@
         practices and you must, in particular, not nor allow others through your
         Gitpod account to:
       </p>
-      <ol class="ol-decimal list-inside space-y-4 mb-4">
+      <ol class="ol-decimal mb-4 list-inside space-y-4">
         <li>
           breach any applicable laws, not limited to a specific jurisdiction;
         </li>
@@ -372,8 +369,7 @@
           redirected to you and you shall hold us harmless and indemnify us for
           any damages, claims, liabilities and expenses, including attorneys’
           fees that your interaction causes to others and us provided you are
-          held responsible for such breach.</strong
-        >
+          held responsible for such breach.</strong>
       </p>
     </li>
     <li>
@@ -407,8 +403,7 @@
           redirected to you and you shall hold us harmless and indemnify us for
           any damages, claims, liabilities and expenses, including attorneys’
           fees that your interaction causes to others and us provided you are
-          held responsible for such breach.</strong
-        >
+          held responsible for such breach.</strong>
       </p>
     </li>
     <li>
@@ -417,7 +412,7 @@
         In addition to our termination rights, we have the right to the
         following blocking measures:
       </p>
-      <ol class="ol-decimal list-inside space-y-4 mb-4">
+      <ol class="ol-decimal mb-4 list-inside space-y-4">
         <li>
           In case a Customer is in breach of Section I. or a reasonable
           suspicion thereon considering the reasonable interests of the Customer
@@ -467,8 +462,8 @@
         </p>
         <p class="mb-4">
           Gitpod GmbH<br /> represented by: Sven Efftinge, Moritz Eysholdt, Dr.
-          Jan K&ouml;hnlein<br /> Am Germaniahafen 1<br /> 24143 Kiel/Germany<br
-          /> Email: contact@gitpod.io
+          Jan K&ouml;hnlein<br /> Am Germaniahafen 1<br /> 24143 Kiel/Germany<br />
+          Email: contact@gitpod.io
         </p>
         <p class="mb-4">
           of your decision to withdraw from this contract by an unequivocal
@@ -535,17 +530,16 @@
       <p class="mb-4">
         In addition, you as Customer or Gitpod can terminate this Agreement with
         immediate effect for good cause (wichtiger Grund). Good cause <em
-          >(wichtiger Grund)</em
-        > on part of Gitpod shall include, among others, when (i) you are in breach
-        or your obligations under this Agreement; or (ii) fall behind in payment
-        for more than six (6) weeks; or (iii) breach the terms of Fair and Acceptable
-        Use in Section I; or (iv) a major change in cooperation between Gitpod and
-        other companies that is central for Gitpod to supply its Service occur, including
-        but not limited to the end or material change of the workings of a software
-        or service, a cancellation of the co-operation, or materially changed pricing;
-        or (v) a major change of resources availability that are central for Gitpod
-        to supply its Service occur; or (vi) Gitpod Service is terminated due to
-        reasons beyond Gitpod’s control or as a whole.
+          >(wichtiger Grund)</em> on part of Gitpod shall include, among others,
+        when (i) you are in breach or your obligations under this Agreement; or (ii)
+        fall behind in payment for more than six (6) weeks; or (iii) breach the terms
+        of Fair and Acceptable Use in Section I; or (iv) a major change in cooperation
+        between Gitpod and other companies that is central for Gitpod to supply its
+        Service occur, including but not limited to the end or material change of
+        the workings of a software or service, a cancellation of the co-operation,
+        or materially changed pricing; or (v) a major change of resources availability
+        that are central for Gitpod to supply its Service occur; or (vi) Gitpod Service
+        is terminated due to reasons beyond Gitpod’s control or as a whole.
       </p>
       <p class="mb-4">
         Upon termination, regulations concerning Liability (Section F.),
@@ -646,7 +640,7 @@
 
       <h2 class="my-4">Transfer of the Agreement to Another Party</h2>
       <p class="mb-4">You agree that we may transfer this Agreement to:</p>
-      <ol class="ol-decimal list-inside space-y-4 mb-4">
+      <ol class="ol-decimal mb-4 list-inside space-y-4">
         <li>
           <strong>Gitpod, Inc.</strong>, a corporation incorporated and validly
           existing under the laws of the State of Delaware, United States,
@@ -698,8 +692,7 @@
   </p>
 
   <div
-    class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white"
-  >
+    class="rounded-2xl bg-off-white p-xx-small sm:py-small sm:px-x-small md:p-medium">
     <div>-- begin model withdrawal form --</div>
     <p class="mb-4">
       To<br /> Gitpod GmbH represented by: Sven Efftinge, Moritz Eysholdt, Dr.

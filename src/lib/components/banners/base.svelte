@@ -43,15 +43,14 @@
   }
 
   .bottom {
-    @apply bottom-0 fixed z-10;
+    @apply fixed bottom-0 z-10;
   }
 </style>
 
 {#if showBanner}
   <div
     transition:slide
-    class="{location} px-4 py-2 flex justify-between items-center w-full bg-sand-dark shadow-sm text-xs sm:text-sm md:text-base"
-  >
+    class="{location} flex w-full items-center justify-between bg-sand-dark px-4 py-2 text-xs shadow-sm sm:text-sm md:text-base">
     <slot {closeBanner} />
   </div>
 {/if}

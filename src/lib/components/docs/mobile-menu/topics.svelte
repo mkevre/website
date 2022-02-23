@@ -15,8 +15,7 @@
       <MenuItem
         href={menuItem.path}
         showIcon={true}
-        onClick={() => ($topicsState = false)}
-      >
+        onClick={() => ($topicsState = false)}>
         {menuItem.title}
       </MenuItem>
     {/each}

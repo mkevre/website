@@ -21,11 +21,10 @@
   ];
 </script>
 
-<div class="pb-8 bg-gray-100 text-p-footer" data-id="footer">
+<div class="bg-gray-100 pb-8 text-p-footer" data-id="footer">
   <footer
-    class="py-large m-auto px-xx-small md:max-w-4xl md:py-small md:px-xx-small"
-  >
-    <div class="flex justify-between flex-wrap pb-micro md:pb-small">
+    class="m-auto py-large px-xx-small md:max-w-4xl md:py-small md:px-xx-small">
+    <div class="flex flex-wrap justify-between pb-micro md:pb-small">
       <Section title="Gitpod">
         <li><FooterLink href="/">Home</FooterLink></li>
         <li><FooterLink href="/pricing">Pricing</FooterLink></li>
@@ -38,8 +37,7 @@
         </li>
         <li>
           <FooterLink href="/for/opensource" class="flex items-center"
-            >Gitpod for Open Source</FooterLink
-          >
+            >Gitpod for Open Source</FooterLink>
         </li>
         <li>
           <FooterLink href="/vs/github-codespaces"
@@ -60,16 +58,14 @@
           <FooterLink
             href="https://www.gitpodstatus.com/"
             target="_blank"
-            rel="noopener">Status</FooterLink
-          >
+            rel="noopener">Status</FooterLink>
         </li>
       </Section>
       <Section title="Developer">
         <li><FooterLink href="/#get-started">Getting started</FooterLink></li>
         <li>
           <FooterLink href="/screencasts/getting-started-with-gitpod"
-            >Screencasts</FooterLink
-          >
+            >Screencasts</FooterLink>
         </li>
         <li><FooterLink href="/blog">Blog</FooterLink></li>
         <li><FooterLink href="/docs">Documentation</FooterLink></li>
@@ -79,8 +75,7 @@
           <FooterLink
             href="https://github.com/gitpod-io/gitpod/issues/new?template=bug_report.md"
             target="_blank"
-            rel="noopener">Report a bug</FooterLink
-          >
+            rel="noopener">Report a bug</FooterLink>
         </li>
         <li><FooterLink href="/community">Community</FooterLink></li>
       </Section>
@@ -90,8 +85,7 @@
           <FooterLink
             href="https://www.gitpod.io/careers"
             target="_blank"
-            highlight>Careers</FooterLink
-          >
+            highlight>Careers</FooterLink>
         </li>
         <li><FooterLink href="/customers">Customers</FooterLink></li>
         <li><FooterLink href="/contact">Contact</FooterLink></li>
@@ -110,8 +104,7 @@
     </div>
 
     <div
-      class="flex flex-col-reverse items-center justify-between border-t border-solid border-sand-dark pt-xx-small md:flex-row md:pt-x-small"
-    >
+      class="flex flex-col-reverse items-center justify-between border-t border-solid border-sand-dark pt-xx-small md:flex-row md:pt-x-small">
       <div class="mt-micro flex items-center md:mt-0">
         <FooterLink href="/"
           ><div class="relative -top-px z-0">
@@ -119,12 +112,10 @@
               src="/svg/logo-textless.svg"
               alt="Gitpod"
               height="24"
-              width="24"
-            />
+              width="24" />
           </div></FooterLink
         ><span class="ml-macro"
-          >Copyright &copy; {new Date().getFullYear()} Gitpod</span
-        >
+          >Copyright &copy; {new Date().getFullYear()} Gitpod</span>
       </div>
       <div class="flex space-x-micro">
         {#each socialLinks as link}
@@ -134,8 +125,7 @@
             class="hover:opacity-80"
             analytics={`{"variant":"social_media","context":"` +
               link.alt.toLowerCase() +
-              `_visit"}`}
-          >
+              `_visit"}`}>
             <img src={link.icon} alt={link.alt} height="24" width="24" />
           </FooterLink>
         {/each}

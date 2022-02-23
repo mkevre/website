@@ -79,7 +79,7 @@
   }
 
   .scrolled-out .nav-items {
-    @apply opacity-0 pointer-events-none;
+    @apply pointer-events-none opacity-0;
   }
 
   @media (min-width: 1090px) {
@@ -108,12 +108,10 @@
 <nav
   class="fixed z-50 mx-auto w-full border-b border-solid border-transparent"
   class:scrolled-out={scroll > 0}
-  class:bg-open-state={$menuState}
->
+  class:bg-open-state={$menuState}>
   <AnnouncementBanner />
   <div
-    class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-micro md:px-x-small"
-  >
+    class="wrapper mx-auto flex h-16 items-center justify-between px-micro md:h-20 md:px-x-small">
     <button
       on:contextmenu|preventDefault={() => goto("/media-kit")}
       aria-label="Home"
@@ -122,18 +120,16 @@
         showHideOverflowY(false);
         goto("/");
         scrollToTop();
-      }}
-    >
+      }}>
       <Logo class="h-8 w-28 lgx:h-10 lgx:w-32" />
     </button>
     <div
-      class="nav-items mx-auto hidden px-2 space-x-6 items-center md:space-x-12"
-    >
+      class="nav-items mx-auto hidden items-center space-x-6 px-2 md:space-x-12">
       {#each navItems as navItem}
         <NavItem on:focus={scrollToTop} {navItem} />
       {/each}
     </div>
-    <div class="login-wrapper items-center hidden space-x-x-small">
+    <div class="login-wrapper hidden items-center space-x-x-small">
       <ContactLink />
       {#if isLoggedIn}
         <DashboardButton />

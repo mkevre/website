@@ -4,8 +4,7 @@
   viewBox="0 0 337 296"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  aria-hidden="true"
->
+  aria-hidden="true">
   <rect width="337" height="296" fill="#F9F9F9" />
   <rect width="337" height="44" fill="#F3F1F0" />
   <rect y="252" width="337" height="44" fill="#FF8A00" />

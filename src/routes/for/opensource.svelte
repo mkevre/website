@@ -31,22 +31,19 @@
       "Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. Upgrade your account to our complementary professional open source plan.",
     title: "Gitpod for Open Source",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod for Open Source"
   text="Spend less time reviewing pull-requests, on-boarding contributors and more time on building great things. <strong>Upgrade your account to our complementary professional open source plan.</strong>"
   textClassNames="text-large max-w-4xl mx-auto"
-  fullWidth={true}
->
+  fullWidth={true}>
   <div slot="content">
     <LinkButton
       variant="primary"
       size="large"
       href="https://docs.google.com/forms/d/1TE0YGgnUpHxQIH-2Sibn4LldB2ZLlhc_nQo90bJya3w/viewform?edit_requested=true"
-      class="mt-x-small mb-medium">Apply now</LinkButton
-    >
+      class="mt-x-small mb-medium">Apply now</LinkButton>
     <Quotes {quotes} />
   </div>
 </Header>
@@ -55,8 +52,7 @@
   title="Be always ready-to-code"
   text="Spin up fresh, automated dev environments for each task, in the cloud, in
   seconds."
-  {features}
-/>
+  {features} />
 
 <ProgramBenefits cards={programBenefits} />
 
@@ -72,19 +68,16 @@
     href: "https://docs.google.com/forms/d/1TE0YGgnUpHxQIH-2Sibn4LldB2ZLlhc_nQo90bJya3w/viewform?edit_requested=true",
     text: "Apply now",
   }}
-  ulMaxWidth="638px"
-/>
+  ulMaxWidth="638px" />
 
 <Faqs />
 
 <SectionCommon
   title="Open source is in our&nbsp;DNA"
-  text="Gitpod is open-source and so are all the tools we develop and contribute to."
->
+  text="Gitpod is open-source and so are all the tools we develop and contribute to.">
   <div
-    class="flex flex-wrap justify-center mt-small max-w-5xl mx-auto"
-    slot="content"
-  >
+    class="mx-auto mt-small flex max-w-5xl flex-wrap justify-center"
+    slot="content">
     {#each cards as card}
       <CardSmall class="m-macro px-xx-small" {card} />
     {/each}

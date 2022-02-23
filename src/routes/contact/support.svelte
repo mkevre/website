@@ -156,29 +156,25 @@
     description:
       "Need help with any question or issue? Please get in contact and we’ll get onto it right away.",
     title: "Contact Support",
-  }}
-/>
+  }} />
 
 <Header
   title="Contact Support"
   text="Need help with any question or issue? Please get in contact and we’ll get
   onto it right away."
   tight={true}
-  class="max-w-2xl"
-/>
+  class="max-w-2xl" />
 
 <Section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl sm:mx-8"
+  class="rounded-2xl bg-off-white p-xx-small shadow-xl sm:mx-8 sm:py-small sm:px-x-small md:p-medium"
   id="form"
-  style="margin-top: 0"
->
+  style="margin-top: 0">
   <div bind:this={sectionStart} data-analytics={`{"dnt":true}`}>
     {#if isEmailSent}
       <SubmissionSuccess
         title="Thank you for your message"
         text="We received your message. Our team will take a look and get back to you as
-      soon as possible."
-      />
+      soon as possible." />
     {:else}
       <form on:submit|preventDefault={handleSubmit} novalidate>
         <h2 class="h3 text-center">Send us a message</h2>
@@ -200,11 +196,9 @@
                           formData.selectedSubject.el.validity.valid;
                       }}
                       value={subject}
-                      name="subject"
-                    />
+                      name="subject" />
                     <label for="subject-{index}" class="font-medium"
-                      >{subject}</label
-                    >
+                      >{subject}</label>
                   </li>
                 {/each}
               </ul>
@@ -223,8 +217,7 @@
                   formData.name.value && formData.name.el.checkValidity();
               }}
               type="text"
-              autocomplete="name"
-            />
+              autocomplete="name" />
           </li>
           <li class:error={isFormDirty && !formData.email.valid}>
             <label class="cursor-pointer" for="email"
@@ -244,8 +237,7 @@
                   formData.email.value && formData.email.el.checkValidity();
               }}
               type="email"
-              autocomplete="email"
-            />
+              autocomplete="email" />
           </li>
           <li>
             <Textarea
@@ -260,8 +252,7 @@
                   formData.message.value && formData.message.el.validity.valid;
               }}
               cols="30"
-              rows="10"
-            />
+              rows="10" />
           </li>
           <li>
             <Checkbox
@@ -273,8 +264,7 @@
                 formData.consent.valid =
                   formData.consent.checked &&
                   formData.consent.el.validity.valid;
-              }}
-            />
+              }} />
           </li>
           <li>
             <Button

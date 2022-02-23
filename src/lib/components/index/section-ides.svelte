@@ -39,7 +39,7 @@
 <Section>
   <div class="row">
     <h2 class="text-center">Your environment, your tools, your craft</h2>
-    <div class="max-w-5xl mx-auto">
+    <div class="mx-auto max-w-5xl">
       <Toggle
         class="mt-x-small mb-macro"
         labelLeft="Desktop"
@@ -50,35 +50,31 @@
           toggleChecked = e.currentTarget.checked;
         }}
         checked={toggleChecked}
-        id="screenshot"
-      />
+        id="screenshot" />
       <div class="relative">
         <div class="py-micro md:pr-micro lg:px-xx-small">
           <img
             src="/images/index/{idetoRender.screenshots[ideType]}"
             alt={idetoRender.label}
-            class="shadow-brand rounded-lg"
-          />
+            class="rounded-lg shadow-brand" />
         </div>
         <IdeSwitcher
           on:message={handleIdeChange}
           {ides}
           activeByDefaultName="vscode"
           {ideType}
-          {activeIdeName}
-        />
+          {activeIdeName} />
       </div>
     </div>
-    <div class="text-center m-auto">
+    <div class="m-auto text-center">
       <h3 class="mt-medium md:mt-x-large">We adapt, so you don't need to</h3>
-      <p class="text-large mt-xx-small mb-x-small mx-auto">
+      <p class="text-large mx-auto mt-xx-small mb-x-small">
         Run a desktop or browser based version of VS Code or any JetBrains IDE
         and customise it to your individual needs - from themes to extensions,
         you have full control.
       </p>
       <LinkButton variant="primary" size="large" href="/#get-started"
-        >Try Now</LinkButton
-      >
+        >Try Now</LinkButton>
     </div>
   </div>
 </Section>

@@ -63,10 +63,10 @@
   h5,
   h6 {
     .icon-link {
-      @apply inline-block ml-2;
+      @apply ml-2 inline-block;
       &::after {
         content: "";
-        @apply inline-block opacity-0 bg-cover;
+        @apply inline-block bg-cover opacity-0;
         width: 22px;
         height: 18px;
         background-image: url("/svg/headling-link.svg");

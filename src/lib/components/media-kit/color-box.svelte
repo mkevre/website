@@ -5,10 +5,9 @@
 </script>
 
 <div
-  class="w-64 sm:w-80 shadow-normal py-medium sm:pl-medium rounded-4xl text-large text-center sm:text-left mb-micro sm:mb-small sm:mx-micro"
+  class="text-large mb-micro w-64 rounded-4xl py-medium text-center shadow-normal sm:mx-micro sm:mb-small sm:w-80 sm:pl-medium sm:text-left"
   class:text-white={isDark}
-  style={`background: ${colorValue}`}
->
+  style={`background: ${colorValue}`}>
   {colorName}
   <br />
   {colorValue}

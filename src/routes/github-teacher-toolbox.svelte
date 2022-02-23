@@ -16,8 +16,7 @@
     title: "GitHub Teacher Toolbox",
     description:
       "With Gitpod you can create coding exams and exercises easily, help out your students via live tutoring, and benefit from a simple onboarding with any device.",
-  }}
-/>
+  }} />
 
 <Header title="GitHub Teacher Toolbox">
   <svelte:fragment slot="description">
@@ -42,6 +41,5 @@
   </svelte:fragment>
 </PricingOffers>
 <Headline
-  text=" Stop wasting time with tedious setups, teach amazing programming skills instead!"
-/>
+  text=" Stop wasting time with tedious setups, teach amazing programming skills instead!" />
 <Explore />

@@ -45,14 +45,12 @@
       "Short screencasts to get started and learn how to become always ready to code. Set up, configure and customize Gitpod and enter remote development in the cloud.",
     title: "Gitpod Screencasts - Videos, guides and tutorials",
     keywords: "learn, video, tutorial, documentation, onboarding",
-  }}
-/>
+  }} />
 
 <Header
   title="Full screencast playlist"
   text="Learn how to be always ready-to-code by following these short videos."
-  tight={true}
-/>
+  tight={true} />
 
 <Search bind:value={searchTerm} class="md:mt-medium" />
 

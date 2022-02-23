@@ -12,5 +12,4 @@
       alt: "Community Heroes",
     },
     showTheMediaFirstOnMobile: true,
-  }}
-/>
+  }} />

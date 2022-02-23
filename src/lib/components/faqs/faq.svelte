@@ -122,7 +122,7 @@
     }
 
     .faq__text {
-      @apply p-micro pt-0 -translate-y-0.5;
+      @apply -translate-y-0.5 p-micro pt-0;
     }
   }
 
@@ -132,35 +132,30 @@
 </style>
 
 <details
-  class="faq group bg-sand-dark border border-solid border-transparent focus:border-white hover:border-white rounded-2xl"
+  class="faq group rounded-2xl border border-solid border-transparent bg-sand-dark hover:border-white focus:border-white"
   open={isActive}
   on:toggle={setActive}
   id={fragment}
   data-analytics={`{"context":"faq"}`}
-  bind:this={details}
->
+  bind:this={details}>
   <summary
-    class="outline-none list-none"
+    class="list-none outline-none"
     bind:this={summary}
-    on:click={handleClick}
-  >
+    on:click={handleClick}>
     <div
-      class="faq__top flex items-center p-xx-small sm:p-x-small lgx:p-medium"
-    >
-      <h3 class="h4 faq__title flex-1 inline-block w-5/6">{title}</h3>
+      class="faq__top flex items-center p-xx-small sm:p-x-small lgx:p-medium">
+      <h3 class="h4 faq__title inline-block w-5/6 flex-1">{title}</h3>
       <img
-        class="faq__arrow group-open:rotate-180 ml-macro h-6 w-6 outline-none transition-all duration-200"
+        class="faq__arrow ml-macro h-6 w-6 outline-none transition-all duration-200 group-open:rotate-180"
         width="24"
         height="24"
         src="/arrow.svg"
-        alt="Arrow"
-      />
+        alt="Arrow" />
     </div>
   </summary>
   <div
-    class="faq__text text-large p-xx-small sm:p-x-small lgx:p-medium -translate-y-2 sm:-translate-y-4 lg:-translate-y-8"
-    bind:this={content}
-  >
+    class="faq__text text-large -translate-y-2 p-xx-small sm:-translate-y-4 sm:p-x-small lg:-translate-y-8 lgx:p-medium"
+    bind:this={content}>
     <slot />
   </div>
 </details>

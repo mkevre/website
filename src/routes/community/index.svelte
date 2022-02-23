@@ -21,16 +21,14 @@
     description:
       "Join the Gitpod community. Browse categories, post your questions, or just chat with other members. On Discord, Twitter, GitHub, YouTube or Reddit.",
     keywords: "community hangout. discord, social",
-  }}
-/>
+  }} />
 
 <Header
   title="Community"
   text="Welcome! Our community is at the centre of everything at Gitpod. We're
   excited to have you join us 🧡"
   fullWidth={true}
-  textClassNames="max-w-3xl text-large mx-auto md:px-x-small"
->
+  textClassNames="max-w-3xl text-large mx-auto md:px-x-small">
   <Resources slot="content" {cards} />
 </Header>
 
@@ -41,8 +39,7 @@
 <SectionCommon
   title="Let’s collaborate"
   text="Would you like to collaborate? We’re excited to hear your ideas. Get in
-  contact."
->
+  contact.">
   <Resources cards={resources} slot="content" />
 </SectionCommon>
 
@@ -59,5 +56,4 @@
       src: "/images/heroes/heart-of-gitpod.png",
       alt: "Community Heroes",
     },
-  }}
-/>
+  }} />

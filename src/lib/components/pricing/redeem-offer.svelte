@@ -13,14 +13,12 @@
 </style>
 
 <div
-  class="bg-white shadow-normal rounded-5xl pt-medium pb-xx-small sm:py-small text-center w-11/12 sm:w-auto"
->
-  <h2 class="h4 max-w-sm mx-auto px-xx-small">
+  class="w-11/12 rounded-5xl bg-white pt-medium pb-xx-small text-center shadow-normal sm:w-auto sm:py-small">
+  <h2 class="h4 mx-auto max-w-sm px-xx-small">
     Enable the Student Plan by following these steps:
   </h2>
   <ol
-    class="text-left list-decimal my-x-small pl-12 pr-xx-small sm:pl-20 sm:pr-small space-y-macro"
-  >
+    class="my-x-small list-decimal space-y-macro pl-12 pr-xx-small text-left sm:pl-20 sm:pr-small">
     <li>
       <a href="https://gitpod.io/login">Log-in</a> with a free Gitpod account.
     </li>
@@ -38,6 +36,5 @@
     </li>
   </ol>
   <LinkButton variant="primary" size="large" href="https://gitpod.io/plans"
-    >Check Plans</LinkButton
-  >
+    >Check Plans</LinkButton>
 </div>

@@ -50,13 +50,12 @@
   data={{
     description: "Gitpod GmbH Security Vulnerability Disclosure Policy",
     title: "Security Disclosure Policy",
-  }}
-/>
+  }} />
 
-<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
+<article class="mx-auto mt-20 mb-8 max-w-[94vw] leading-7 lg:w-[50rem]">
   <h1 class="h2 text-center">Security Vulnerability Disclosure Policy</h1>
 
-  <h2 class="mx-0 my-8 h3">Introduction</h2>
+  <h2 class="h3 mx-0 my-8">Introduction</h2>
   <p class="mb-4">
     Gitpod GmbH welcomes feedback from security researchers and the general
     public to help improve our security. If you believe you have discovered a
@@ -65,18 +64,18 @@
     reporting vulnerabilities to us, what we expect, what you can expect from
     us.
   </p>
-  <h2 class="mx-0 my-8 h3">Systems in Scope</h2>
+  <h2 class="h3 mx-0 my-8">Systems in Scope</h2>
   <p class="mb-4">
     This policy applies to any digital assets owned, operated, or maintained by
     Gitpod GmbH:
   </p>
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li><code>io.gitpod.*</code></li>
     <li><code>com.gitpod-staging.*</code></li>
     <li><code>com.gitpod-dev.com.*</code></li>
   </ul>
-  <h2 class="mx-0 my-8 h3">Out of Scope</h2>
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <h2 class="h3 mx-0 my-8">Out of Scope</h2>
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li>
       Assets or other equipment not owned by parties participating in this
       policy.
@@ -86,11 +85,11 @@
     Vulnerabilities discovered or suspected in out-of-scope systems should be
     reported to the appropriate vendor or applicable authority.
   </p>
-  <h2 class="mx-0 my-8 h3">Our Commitments</h2>
+  <h2 class="h3 mx-0 my-8">Our Commitments</h2>
   <p class="mb-4">
     When working with us, according to this policy, you can expect us to:
   </p>
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li>
       Respond to your report promptly, and work with you to understand and
       validate your report;
@@ -112,12 +111,12 @@
       if responsibily disclosed.
     </li>
   </ul>
-  <h2 class="mx-0 my-8 h3">Our Expectations</h2>
+  <h2 class="h3 mx-0 my-8">Our Expectations</h2>
   <p class="mb-4">
     In participating in our vulnerability disclosure program in good faith, we
     ask that you:
   </p>
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li>
       Perform the majority of your security research against <a
         href="https://www.gitpod.io/docs/self-hosted/latest"
@@ -160,11 +159,10 @@
     </li>
     <li>Do not engage in extortion.</li>
   </ul>
-  <h2 class="mx-0 my-8 h3">Official Channels</h2>
+  <h2 class="h3 mx-0 my-8">Official Channels</h2>
   <p class="mb-4">
     Please report security issues via <a href="mailto://security@gitpod.io"
-      >security@gitpod.io</a
-    >
+      >security@gitpod.io</a>
     or <a href="/security/report">https://www.gitpod.io/security/report</a>,
     providing all relevant information. The more details you provide, the easier
     it will be for us to triage and fix the issue.
@@ -174,7 +172,7 @@
     When conducting vulnerability research, according to this policy, we
     consider this research conducted under this policy to be:
   </p>
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li>
       Authorized concerning any applicable anti-hacking laws, and we will not
       initiate or support legal action against you for accidental, good-faith
@@ -217,6 +215,5 @@
 <Section>
   <Action
     action={thanksAction}
-    class="mx-auto text-center bg-white max-w-md p-small shadow-normal rounded-2xl"
-  />
+    class="mx-auto max-w-md rounded-2xl bg-white p-small text-center shadow-normal" />
 </Section>

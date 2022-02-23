@@ -6,5 +6,5 @@
 </script>
 
 <Tooltip title={tooltip} class="inline-flex items-center">
-  <span class="whitespace-nowrap mr-macro">{text}</span>
+  <span class="mr-macro whitespace-nowrap">{text}</span>
 </Tooltip>

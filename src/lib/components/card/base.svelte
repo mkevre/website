@@ -21,17 +21,15 @@
 </script>
 
 <div
-  class="flex flex-col justify-between items-center max-w-sm bg-off-white shadow-normal text-center {clazz}"
-  style={styles}
->
+  class="flex max-w-sm flex-col items-center justify-between bg-off-white text-center shadow-normal {clazz}"
+  style={styles}>
   <div>
     {#if icon}
       <img
         src={icon.src}
         alt={icon.alt || title}
-        class="{iconClassNames} mb-xx-small mx-auto"
-        style="transform: {icon.transform}"
-      />
+        class="{iconClassNames} mx-auto mb-xx-small"
+        style="transform: {icon.transform}" />
     {/if}
     {#if headingLevel === "h3"}
       <h3 class="mb-micro {titleClassNames}">{title}</h3>
@@ -46,15 +44,13 @@
       {target}
       {variant}
       size="medium"
-      class={btnClassNames}>{link.text}</LinkButton
-    >
+      class={btnClassNames}>{link.text}</LinkButton>
   {/if}
   {#if modal}
     <Button
       {variant}
       class={btnClassNames}
-      on:click={() => (isModalOpen = true)}>{modal.btnText}</Button
-    >
+      on:click={() => (isModalOpen = true)}>{modal.btnText}</Button>
   {/if}
 </div>
 

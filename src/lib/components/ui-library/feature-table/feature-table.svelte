@@ -13,13 +13,13 @@
   };
 </script>
 
-<div class="gap-4 mb-8 hidden md:grid {colMap[tableData.columns.length + 1]}">
+<div class="mb-8 hidden gap-4 md:grid {colMap[tableData.columns.length + 1]}">
   <FeatureTableToc tocData={tableData.toc} />
   {#each tableData.columns as col}
     <FeatureTableColumn featureData={col} />
   {/each}
 </div>
-<div class="grid grid-cols-1 md:hidden gap-4 justify-center">
+<div class="grid grid-cols-1 justify-center gap-4 md:hidden">
   <div class="w-full space-y-8">
     {#each tableData.columns as col}
       <FeatureTableColumnMobile featureData={col} />

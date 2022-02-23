@@ -13,15 +13,14 @@
 <Section>
   <h2 class="text-center text-h2" class:mb-small={!text}>{title}</h2>
   {#if text}
-    <p class="text-center text-large max-w-4xl mb-small mx-auto">
+    <p class="text-large mx-auto mb-small max-w-4xl text-center">
       {text}
     </p>
   {/if}
   <div
-    class="grid m-auto max-w-7xl w-full gap-6 grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3"
-  >
+    class="m-auto grid w-full max-w-7xl grid-cols-none justify-center gap-6 md:grid-cols-2 lg:grid-cols-3">
     {#each posts as post}
-      <div class="flex justify-center min-w-[20rem] max-w-sm">
+      <div class="flex min-w-[20rem] max-w-sm justify-center">
         <PostPreview {post} {type} isMostRecent headlineOrder="h3" />
       </div>
     {/each}

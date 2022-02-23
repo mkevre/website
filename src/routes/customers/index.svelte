@@ -37,8 +37,7 @@
       "Learn how other companies leverage Gitpod to improve their developer experience, remote collaboration and security.",
     keywords:
       "case study, customer story, experience, review, benefit, companies",
-  }}
-/>
+  }} />
 
 <Hero
   title="You are in good company"
@@ -54,8 +53,7 @@
   btnSecondary={{
     href: "/contact/sales",
     text: "Contact sales",
-  }}
-/>
+  }} />
 
 <CompanyBenefits {benefits} class="lg:pt-16" />
 
@@ -67,16 +65,14 @@
   title="Accelerate your workflow"
   text="Spin up fresh, automated developer environments for each task, in the cloud, in seconds."
   features={[{ ...developFeature, headingLevel: "h3" }]}
-  type="box"
-/>
+  type="box" />
 
 <Stories
   title="Featured Customer Stories"
   text="Read how our customers improved their development workflows"
   id="stories"
   {customers}
-  class="max-w-7xl lg:grid-cols-3 xl:px-4"
-/>
+  class="max-w-7xl lg:grid-cols-3 xl:px-4" />
 
 <UsedBy title="Trusted by +500k developers" />
 
@@ -90,5 +86,4 @@
       href: "https://www.notion.so/gitpod/Gitpod-Onboarding-Guides-Stages-1-3-d97968210ad2408789e968597fe4633c",
       text: "View onboarding guides",
     },
-  }}
-/>
+  }} />

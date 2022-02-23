@@ -14,8 +14,7 @@
           src="/arrow.svg"
           alt="See more"
           width="12"
-          height="7"
-        />
+          height="7" />
       </div>
     {/if}
   </a>

@@ -25,7 +25,7 @@
 </script>
 
 <section class="text-center">
-  <div class="max-w-3xl m-auto mb-small">
+  <div class="m-auto mb-small max-w-3xl">
     <h2>About</h2>
     <p>
       Please don’t modify the logos or use them in any altered way.
@@ -34,7 +34,7 @@
       <a href="/assets/style-guide.pdf" target="_blank">see style guide</a>.
     </p>
   </div>
-  <div class="flex justify-around flex-wrap max-w-container-normal m-auto">
+  <div class="m-auto flex max-w-container-normal flex-wrap justify-around">
     {#each logos as logo}
       <LogoBox {logo} />
     {/each}

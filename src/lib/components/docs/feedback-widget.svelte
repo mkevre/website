@@ -48,16 +48,15 @@
 
 <style lang="postcss">
   .selected {
-    @apply grayscale-0 scale-150;
+    @apply scale-150 grayscale-0;
   }
 </style>
 
 <div class={clazz}>
   <div
-    class="bg-white shadow-normal rounded-2xl max-w-md py-small px-xx-small m-auto"
-    data-analytics={`{"dnt":true}`}
-  >
-    <h2 class="text-xl leading-6 mb-6 text-center justify-center w-full">
+    class="m-auto max-w-md rounded-2xl bg-white py-small px-xx-small shadow-normal"
+    data-analytics={`{"dnt":true}`}>
+    <h2 class="mb-6 w-full justify-center text-center text-xl leading-6">
       Was this helpful?
     </h2>
     {#if resultMessage}
@@ -69,14 +68,12 @@
             <button
               on:click|preventDefault={() => (selectedEmotion = index + 1)}
               class:selected={selectedEmotion === index + 1}
-              class="grayscale transition duration-150 hover:grayscale-0 hover:scale-150"
-            >
+              class="grayscale transition duration-150 hover:grayscale-0 hover:scale-150">
               <img
                 src="/images/docs/feedback-widget/{index + 1}.svg"
                 alt="Feedback {index + 1} of 4"
                 title="Feedback {index + 1} of 4"
-                class="h-6 w-6"
-              />
+                class="h-6 w-6" />
             </button>
           {/each}
         </div>
@@ -94,8 +91,7 @@
               autocomplete="off"
               autocorrect="off"
               type="text"
-              class="mb-0"
-            />
+              class="mb-0" />
             <div>
               <span>
                 <Button
@@ -103,8 +99,7 @@
                   size="medium"
                   disabled={isSubmittedOnce}
                   class="mt-micro"
-                  type="submit"><span>Send</span></Button
-                >
+                  type="submit"><span>Send</span></Button>
               </span>
             </div>
           </div>

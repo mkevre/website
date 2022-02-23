@@ -12,15 +12,13 @@
 </style>
 
 <div
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white text-center shadow-xl"
->
+  class="rounded-2xl bg-off-white p-xx-small text-center shadow-xl sm:py-small sm:px-x-small md:p-medium">
   <!-- svelte-ignore a11y-missing-attribute -->
   <img
     src="/images/contact/{contactCard.image}"
     height={contactCard.imgHeight}
     width={contactCard.imgWidth}
-    role="presentation"
-  />
+    role="presentation" />
   <h2 class="h3">{contactCard.title}</h2>
   <p>{contactCard.description}</p>
   <LinkButton
@@ -30,6 +28,5 @@
       if (contactCard.tracking) contactCard.tracking();
     }}
     size="large"
-    href={contactCard.btnHref}>{contactCard.btnText}</LinkButton
-  >
+    href={contactCard.btnHref}>{contactCard.btnText}</LinkButton>
 </div>

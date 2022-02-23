@@ -18,26 +18,23 @@
 </style>
 
 <div
-  class="logo-box px-small py-medium sm:p-large rounded-4xl bg-white shadow-normal md:mx-micro mb-micro md:mb-small"
+  class="logo-box mb-micro rounded-4xl bg-white px-small py-medium shadow-normal sm:p-large md:mx-micro md:mb-small"
   class:bg-gray-900={isDark}
-  class:text-white={isDark}
->
+  class:text-white={isDark}>
   <img src={svgSrc} {alt} class="mx-auto" />
   <p class="mt-medium mb-micro">Download {text}</p>
-  <div class="flex justify-center items-center flex-wrap space-x-4">
+  <div class="flex flex-wrap items-center justify-center space-x-4">
     <LinkButton
       style="min-width: 0"
       variant="primary"
       size="large"
       download
-      href={svgSrc}>SVG</LinkButton
-    >
+      href={svgSrc}>SVG</LinkButton>
     <LinkButton
       style="min-width: 0"
       variant="cta"
       size="large"
       href={`/images/media-kit/${srcPNG}`}
-      download>PNG</LinkButton
-    >
+      download>PNG</LinkButton>
   </div>
 </div>

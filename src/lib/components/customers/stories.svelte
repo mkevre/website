@@ -14,8 +14,7 @@
 <SectionCommon {title} {text} {$$restProps} {id}>
   <div
     slot="content"
-    class="grid justify-center gap-xx-small mx-auto mt-small {clazz}"
-  >
+    class="mx-auto mt-small grid justify-center gap-xx-small {clazz}">
     {#each customers as { title, excerpt, image, slug, availability }}
       <PostPreview
         post={{
@@ -28,8 +27,7 @@
         availability={!(availability === "soon")}
         headlineOrder="h3"
         type="customers"
-        isMostRecent={true}
-      />
+        isMostRecent={true} />
     {/each}
   </div>
 </SectionCommon>

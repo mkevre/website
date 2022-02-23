@@ -54,17 +54,15 @@
     image: `images/customers/${slug}/${image}`,
     imageTwitter: `images/customers/${slug}/${image}`,
     norobots,
-  }}
-/>
+  }} />
 
 <slot />
 
-<div class="max-w-3xl mx-auto">
+<div class="mx-auto max-w-3xl">
   <Share
     text="Share this story"
     {shareLinks}
-    class="border-t border-solid border-divider pt-xx-small md:pt-micro mt-small"
-  />
+    class="mt-small border-t border-solid border-divider pt-xx-small md:pt-micro" />
 </div>
 
 <MoreCustomersStories />

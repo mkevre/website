@@ -39,12 +39,12 @@
   }
   .cast h2,
   .cast .h2 {
-    @apply m-0 leading-6 flex-1;
+    @apply m-0 flex-1 leading-6;
     font-size: var(--xx-small);
   }
   .cast > div::after {
     content: "";
-    @apply -z-10 absolute right-0 top-2 bottom-2 pointer-events-none;
+    @apply pointer-events-none absolute right-0 top-2 bottom-2 -z-10;
     background-image: url("/images/screencasts/gitpod-editor.png");
     border-radius: 0.25rem;
     filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.2));
@@ -61,10 +61,9 @@
   href="/screencasts/{stringToBeautifiedFragment(
     screencast.title.slice(0, -3)
   )}"
-  class="cast relative flex flex-col flex-nowrap min-w-full text-left mb-micro py-micro pl-x-small z-10 rounded-xl bg-right h-56"
-  data-analytics={`{"variant":"preview"}`}
->
-  <div class="flex flex-col h-full">
+  class="cast relative z-10 mb-micro flex h-56 min-w-full flex-col flex-nowrap rounded-xl bg-right py-micro pl-x-small text-left"
+  data-analytics={`{"variant":"preview"}`}>
+  <div class="flex h-full flex-col">
     <data class="text-dark-grey">Screencast {screencastNumberPadded}</data>
     {#if headlineOrder === "h3"}
       <h3 class="h2">{screencast.title}</h3>
@@ -75,7 +74,6 @@
       src="/svg/media-kit/logo-light-theme.svg"
       height="40"
       width="81.6"
-      alt="Gitpod"
-    />
+      alt="Gitpod" />
   </div>
 </a>

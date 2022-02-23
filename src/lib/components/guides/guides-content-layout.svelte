@@ -7,8 +7,7 @@
   imagesDirectoryName="guides"
   baseUrl="https://www.gitpod.io/guides/"
   norobots={true}
-  {...$$restProps}
->
+  {...$$restProps}>
   <slot />
 </PostContentLayout>
 <FeedbackWidget type="guides" class="mb-huge" />

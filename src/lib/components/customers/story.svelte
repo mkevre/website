@@ -10,29 +10,28 @@
   }
 
   :global(blockquote) {
-    @apply bg-transparent border-l-4 border-orange-900 pl-xx-small py-0 sm:m-small rounded-none !important;
+    @apply rounded-none border-l-4 border-orange-900 bg-transparent py-0 pl-xx-small sm:m-small !important;
   }
 
   :global(blockquote) :global(p) {
-    @apply text-h6 text-black font-semibold !important;
+    @apply text-h6 font-semibold text-black !important;
   }
 
   :global(code) {
-    @apply bg-orange-700 rounded-xl px-macro py-1;
+    @apply rounded-xl bg-orange-700 px-macro py-1;
   }
 </style>
 
 <Section>
-  <div class="text-center max-w-3xl mx-auto">
+  <div class="mx-auto max-w-3xl text-center">
     <h2 class="h2">Full customer story</h2>
     <p>{text}</p>
   </div>
 
-  <div class="prose max-w-3xl mx-auto mt-x-large">
+  <div class="prose mx-auto mt-x-large max-w-3xl">
     <div
-      class="h-36 bg-cover bg-center rounded-t-2xl mb-small"
-      style="background-image: url({bannerImg});"
-    />
+      class="mb-small h-36 rounded-t-2xl bg-cover bg-center"
+      style="background-image: url({bannerImg});" />
     <slot />
   </div>
 </Section>

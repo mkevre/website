@@ -12,5 +12,4 @@
 <Stories
   title="More Customer Stories"
   customers={recentCustomersWithoutCurrent}
-  class="max-w-4xl md:grid-cols-2 lg:px-9"
-/>
+  class="max-w-4xl md:grid-cols-2 lg:px-9" />

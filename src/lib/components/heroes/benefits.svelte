@@ -17,11 +17,11 @@
 
 <Section class="text-center">
   <h2>Your benefits</h2>
-  <p class="text-large max-w-4xl mx-auto">
+  <p class="text-large mx-auto max-w-4xl">
     This is not a paid position, but in exchange for contributing to Gitpod, you
     will get access to some great and exclusive rewards and perks.
   </p>
-  <div class="grid gap-micro justify-center mx-auto mt-small">
+  <div class="mx-auto mt-small grid justify-center gap-micro">
     {#each benefits as benefit}
       <CardSmall card={benefit} />
     {/each}

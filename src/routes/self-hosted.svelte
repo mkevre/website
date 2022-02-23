@@ -18,8 +18,7 @@
     title: "Gitpod Self-Hosted - Run Gitpod on your infrastructure",
     keywords:
       "self-hosted, self-managed, download, installation, infrastructure, kubernetes, deploy, teams",
-  }}
-/>
+  }} />
 <PlansAndPricing {pricingPlans} />
 <ViewAllFeatures />
 <Faqs />
@@ -30,5 +29,4 @@
       Install Gitpod Self-hosted on GKE, EKS, AKS, or K3s.
     `,
     link: { href: "/docs/self-hosted/latest", text: "View installation guide" },
-  }}
-/>
+  }} />

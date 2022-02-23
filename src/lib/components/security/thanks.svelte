@@ -5,7 +5,7 @@
 <style lang="postcss">
   .year {
     border-bottom: 3px;
-    @apply inline-block border-orange-900 border-solid;
+    @apply inline-block border-solid border-orange-900;
   }
 
   ol {
@@ -17,14 +17,12 @@
   title="Thanks"
   text="Big thanks the following people who responsibly disclosed their security
   findings."
-  class="max-w-lg"
->
+  class="max-w-lg">
   <img
     src="/svg/heart.svg"
     alt="Heart"
-    class="absolute -top-16 left-1/2 -translate-x-1/2 h-10"
-    slot="top"
-  />
+    class="absolute -top-16 left-1/2 h-10 -translate-x-1/2"
+    slot="top" />
   <div class="mt-x-large" slot="content">
     <h2 class="h4 year">2022</h2>
     <ol class="mx-auto my-x-small">
@@ -34,11 +32,10 @@
       </li>
       <ol class="mt-x-large" />
       <h2 class="h4 year">2021</h2>
-      <ol class="text-left mx-auto my-x-small">
+      <ol class="mx-auto my-x-small text-left">
         <li>
           <a rel="nofollow" href="https://twitter.com/Kuys_Potpot"
-            >Andrei Jiroh Eugenio Halili</a
-          > from Marilao.
+            >Andrei Jiroh Eugenio Halili</a> from Marilao.
         </li>
         <li>
           <a rel="nofollow" href="https://twitter.com/byte89">Kirill Efimov</a> from
@@ -48,8 +45,7 @@
           <a
             rel="nofollow"
             href="https://about.gitlab.com/blog/2021/07/08/two-bugs-and-a-quick-fix-in-gitpod/"
-            >Joern Schneeweisz</a
-          > from GitLab.
+            >Joern Schneeweisz</a> from GitLab.
         </li>
       </ol>
     </ol>

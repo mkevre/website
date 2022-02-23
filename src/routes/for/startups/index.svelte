@@ -34,28 +34,24 @@
     description:
       "Apply for our startup program and get Gitpod for free for up to 2 years with unlimited users and usage. ",
     keywords: "startup, free",
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod for Startups"
   text="Spend less time worrying about brittle, local dev environments and more time
   on building great things."
   data-analytics={`{"position":"hero"}`}
-  style="max-width: 1000px"
->
+  style="max-width: 1000px">
   <div slot="content">
     <p
-      class="h5 text-gray-900 font-semibold max-w-2xl mx-auto mt-micro mb-x-small"
-    >
+      class="h5 mx-auto mt-micro mb-x-small max-w-2xl font-semibold text-gray-900">
       Use all our services for free, up to 2 years.
     </p>
     <LinkButton
       variant="primary"
       size="large"
       href="https://docs.google.com/forms/d/e/1FAIpQLSc-Vaelz0yG-XkuN2CYyUtZz0khhwMaju4oSLdMNIzoMkpHug/viewform"
-      target="_blank">Apply now</LinkButton
-    >
+      target="_blank">Apply now</LinkButton>
     <Quotes class="mt-small" {quotes} />
   </div>
 </Header>
@@ -64,8 +60,7 @@
 
 <ProgramBenefits
   text="<a href='https://bit.ly/3liFICY' target='_blank'>Apply now</a> and receive these unique benefits."
-  {cards}
-/>
+  {cards} />
 
 <Eligibility
   text="To qualify for Gitpod’s startup program, your company needs to:"
@@ -75,15 +70,13 @@
     "have not been on any paid plan yet",
   ]}
   link={{ href: "https://bit.ly/3liFICY", text: "Apply now" }}
-  ulMaxWidth="365px"
-/>
+  ulMaxWidth="365px" />
 
 <SectionCommon
   title="Helpful resources"
   text="If you are still uncertain about moving your local dev environment to the
     cloud, this blog post will clear your thoughts."
-  textClassNames="max-w-3xl mx-auto mb-small"
->
+  textClassNames="max-w-3xl mx-auto mb-small">
   <FeatureBox
     feature={{
       title: "Gitpod vs Local Development",
@@ -98,8 +91,7 @@
         alt: "Bob and Alice",
       },
     }}
-    slot="content"
-  />
+    slot="content" />
 </SectionCommon>
 
 <Faqs />

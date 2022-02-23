@@ -61,16 +61,15 @@
   data={{
     description: screencast.description,
     title: screencast.title,
-  }}
-/>
+  }} />
 
 <Header title={screencast.title} text={screencast.description} tight={true} />
 
 <YouTubeEmbed embedId={screencast.youtubeId} title={screencast.title} />
 
-<div class="max-w-lg mx-auto mt-24">
+<div class="mx-auto mt-24 max-w-lg">
   <Duration duration={screencast.duration} />
-  <p class="h5 text-black font-bold mt-macro mb-xx-small">
+  <p class="h5 mt-macro mb-xx-small font-bold text-black">
     {screencast.description}
   </p>
   {#if screencast.relatedDocs}
@@ -95,8 +94,7 @@
         size="large"
         href="/screencasts/{stringToBeautifiedFragment(
           screencasts[screencast.nextScreencast].title.slice(0, -3)
-        )}">View next screencast</LinkButton
-      >
+        )}">View next screencast</LinkButton>
     </div>
   {/if}
 </div>
@@ -105,8 +103,7 @@
   <SectionCommon title="Next up...">
     <ScreencastsGrid
       screencasts={nextScreencasts.slice(0, isAMobileDevice ? 3 : 6)}
-      slot="content"
-    />
+      slot="content" />
   </SectionCommon>
 {/if}
 
@@ -116,7 +113,6 @@
   link={{
     href: "/screencasts",
     text: "View all screencasts",
-  }}
-/>
+  }} />
 
 <Explore />

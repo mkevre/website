@@ -36,7 +36,7 @@ legend {
 
 [type="checkbox"] + label::before {
   content: "";
-  @apply block h-6 rounded text-center mr-micro transition border border-solid border-divider;
+  @apply mr-micro block h-6 rounded border border-solid border-divider text-center transition;
   flex: 0 0 24px;
   line-height: 1.1;
 }

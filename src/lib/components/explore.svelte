@@ -25,7 +25,7 @@
 
   @media (max-width: 830px) {
     .explore {
-      @apply flex-col rounded-2xl mx-auto;
+      @apply mx-auto flex-col rounded-2xl;
       max-width: 345px;
     }
   }
@@ -51,7 +51,7 @@
     }
 
     @media (max-width: 830px) {
-      @apply pt-xx-small px-xx-small;
+      @apply px-xx-small pt-xx-small;
     }
   }
 
@@ -60,7 +60,7 @@
     max-width: 510px;
 
     @media (max-width: 830px) {
-      @apply max-w-sm mb-xx-small;
+      @apply mb-xx-small max-w-sm;
     }
   }
 
@@ -104,34 +104,31 @@
 
 <Section>
   <div
-    class="explore flex xl:items-center bg-off-white shadow-normal max-w-none text-left"
-  >
+    class="explore flex max-w-none bg-off-white text-left shadow-normal xl:items-center">
     <div class="explore__text md:py-medium xl:py-0">
       <h2 class="h1">{@html title}</h2>
       <p class="explore__paragraph text-p-large">
         {@html description}
       </p>
       {#if note}
-        <p class="h5 font-semibold text-gray-900 mb-x-small md:-mt-micro">
+        <p class="h5 mb-x-small font-semibold text-gray-900 md:-mt-micro">
           {note}
         </p>
       {/if}
-      <div class="flex wrap pb-small sm:pb-micro md:pb-0">
+      <div class="wrap flex pb-small sm:pb-micro md:pb-0">
         <LinkButton
           size="large"
           variant="primary"
           href={link.href}
           target={link.href.startsWith("http") ? "_blank" : null}
-          >{link.text}</LinkButton
-        >
+          >{link.text}</LinkButton>
         {#if secondaryLink}
           <LinkButton
             variant="cta"
             size="large"
             href={secondaryLink.href}
             target={secondaryLink.href.startsWith("http") ? "_blank" : null}
-            >{secondaryLink.text}</LinkButton
-          >
+            >{secondaryLink.text}</LinkButton>
         {/if}
       </div>
     </div>
@@ -139,22 +136,19 @@
       class="explore__illustration w-full bg-cover bg-left"
       style="background-image: url(/images/{useKumquatIllustration
         ? 'kumquat.png'
-        : 'illustration-grid.png'});"
-    >
+        : 'illustration-grid.png'});">
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
           : 'illustration-grid.png'}"
-        alt="Gitpod in a Nutshell"
-      />
+        alt="Gitpod in a Nutshell" />
       <img
         src="/images/{useKumquatIllustration
           ? 'kumquat.png'
           : 'illustration-small.png'}"
         class:pt-micro={useKumquatIllustration}
         class="small"
-        alt="Gitpod in a Nutshell"
-      />
+        alt="Gitpod in a Nutshell" />
     </div>
   </div>
 </Section>

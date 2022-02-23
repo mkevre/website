@@ -50,16 +50,14 @@
   data={{
     description: "Gitpod's privacy policy.",
     title: "Privacy",
-  }}
-/>
-<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
+  }} />
+<article class="mx-auto mt-20 mb-8 max-w-[94vw] leading-7 lg:w-[50rem]">
   <h1>Privacy Policy</h1>
 
   <p class="mb-4">
     Below we provide you with an overview of what data we collect for what
     purpose and how we ensure the protection of the data <a href="#short"
-      >in short</a
-    >
+      >in short</a>
     and
     <a href="#detailed">in a more detailed form</a>.
   </p>
@@ -83,7 +81,7 @@
   </p>
   <h2 class="mx-0 my-8" id="short">In Short</h2>
 
-  <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+  <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
     <li>
       <h3 class="mx-0 my-4">Controller</h3>
       <p class="mb-4">
@@ -96,8 +94,7 @@
       </p>
       <p class="mb-4">
         We have appointed a data protection officer who may be contacted via <a
-          href="mailto:data@gitpod.io">data@gitpod.io</a
-        >
+          href="mailto:data@gitpod.io">data@gitpod.io</a>
       </p>
       <p class="mb-4">
         This privacy policy also contains further data controllers.
@@ -109,7 +106,7 @@
         Data
       </h3>
       <p class="mb-4">Your data will be used for the following purposes:</p>
-      <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+      <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
         <li>to provide the functioning Website,</li>
         <li>
           to implement this privacy policy and carrying out the contractual
@@ -209,35 +206,30 @@
 
   <h2 class="mx-0 my-8" id="detailed">More Detailed Information</h2>
 
-  <ol class="ol-roman list-inside space-y-4 mb-4">
+  <ol class="ol-roman mb-4 list-inside space-y-4">
     <li><a href="#details-I">What are Personal Data?</a></li>
     <li>
       <a href="#details-II"
-        >How are my Data processed when visiting the Website and contacting us?</a
-      >
+        >How are my Data processed when visiting the Website and contacting us?</a>
     </li>
     <li>
       <a href="#details-III"
         >What Third Party Services, Cookies, Analytics and Social Plugins does
-        the Website use?</a
-      >
+        the Website use?</a>
     </li>
     <li>
       <a href="#details-IV"
         >How are my data processed when using the Gitpod Service (with User
-        Account)?</a
-      >
+        Account)?</a>
     </li>
     <li>
       <a href="#details-V"
-        >How are Data processed when visiting our Social Media pages?</a
-      >
+        >How are Data processed when visiting our Social Media pages?</a>
     </li>
     <li>
       <a href="#details-VI"
         >Are my Data transferred to Third Parties? Does automated decision
-        making including profiling take place?</a
-      >
+        making including profiling take place?</a>
     </li>
     <li>
       <a href="#details-VII">Are my Data transferred outside the EU?</a>
@@ -246,12 +238,11 @@
     <li>
       <a href="#details-IX"
         >Duration of Storing your Data; Data Security; Access and Changes to
-        this Privacy Policy; Contact Details</a
-      >
+        this Privacy Policy; Contact Details</a>
     </li>
   </ol>
-  <ol class="toc ol-roman list-inside space-y-4 mb-4">
-    <li class="mb-4 my-small">
+  <ol class="toc ol-roman mb-4 list-inside space-y-4">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-I">What are Personal Data?</h2>
       <p class="mb-4 mt-x-small">
         Personal data are any information relating to an identified or
@@ -262,7 +253,7 @@
         consents to the data processing.
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-II">
         How are my Data processed when visiting the Website and contacting us?
       </h2>
@@ -358,12 +349,12 @@
         <strong
           >You can withdraw your consent or object to the processing of data
           (email address) and their respective use for sending the newsletter
-          and analyzing your data at any time.</strong
-        > This can be done free of charge (except for the transmission costs) and
-        via a link in the newsletter itself or notification to us.
+          and analyzing your data at any time.</strong> This can be done free of
+        charge (except for the transmission costs) and via a link in the newsletter
+        itself or notification to us.
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-III">
         What Third Party Services, Cookies, Analytics and Social Plugins does
         the Website use?
@@ -394,8 +385,7 @@
         also manage a lot of online Cookies by different businesses on the
         US-website
         <a href="http://www.aboutads.info/choices/"
-          >http://www.aboutads.info/choices/</a
-        >
+          >http://www.aboutads.info/choices/</a>
         or the EU-website
         <a href="http://www.youronlinechoices.com/uk/your-ad-choices/"
           >http://www.youronlinechoices.com/uk/your-ad-choices/</a
@@ -435,8 +425,8 @@
 
       <p class="mb-4">
         We point out that an <a href="#details-VI"
-          >automated decision making or profiling</a
-        > can take place when integrating Google or an existing Google account.
+          >automated decision making or profiling</a> can take place when integrating
+        Google or an existing Google account.
       </p>
       <p class="mb-4">
         For Users who have their usual residence in the European Economic Area
@@ -516,8 +506,7 @@
       <h3 class="mx-0 my-4">Mixpanel</h3>
       <p class="mb-4">
         We use Mixpanel, provided by Mixpanel, Inc., as data sink for <a
-          href="#segment-io">Segment</a
-        >
+          href="#segment-io">Segment</a>
         for the analysis of user behaviour in order to offer the best experience
         to our users. Mixpanel operates in
         <a href="https://mixpanel.com/legal/mixpanel-gdpr/">
@@ -543,8 +532,7 @@
       <p class="mb-4">
         We use Mode Analytics, provided by Mode Analytics, Inc., to explore and
         analyse usage data that may contain data captured by <a
-          href="#segment-io">Segment</a
-        >
+          href="#segment-io">Segment</a>
         from the Website and Product. Mode Analytics operates in
         <a href="https://mode.com/gdpr/">compliance with the GDPR</a>.
       </p>
@@ -560,8 +548,7 @@
         of our community on social Platforms such as GitHub, Twitter and
         Discord. Orbit Labs has no access to data of our Website Visitors. Orbit
         Labs acts as data controller in accordance with the GDPR (see Section <i
-          >Who is responsible for your personal information</i
-        >
+          >Who is responsible for your personal information</i>
         of the
         <a href="https://orbit.love/privacy-policy">Privacy Policy</a>).
       </p>
@@ -619,20 +606,18 @@
         Further information about data processing and privacy practices of
         YouTube and Google can be found here:
       </p>
-      <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+      <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
         <li>
           <a href="https://policies.google.com/privacy"
-            >https://policies.google.com/privacy</a
-          >
+            >https://policies.google.com/privacy</a>
         </li>
         <li>
           <a href="https://support.google.com/youtube/answer/171780?hl=e"
-            >https://support.google.com/youtube/answer/171780?hl=e</a
-          >
+            >https://support.google.com/youtube/answer/171780?hl=e</a>
         </li>
       </ul>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-IV">
         How are my Data processed when using the Gitpod Service (with User
         Account)?
@@ -644,8 +629,7 @@
         register. You may only register if you have an existing user account at
         the third party services set forth on the Website, for example the
         service offered on the website <a href="https://github.com"
-          >https://github.com</a
-        >
+          >https://github.com</a>
         operated by GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107,
         USA, (<strong>"Existing Account"</strong>).
       </p>
@@ -656,8 +640,7 @@
         explicit consent only. Such data include:
         <em
           >user profile data (name, username and email address), list of
-          repositories you have access to.</em
-        >
+          repositories you have access to.</em>
       </p>
 
       <p class="mb-4">
@@ -744,8 +727,8 @@
         payment providers. Currently we use the payment services by Stripe (for
         EU/EEA: Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand
         Canal Dock, Dublin, Irland; more information:
-        <a href="https://stripe.com/de/privacy">https://stripe.com/de/privacy</a
-        >
+        <a href="https://stripe.com/de/privacy"
+          >https://stripe.com/de/privacy</a>
         ; contact:
         <a href="https://stripe.com/contact">https://stripe.com/contact</a>) and
         Chargebee (by Chargebee Inc. 340 S Lemon Avenue, 1537 Walnut, CA 91789,
@@ -766,25 +749,23 @@
         <a href="#details-V">respective section below</a>.
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-V">
         How are Data processed when visiting our Social Media pages?
       </h2>
       <p class="mb-4">We operate pages on</p>
-      <ul class="pl-xx-small md:pl-x-small space-y-4 mb-4">
+      <ul class="mb-4 space-y-4 pl-xx-small md:pl-x-small">
         <li>
           Twitter (twitter.com or applications) by Twitter Inc., 1355 Market
           Street, Suite 900, San Francisco, CA 94103, USA, please also refer to:
           <ul class="pl-xx-small md:pl-x-small">
             <li>
               <a href="https://twitter.com/de/privacy"
-                >https://twitter.com/de/privacy</a
-              >
+                >https://twitter.com/de/privacy</a>
             </li>
             <li>
               <a href="https://twitter.com/personalization"
-                >https://twitter.com/personalization</a
-              >
+                >https://twitter.com/personalization</a>
             </li>
           </ul>
         </li>
@@ -796,18 +777,15 @@
             <li>
               <a
                 href="https://policy.medium.com/medium-privacy-policy-f03bf92035c9"
-                >https://policy.medium.com/medium-privacy-policy-f03bf92035c9</a
-              >
+                >https://policy.medium.com/medium-privacy-policy-f03bf92035c9</a>
             </li>
             <li>
               <a href="https://medium.com/me/settings"
-                >https://medium.com/me/settings</a
-              >
+                >https://medium.com/me/settings</a>
             </li>
             <li>
               <a href="https://medium.com/me/following/suggestions"
-                >https://medium.com/me/following/suggestions</a
-              >
+                >https://medium.com/me/following/suggestions</a>
             </li>
           </ul>
         </li>
@@ -817,8 +795,7 @@
           <ul class="pl-xx-small md:pl-x-small">
             <li>
               <a href="https://spectrum.chat/privacy.html"
-                >https://spectrum.chat/privacy.html</a
-              >
+                >https://spectrum.chat/privacy.html</a>
             </li>
           </ul>
         </li>
@@ -843,8 +820,8 @@
         certified in accordance with the EU-US Privacy Shield agreement, which
         guarantees compliance with data protection regulations in the EU. For
         more information please refer to their respective privacy policies or
-        <a href="https://www.privacyshield.gov">https://www.privacyshield.gov</a
-        >
+        <a href="https://www.privacyshield.gov"
+          >https://www.privacyshield.gov</a>
         . By using Medium Services, you authorize Medium to transfer, store, and
         use your information in the United States and any other country where Medium
         operates. Where your data is disclosed to Medium’s processors, it is subject
@@ -876,12 +853,10 @@
         recorded when you visit Twitter pages. To do this, you can manage the
         settings for advertising preferences in your Twitter account or under
         <a href="https://twitter.com/personalization"
-          >https://twitter.com/personalization</a
-        >
+          >https://twitter.com/personalization</a>
         or
         <a href="https://twitter.com/de/privacy#overlay-chapter2.10.1"
-          >https://twitter.com/de/privacy#overlay-chapter2.10.1</a
-        >
+          >https://twitter.com/de/privacy#overlay-chapter2.10.1</a>
         or without an account under
         <a href="https://pscp.tv/account/settings"
           >https://pscp.tv/account/settings</a
@@ -895,8 +870,7 @@
         recorded when you visit Medium pages. To do this, you can manage the
         settings for advertising preferences in your Medium account or under
         <a href="https://medium.com/me/settings"
-          >https://medium.com/me/settings</a
-        >
+          >https://medium.com/me/settings</a>
         or
         <a href="https://medium.com/me/following/suggestions"
           >https://medium.com/me/following/suggestions</a
@@ -910,13 +884,12 @@
         As a user of Spectrum Chat / Github you can find more information on how
         to influence the processing of your data in their privacy policy
         <a href="https://spectrum.chat/privacy.html"
-          >https://spectrum.chat/privacy.html</a
-        >
+          >https://spectrum.chat/privacy.html</a>
         or contact them via
         <a href="mailto:help@spectrum.chat">help@spectrum.chat</a>.
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-VI">
         Are my Data transferred to Third Parties? Does Profiling or automated
         decision making take place?
@@ -961,7 +934,7 @@
         against him or significantly affects him or her in a similar manner.
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-VII">
         Are my Data transferred outside the EU?
       </h2>
@@ -988,11 +961,10 @@
       <p class="mb-4">
         Your data may also be processed outside the EU when visiting our Social
         Media pages. For further information please refer to <a
-          href="#details-V">section V.</a
-        >
+          href="#details-V">section V.</a>
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-VIII">Your Rights</h2>
 
       <p class="mb-4"><strong>As a data subject you have the right:</strong></p>
@@ -1066,11 +1038,10 @@
         be found here:
         <a
           href="http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080"
-          >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a
-        >
+          >http://ec.europa.eu/newsroom/article29/item-detail.cfm?item_id=612080</a>
       </p>
     </li>
-    <li class="mb-4 my-small">
+    <li class="my-small mb-4">
       <h2 class="mx-0 my-4 inline" id="details-IX">
         Duration of Storing your Data; Data Security; Access and Changes to this
         Privacy Policy; Contact Details
@@ -1091,8 +1062,7 @@
         to the duration of the contractual relationship or, with regard to the
         inventory data, to the maximum legal retention periods, e.g. in
         accordance with the German Commercial Code <em
-          >(Handelsgesetzbuch, HGB)</em
-        >
+          >(Handelsgesetzbuch, HGB)</em>
         and the Tax Code
         <em>(Abgabenordnung, AO)</em>
       </p>
@@ -1121,8 +1091,7 @@
       <h3 class="mx-0 my-4">Access and Changes to this Privacy Policy</h3>
       <p class="mb-4">
         This privacy policy is accessible via our Website under <a
-          href="/privacy">https://gitpod.io/privacy</a
-        >
+          href="/privacy">https://gitpod.io/privacy</a>
         and may be downloaded and printed anytime.
       </p>
 

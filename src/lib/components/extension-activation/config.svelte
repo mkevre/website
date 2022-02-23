@@ -5,12 +5,10 @@
 
 <Section>
   <div
-    class="p-xx-small sm:py-small sm:px-x-small md:p-medium bg-off-white rounded-4xl shadow-brand max-w-4xl mx-auto text-center mb-xx-large"
-  >
+    class="mx-auto mb-xx-large max-w-4xl rounded-4xl bg-off-white p-xx-small text-center shadow-brand sm:py-small sm:px-x-small md:p-medium">
     <h2>To become always ready to code</h2>
     <ol
-      class="max-w-xl w-full list-decimal pl-small md:px-small text-left mx-auto my-small lg:mt-medium lg:mb-large space-y-macro text-p-large"
-    >
+      class="mx-auto my-small w-full max-w-xl list-decimal space-y-macro pl-small text-left text-p-large md:px-small lg:mt-medium lg:mb-large">
       <li>
         Help Gitpod understand your repository by creating a gitpod.yml file
       </li>
@@ -20,8 +18,7 @@
       </li>
     </ol>
     <LinkButton variant="primary" size="large" href="/docs/configure"
-      >Configure your project</LinkButton
-    >
+      >Configure your project</LinkButton>
     <p class="mt-micro text-link-grey">In less than 5 min</p>
   </div>
 </Section>

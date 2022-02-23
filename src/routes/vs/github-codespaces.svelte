@@ -30,15 +30,13 @@
       "Why choose Gitpod over GitHub Codespaces? Gitpod is the faster, more resource-efficient, open-source alternative that integrates with your individual stack.",
     title: "Gitpod vs GitHub Codespaces - what makes Gitpod different?",
     keywords: "Codespaces, alternative, differences",
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod vs GitHub Codespaces"
   text="Gitpod is the faster, more resource-efficient, open-source platform that
   integrates with your individual stack."
-  tight={true}
-/>
+  tight={true} />
 
 <FeatureBox
   feature={{
@@ -55,8 +53,7 @@
     },
     footnote:
       "Compared start-up time until ready-to-code for<br /> <a href='https://github.com/gitpod-io/vscode' target='_blank'>https://github.com/gitpod-io/vscode</a>. Last verified 25 Sep 2020.",
-  }}
-/>
+  }} />
 
 <FeatureBox
   feature={{
@@ -69,8 +66,7 @@
     },
     footnote:
       "Price comparison for a developer working 5h per day, 21 per month with 8 core CPUs and 12GB RAM. Last verified 3 Sep 2021. Sources: <a href='/pricing'>Gitpod</a>, <a href='https://github.com/features/codespaces' target='_blank'>GitHub Codespaces</a>.",
-  }}
-/>
+  }} />
 
 <Section>
   <FeatureTable tableData={codespacesComparison} />
@@ -78,12 +74,11 @@
 
 <CalloutSecondary
   title="Ready to feel the difference?"
-  text="Spin up an example workspace now, just link your git provider"
-/>
+  text="Spin up an example workspace now, just link your git provider" />
 
 <FeatureBox feature={openSourceFeature} />
 
-<div class="flex justify-center flex-wrap page-bottom">
+<div class="page-bottom flex flex-wrap justify-center">
   <Card
     card={{
       title: "Automation-first",
@@ -96,8 +91,7 @@
     variant="primary"
     btnClassNames="mt-x-small"
     class="mx-micro mb-micro"
-    headingLevel="h2"
-  />
+    headingLevel="h2" />
 
   <Card
     card={{
@@ -111,6 +105,5 @@
     variant="cta"
     btnClassNames=" mt-x-small"
     class="mx-micro mb-micro"
-    headingLevel="h2"
-  />
+    headingLevel="h2" />
 </div>

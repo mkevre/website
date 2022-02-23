@@ -8,7 +8,6 @@
 <SectionCommon
   title="Compare features"
   text="Remote development without friction that integrates with your individual stack."
-  textClassNames="mb-xx-small"
->
+  textClassNames="mb-xx-small">
   <FeatureTable slot="content" tableData={JetBrainsComparison} />
 </SectionCommon>

@@ -57,8 +57,7 @@
 
 {#if $menuState}
   <div
-    class="nav-items absolute flex flex-col py-x-small w-screen items-center bg-off-white space-y-xx-small z-10 shadow-md max-h-screen overflow-y-auto"
-  >
+    class="nav-items absolute z-10 flex max-h-screen w-screen flex-col items-center space-y-xx-small overflow-y-auto bg-off-white py-x-small shadow-md">
     {#each navItems as navItem}
       <NavItem {navItem} />
     {/each}
@@ -69,8 +68,7 @@
       <LoginButton />
       <SignUpButton
         class="text-lg h-8 w-28 button flex-shrink-0"
-        on:click={toggle}
-      />
+        on:click={toggle} />
     {/if}
   </div>
 {/if}

@@ -8,20 +8,17 @@
   title="DevX Digest"
   text=" Our newsletter where we cover everything about Developer Experience"
   textClassNames="text-medium mb-x-small"
-  tight={true}
->
+  tight={true}>
   <div
     slot="content"
-    class="flex justify-center items-center flex-wrap space-x-4"
-  >
+    class="flex flex-wrap items-center justify-center space-x-4">
     <LinkButton
       variant="primary"
       size="medium"
       href="https://gitpod.io/notifications"
       target="_blank"
       data-analytics={`{"context":"dashboard"}`}
-      >Signup for the Newsletter</LinkButton
-    >
+      >Signup for the Newsletter</LinkButton>
     <TwitterFollowButton variant="secondary" />
   </div>
 </Header>

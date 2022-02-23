@@ -17,22 +17,19 @@
     title: "Approved Organisations | Gitpod for Startups",
     description:
       "If your startup is affiliated with a Gitpod approved VC, incubator or accelerator we will extend the Gitpod startup program from 1 year to 2 years.",
-  }}
-/>
+  }} />
 
 <Header
   title="Approved Organisations"
   text="If your startup is affiliated with a Gitpod approved VC, incubator or
   accelerator we will extend the Gitpod startup program from 1 year to 2
-  years."
->
+  years.">
   <LinkButton
     slot="content"
     href="/for/startups"
     class="mt-x-small"
     variant="primary"
-    size="large">View Startup program</LinkButton
-  >
+    size="large">View Startup program</LinkButton>
 </Header>
 
 <Find />

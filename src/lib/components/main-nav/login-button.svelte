@@ -7,5 +7,4 @@
     href: "https://gitpod.io/login/",
     label: "Login",
     isExternal: true,
-  }}
-/>
+  }} />

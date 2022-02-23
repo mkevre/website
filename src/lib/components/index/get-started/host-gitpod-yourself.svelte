@@ -29,7 +29,7 @@
 </script>
 
 <h3>Host Gitpod yourself</h3>
-<p class="max-w-xs mx-auto">
+<p class="mx-auto max-w-xs">
   Run Gitpod on your own infrastructure. Free for up to 10 users.
 </p>
 
@@ -37,19 +37,16 @@
   {#each selfHostedButtons as { href, text, icon }}
     <div>
       <LinkButton
-        class="inline-flex mx-auto items-center bg-off-white hover:bg-orange-700 focus:bg-orange-700"
+        class="mx-auto inline-flex items-center bg-off-white hover:bg-orange-700 focus:bg-orange-700"
         {href}
         variant="unstyled"
-        size="large"
-      >
+        size="large">
         <img
           slot="image"
           src={icon.src}
           alt={icon.alt}
-          class="h-6 w-8 mr-micro"
-        />
-        {text}</LinkButton
-      >
+          class="mr-micro h-6 w-8" />
+        {text}</LinkButton>
     </div>
   {/each}
 </div>

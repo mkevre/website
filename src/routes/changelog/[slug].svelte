@@ -48,8 +48,7 @@
     type: "article",
     image: `images/changelog/${image}`,
     imageTwitter: `images/changelog/${image}`,
-  }}
-/>
+  }} />
 
 <Wrapper class="pt-small pb-x-large md:pb-xx-large">
   <div class=" entry flex flex-col md:flex-row">

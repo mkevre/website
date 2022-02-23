@@ -6,9 +6,8 @@
 </script>
 
 <span
-  class="px-3 py-0.5 text-xs font-semibold text-black bg-pink-900 rounded-lg shadow-light {clazz}"
+  class="rounded-lg bg-pink-900 px-3 py-0.5 text-xs font-semibold text-black shadow-light {clazz}"
   class:bg-pink-900={text === "soon"}
-  class:bg-orange-700={text === "beta"}
->
+  class:bg-orange-700={text === "beta"}>
   {capitalised}
 </span>

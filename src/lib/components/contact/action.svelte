@@ -15,9 +15,8 @@
 </script>
 
 <div
-  class="flex flex-col justify-between items-center bg-off-white rounded-4xl px-xx-small py-xx-small md:py-small mb-micro md:mb-small shadow-normal {clazz}"
-  style="width: {width}"
->
+  class="mb-micro flex flex-col items-center justify-between rounded-4xl bg-off-white px-xx-small py-xx-small shadow-normal md:mb-small md:py-small {clazz}"
+  style="width: {width}">
   <div>
     {#if icon}
       <img src="/svg/contact/{icon}" alt={title} class="mx-auto h-28" />
@@ -26,6 +25,5 @@
     <p class="mt-micro mb-x-small" class:text-small={isTextSmall}>{text}</p>
   </div>
   <LinkButton href={link.href} {target} variant={btnClass}
-    >{link.text}</LinkButton
-  >
+    >{link.text}</LinkButton>
 </div>

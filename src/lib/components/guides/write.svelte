@@ -3,10 +3,9 @@
 </script>
 
 <div
-  class="bg-white shadow-normal rounded-4xl max-w-2xl py-small px-xx-small sm:px-small mx-auto mt-huge mb-xx-large text-center"
->
+  class="mx-auto mt-huge mb-xx-large max-w-2xl rounded-4xl bg-white py-small px-xx-small text-center shadow-normal sm:px-small">
   <h2 class="h3">Write your guide</h2>
-  <p class="text-p-large my-xx-small">
+  <p class="my-xx-small text-p-large">
     Write about how to use Gitpod with a technology of your choice and get
     featured!
   </p>
@@ -14,6 +13,5 @@
     size="large"
     variant="primary"
     href="https://github.com/gitpod-io/website/issues/new/choose"
-    target="_blank">Start Guide</LinkButton
-  >
+    target="_blank">Start Guide</LinkButton>
 </div>

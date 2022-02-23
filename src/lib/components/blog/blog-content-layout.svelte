@@ -13,8 +13,7 @@
 <PostContentLayout
   imagesDirectoryName="blog"
   baseUrl="https://www.gitpod.io/blog/"
-  {...$$restProps}
->
+  {...$$restProps}>
   <slot />
 </PostContentLayout>
 

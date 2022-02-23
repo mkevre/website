@@ -142,8 +142,7 @@
       <div class="hero__try-now text-small">
         <div>
           <LinkButton variant="primary" href="#get-started" size="large"
-            >Try Now</LinkButton
-          >
+            >Try Now</LinkButton>
         </div>
         <p>
           Open a workspace.
@@ -159,8 +158,7 @@
             src="/svg/bitbucket.svg"
             alt="Bitbucket logo"
             width="30"
-            height="30"
-          />
+            height="30" />
         </div>
         <div class="hero__stars">
           <a
@@ -170,8 +168,7 @@
             data-icon="octicon-star"
             data-size="large"
             data-show-count="true"
-            aria-label="Star the Gitpod Repo on GitHub">Star</a
-          >
+            aria-label="Star the Gitpod Repo on GitHub">Star</a>
         </div>
       </div>
     </div>
@@ -181,7 +178,6 @@
       src="/images/illustration-large.jpg"
       alt="Gitpod in a Nutshell"
       width="700"
-      height="724"
-    />
+      height="724" />
   </div>
 </div>

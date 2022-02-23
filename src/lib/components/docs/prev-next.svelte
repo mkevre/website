@@ -5,14 +5,12 @@
 </script>
 
 <div
-  class="flex justify-between pt-xx-small border-t border-solid border-gray-400"
->
+  class="flex justify-between border-t border-solid border-gray-400 pt-xx-small">
   {#if menuCtx.prev}
     <a
       href={menuCtx.prev.path}
       title={`Previous: ${menuCtx.prev.title}`}
-      class="font-thin"
-    >
+      class="font-thin">
       Previous
     </a>
   {:else}
@@ -22,8 +20,7 @@
     <a
       href={menuCtx.next.path}
       title={`Next: ${menuCtx.next.title}`}
-      class="font-thin"
-    >
+      class="font-thin">
       Next
     </a>
   {:else}

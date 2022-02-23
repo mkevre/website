@@ -7,7 +7,7 @@
 
 <div id="toc" class="p-4">
   <FeatureTableHeader isToc={true} />
-  <section class="grid grid-cols-1 auto-rows-[3.75rem] pt-4 inner-grid-desktop">
+  <section class="inner-grid-desktop grid auto-rows-[3.75rem] grid-cols-1 pt-4">
     {#each tocData as item}
       <FeatureTableTocItem type={item.type} definition={item.data} />
     {/each}

@@ -10,5 +10,4 @@
   href="/#get-started"
   on:click
   data-analytics={`{"context":"dashboard"}`}
-  class="hidden sm:inline no-underline text-sm mr-micro">Sign Up</a
->
+  class="mr-micro hidden text-sm no-underline sm:inline">Sign Up</a>

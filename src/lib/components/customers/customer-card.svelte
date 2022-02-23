@@ -24,20 +24,17 @@
   }
 
   .h5 {
-    @apply text-black font-bold mb-macro;
+    @apply mb-macro font-bold text-black;
   }
 </style>
 
 <div
-  class="rounded-2xl bg-off-white shadow-xl overflow-hidden max-w-xs sm:max-w-sm min-w-fit"
->
+  class="min-w-fit max-w-xs overflow-hidden rounded-2xl bg-off-white shadow-xl sm:max-w-sm">
   <div
     class="h-60 bg-cover bg-center "
-    style="background-image: url({image})"
-  />
+    style="background-image: url({image})" />
   <div
-    class="text grid grid-cols-2 gap-y-xx-small gap-x-micro sm:gap-y-small p-xx-small sm:p-x-small"
-  >
+    class="text grid grid-cols-2 gap-y-xx-small gap-x-micro p-xx-small sm:gap-y-small sm:p-x-small">
     <div>
       <p class="h5">Industry</p>
       <p>{details.industry}</p>

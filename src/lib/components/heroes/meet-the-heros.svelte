@@ -12,6 +12,5 @@
     variant="cta"
     size="large"
     href="https://www.gitpod.io/chat"
-    target="_blank">Connect on Discord</LinkButton
-  >
+    target="_blank">Connect on Discord</LinkButton>
 </Section>

@@ -10,20 +10,20 @@
 
 <style lang="postcss">
   .error {
-    @apply text-error border-error;
+    @apply border-error text-error;
   }
 
   label::before {
     content: "";
     flex: 0 0 24px;
-    @apply text-transparent block h-6 rounded
-      text-center mr-micro transition border border-solid border-divider
-      leading-[1.1];
+    @apply mr-micro block h-6 rounded
+      border border-solid border-divider text-center leading-[1.1] text-transparent
+      transition;
   }
 
   input:checked + label::before {
     background-image: url("/tick-dark.svg");
-    @apply text-black border border-solid border-orange-900 bg-orange-900 bg-center;
+    @apply border border-solid border-orange-900 bg-orange-900 bg-center text-black;
   }
 
   label:hover::before,
@@ -36,16 +36,16 @@
   }
 
   .error + label::before {
-    @apply text-error border-error;
+    @apply border-error text-error;
   }
 
   .disabled + label::before {
-    @apply text-error border-error;
+    @apply border-error text-error;
   }
 </style>
 
 <input
-  class="hidden absolute box-border text-black {className}"
+  class="absolute box-border hidden text-black {className}"
   class:error={hasError}
   class:disabled
   {disabled}
@@ -54,10 +54,8 @@
   bind:this={element}
   on:change
   type="checkbox"
-  {...$$restProps}
-/>
+  {...$$restProps} />
 {#if label}
-  <label class="flex cursor-pointer text-dark-grey mt-1 mb-2" for={label}
-    >{@html label}</label
-  >
+  <label class="mt-1 mb-2 flex cursor-pointer text-dark-grey" for={label}
+    >{@html label}</label>
 {/if}

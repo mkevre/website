@@ -17,26 +17,22 @@
   data={{
     description: "Does Gitpod encrypt data?",
     title: "Security",
-  }}
-/>
+  }} />
 
 <Header
   title="Security at Gitpod"
   text="Gitpod is trusted by over 500k developers and companies that are moving
   their dev environments to the cloud."
   textClassNames="text-large max-w-2xl mx-auto mb-x-small"
-  tight={true}
->
+  tight={true}>
   <LinkButton variant="primary" size="medium" href="/contact/support"
-    >Talk to an expert</LinkButton
-  >
+    >Talk to an expert</LinkButton>
 </Header>
 
 <UsedBy
   title="Trusted by developer led companies"
-  class="bg-off-white rounded-2xl shadow-normal pt-small pb-9"
-  style="margin-top: 0"
-/>
+  class="rounded-2xl bg-off-white pt-small pb-9 shadow-normal"
+  style="margin-top: 0" />
 <Secure />
 <Program />
 <CallToAction />

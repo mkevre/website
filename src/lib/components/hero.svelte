@@ -35,20 +35,19 @@
   }
 </style>
 
-<Section class="hero relative text-center lg:text-left pb-x-large lg:pb-0">
-  <div class="text-box lg:pt-x-large mx-auto lg:mx-0">
+<Section class="hero relative pb-x-large text-center lg:pb-0 lg:text-left">
+  <div class="text-box mx-auto lg:mx-0 lg:pt-x-large">
     <h1 class="h1">{title}</h1>
-    <p class="mx-auto lg:mx-0 max-w-lg lgx:max-w-none text-large mb-x-small">
+    <p class="text-large mx-auto mb-x-small max-w-lg lg:mx-0 lgx:max-w-none">
       {text}
     </p>
-    <div class="flex gap-4 justify-center lg:justify-start">
+    <div class="flex justify-center gap-4 lg:justify-start">
       {#if btnPrimary}
         <LinkButton
           size="large"
           variant="primary"
           href={btnPrimary.href}
-          on:click={btnPrimary.onClickHandler}
-        >
+          on:click={btnPrimary.onClickHandler}>
           {btnPrimary.text}
         </LinkButton>
       {/if}
@@ -57,16 +56,14 @@
           variant="cta"
           size="large"
           href={btnSecondary.href}
-          on:click={btnPrimary.onClickHandler}
-        >
+          on:click={btnPrimary.onClickHandler}>
           {btnSecondary.text}
         </LinkButton>
       {/if}
     </div>
   </div>
   <img
-    class="absolute max-w-2xl right-0 top-1/2 -z-10 hidden lg:block"
+    class="absolute right-0 top-1/2 -z-10 hidden max-w-2xl lg:block"
     {src}
-    {alt}
-  />
+    {alt} />
 </Section>

@@ -96,23 +96,20 @@
     description: "The browser extension has been uninstalled.",
     title: "Extension Uninstall",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Header title="How Can We Improve?" tight={true}>
   <div slot="top">
     {#if extensionUrl}
       <a href={extensionUrl} rel="noopener" target="_blank"
-        >Reinstall Extension</a
-      >
+        >Reinstall Extension</a>
     {/if}
   </div>
 </Header>
 
 <section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-32 sm:mx-8 lg:flex lg:items-center lg:justify-around"
->
-  <div class="letter lg:w-2/5 lgpr-xx-small mb-small">
+  class="mb-32 rounded-2xl bg-off-white p-xx-small shadow-xl sm:mx-8 sm:py-small sm:px-x-small md:p-medium lg:flex lg:items-center lg:justify-around">
+  <div class="letter lgpr-xx-small mb-small lg:w-2/5">
     <p class="text-large">
       Hi there, sad to hear that our browser extension was uninstalled. To
       improve and make sure that other developers are happier with Gitpod, we’d
@@ -122,16 +119,14 @@
     <br />
     <p class="text-large">
       ps. Did you know we also offer a <a href="/docs/browser-bookmarklet"
-        >browser bookmarketlet</a
-      > as an alternative?
+        >browser bookmarketlet</a> as an alternative?
     </p>
   </div>
   <form
     on:submit|preventDefault={handleSubmit}
     name="Extension Deletion"
     novalidate
-    class="lg:w-2/5"
-  >
+    class="lg:w-2/5">
     <input type="hidden" name="form-name" value="extension-deletion" />
     <h2 class="h3">Why did you uninstall the browser extension?</h2>
     <ul>
@@ -153,8 +148,7 @@
                     formData.reason.valid =
                       formData.reason.selected.length > 0 &&
                       formData.reason.el.validity.valid;
-                  }}
-                />
+                  }} />
                 <label for={id}>{label}</label>
               </li>
             {/each}
@@ -177,8 +171,7 @@
               formData.otherFeedback.value === ""
                 ? true
                 : formData.otherFeedback.el.validity.valid;
-          }}
-        />
+          }} />
       </li>
       <li>
         <Button
@@ -186,10 +179,9 @@
           size="large"
           class="mt-x-small"
           disabled={(isFormDirty && !isFormValid) || isFeedbackSent}
-          type="submit">Send</Button
-        >
+          type="submit">Send</Button>
         {#if isFormDirty && !isFormValid}
-          <legend class="text-xs text-error block mt-1 mb-2">
+          <legend class="mt-1 mb-2 block text-xs text-error">
             Please fill out all required fields above
           </legend>
         {/if}

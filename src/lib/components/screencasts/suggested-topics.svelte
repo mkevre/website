@@ -21,18 +21,17 @@
   };
 </script>
 
-<div class="md:mt-x-large mb-small">
-  <p class="h5 text-center text-black font-bold mb-xx-small">
+<div class="mb-small md:mt-x-large">
+  <p class="h5 mb-xx-small text-center font-bold text-black">
     Suggested topics
   </p>
-  <div class="flex flex-wrap justify-center max-w-3xl mx-auto sm:space-x-macro">
+  <div class="mx-auto flex max-w-3xl flex-wrap justify-center sm:space-x-macro">
     {#each topics as topic}
       <Button
         on:click={(e) => handleTopicSetup(e, topic)}
-        class=" mb-macro mx-0.5 sm:mx-0"
+        class=" mx-0.5 mb-macro sm:mx-0"
         variant="cta"
-        size="medium"
-      >
+        size="medium">
         {topic}
       </Button>
     {/each}

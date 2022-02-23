@@ -43,8 +43,7 @@
   xmlns="http://www.w3.org/2000/svg"
   width="75.78"
   height="82.55"
-  viewBox="0 0 75.78 82.55"
->
+  viewBox="0 0 75.78 82.55">
   <defs>
     <linearGradient
       id="gitpod-logo-animation-paint"
@@ -52,8 +51,7 @@
       y1="76"
       x2="32"
       y2="36"
-      gradientUnits="userSpaceOnUse"
-    >
+      gradientUnits="userSpaceOnUse">
       <stop stop-color="#FB8700" />
       <stop offset="1" stop-color="#FBB000" />
     </linearGradient>
@@ -65,6 +63,5 @@
     stroke-miterlimit="10"
     stroke-width="15.5"
     stroke-linejoin="round"
-    stroke-linecap="round"
-  />
+    stroke-linecap="round" />
 </svg>

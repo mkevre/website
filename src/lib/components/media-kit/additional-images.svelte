@@ -40,7 +40,7 @@
 
 <Section class="text-center">
   <h2 class="mb-small">Additional images</h2>
-  <div class="flex justify-around flex-wrap">
+  <div class="flex flex-wrap justify-around">
     {#each images as image}
       <ImageBox {image} />
     {/each}

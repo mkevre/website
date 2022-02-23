@@ -39,18 +39,17 @@
   }
 </style>
 
-<div class="sticky z-10 sm:top-36 top-28 parent">
-  <div class="inline-flex flex-col sm:mt-large bg-gray-200">
+<div class="parent sticky top-28 z-10 sm:top-36">
+  <div class="inline-flex flex-col bg-gray-200 sm:mt-large">
     {#each froms as from, index}
       <a
         bind:this={refs[index]}
         href="#{from}"
-        class="text-h5 font-semibold border-solid border-l-4 border-divider px-macro sm:px-x-small py-micro hover:border-orange-900 active:border-orange-900 sidenav-link"
+        class="sidenav-link border-l-4 border-solid border-divider px-macro py-micro text-h5 font-semibold hover:border-orange-900 active:border-orange-900 sm:px-x-small"
         on:click={() => {
           refs.forEach((r) => r.classList.remove("border-orange-900"));
           refs[index].classList.add("border-orange-900");
-        }}>{from}</a
-      >
+        }}>{from}</a>
     {/each}
   </div>
 </div>

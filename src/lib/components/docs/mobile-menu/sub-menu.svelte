@@ -55,21 +55,19 @@
 </style>
 
 <button
-  class="back-button flex items-center text-black w-full py-3"
+  class="back-button flex w-full items-center py-3 text-black"
   type="button"
   on:click={() => {
     $topicsState = true;
     $subMenuState = false;
-  }}
->
+  }}>
   <div class="back-button__icon">
     <img
       class="back-button__icon-arrow"
       src="/arrow.svg"
       alt="See all topics"
       width="12"
-      height="7"
-    />
+      height="7" />
   </div>
   All topics
 </button>
@@ -81,8 +79,7 @@
       type="button"
       aria-controls="sub-menu"
       aria-expanded={$subMenuState}
-      on:click={() => ($subMenuState = !$subMenuState)}
-    >
+      on:click={() => ($subMenuState = !$subMenuState)}>
       <div class="toggle-button__label">{currentSection?.title}</div>
       <div class="toggle-button__icon">
         <img
@@ -90,8 +87,7 @@
           src="/arrow.svg"
           alt="Toggle sub menu"
           width="12"
-          height="7"
-        />
+          height="7" />
       </div>
     </button>
 
@@ -99,8 +95,7 @@
       aria-label={currentSection?.title}
       role="navigation"
       class={`px-4 ${$subMenuState ? "block" : "hidden"}`}
-      id="sub-menu"
-    >
+      id="sub-menu">
       <ul class="divide-y divide-sand-dark">
         {#each currentSection?.subMenu as sub}
           <MenuItem href={sub.path} onClick={() => ($subMenuState = false)}>

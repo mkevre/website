@@ -31,6 +31,6 @@
   }
 </style>
 
-<div class="{clazz} flex items-start overflow-x-scroll space-x-6" dir="ltr">
+<div class="{clazz} flex items-start space-x-6 overflow-x-scroll" dir="ltr">
   <slot />
 </div>

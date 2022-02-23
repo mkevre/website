@@ -5,7 +5,7 @@
   export let text: string;
 </script>
 
-<h2 class="h3 text-center mb-8">{title}</h2>
+<h2 class="h3 mb-8 text-center">{title}</h2>
 <p class="text-center">
   {text}
 </p>

@@ -14,8 +14,8 @@
 </script>
 
 <section id="timeline">
-  <div class="container order-2 mb-8  mx-auto flex flex-wrap">
-    <div class="flex flex-wrap w-full">
+  <div class="container order-2 mx-auto  mb-8 flex flex-wrap">
+    <div class="flex w-full flex-wrap">
       {#each changelogEntries.slice(0, numberOfEntriesToDisplay) as entry}
         <TimelineItem timelineItem={entry} />
       {/each}

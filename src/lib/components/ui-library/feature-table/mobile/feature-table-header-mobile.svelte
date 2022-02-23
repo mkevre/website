@@ -8,16 +8,14 @@
   export let isShown: boolean;
 </script>
 
-<div class="mb-x-small flex flex-col justify-center items-center">
+<div class="mb-x-small flex flex-col items-center justify-center">
   <div
-    class="pb-x-small flex flex-col justify-center items-center space-y-4 border-b-2 border-divider w-64"
-  >
+    class="flex w-64 flex-col items-center justify-center space-y-4 border-b-2 border-divider pb-x-small">
     {#if headerData.image}
       <img
         src={headerData.image.path}
         alt={headerData.image.alt}
-        class="h-10"
-      />
+        class="h-10" />
     {/if}
     <div class="text-center ">
       <h3>{headerData.headline}</h3>
@@ -27,7 +25,7 @@
     </div>
   </div>
   <slot />
-  <button class="pt-x-small w-64" on:click={() => toggleIsShown()}>
+  <button class="w-64 pt-x-small" on:click={() => toggleIsShown()}>
     <div class="underline">
       {#if isShown}
         Hide Features
@@ -38,8 +36,7 @@
     <img
       src="/arrow.svg"
       alt="Arrow Toggle"
-      class="h-6 w-6 mt-macro mx-auto duration-200"
-      class:rotate-180={isShown}
-    />
+      class="mx-auto mt-macro h-6 w-6 duration-200"
+      class:rotate-180={isShown} />
   </button>
 </div>

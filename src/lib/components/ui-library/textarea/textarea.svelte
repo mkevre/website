@@ -11,16 +11,15 @@
 
 <style lang="postcss">
   .error {
-    @apply text-error border-error;
+    @apply border-error text-error;
   }
 </style>
 
 {#if label}
   <label
-    class="text-dark-grey cursor-pointer block mb-2"
+    class="mb-2 block cursor-pointer text-dark-grey"
     class:error={hasError}
-    for={label}>{@html label}</label
-  >
+    for={label}>{@html label}</label>
 {/if}
 <textarea
   id={label}
@@ -28,11 +27,9 @@
   bind:value
   bind:this={element}
   class:error={hasError}
-  class="whitespace-pre-wrap resize-none bg-transparent text-[#000000] box-border w-full rounded-lg py-2 px-4 border-[1px] border-divider placeholder:text-dark-grey {className}"
-  {...$$restProps}
-/>
+  class="box-border w-full resize-none whitespace-pre-wrap rounded-lg border-[1px] border-divider bg-transparent py-2 px-4 text-[#000000] placeholder:text-dark-grey {className}"
+  {...$$restProps} />
 {#if hasError}
-  <legend class:error={hasError} class="text-xs block mt-1 mb-2"
-    >Please fill out the {name ? name : ""} field</legend
-  >
+  <legend class:error={hasError} class="mt-1 mb-2 block text-xs"
+    >Please fill out the {name ? name : ""} field</legend>
 {/if}

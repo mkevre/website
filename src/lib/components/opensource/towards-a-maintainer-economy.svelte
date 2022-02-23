@@ -30,5 +30,4 @@
 <MoreArticles
   title="Towards a maintainer economy"
   text="Gitpod supports the high achievers that our digital society is built upon."
-  {posts}
-/>
+  {posts} />

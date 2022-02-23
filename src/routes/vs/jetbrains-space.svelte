@@ -18,8 +18,7 @@
     title: "Gitpod vs JetBrains Space - what makes Gitpod different?",
     keywords: "differences, jetbrains, Goland, Intellij, alternative",
     norobots: true,
-  }}
-/>
+  }} />
 
 <Hero
   title="Gitpod vs JetBrains Space"
@@ -37,8 +36,7 @@
         context: "hero",
         destination: "#get-started",
       }),
-  }}
-/>
+  }} />
 
 <FeatureBoxes {features} />
 
@@ -46,18 +44,15 @@
 
 <CalloutSecondary
   title="Ready to launch your JetBrains IDE within Gitpod?"
-  text="If you already have a Gitpod account, simply go to <a href='https://gitpod.io/preferences'>gitpod.io/preferences</a>, select your favourite IDE and open your project. If you are new to Gitpod, hit the `try now` button."
->
+  text="If you already have a Gitpod account, simply go to <a href='https://gitpod.io/preferences'>gitpod.io/preferences</a>, select your favourite IDE and open your project. If you are new to Gitpod, hit the `try now` button.">
   <img
     src="/images/jetbrains-space/jetbrains-ides-in-gitpod.png"
     alt="Jetbrains IDEs available to use with Gitpod"
     slot="image"
-    class="max-w-3xl mx-auto mt-small w-full hidden md:block"
-  />
+    class="mx-auto mt-small hidden w-full max-w-3xl md:block" />
   <img
     src="/images/jetbrains-space/jetbrains-ides-in-gitpod-mobile.png"
     alt="Jetbrains IDEs available to use with Gitpod"
     slot="image-mobile"
-    class="max-w-xs mx-auto mt-x-small w-full md:hidden"
-  />
+    class="mx-auto mt-x-small w-full max-w-xs md:hidden" />
 </CalloutSecondary>

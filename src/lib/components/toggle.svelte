@@ -11,7 +11,7 @@
 
 <style lang="postcss">
   label {
-    @apply mb-0 cursor-pointer text-h6 font-bold py-macro px-xx-small rounded-5xl transition-all duration-300 hover:text-gray-900;
+    @apply mb-0 cursor-pointer rounded-5xl py-macro px-xx-small text-h6 font-bold transition-all duration-300 hover:text-gray-900;
   }
 
   .switch-container {
@@ -55,25 +55,23 @@
 
 <div class="text-center">
   <div
-    class="switch-container inline-flex justify-center items-center space-x-0.5 {clazz} h-14 mx-auto bg-white p-1.5 rounded-5xl transition-all duration-200"
+    class="switch-container inline-flex items-center justify-center space-x-0.5 {clazz} mx-auto h-14 rounded-5xl bg-white p-1.5 transition-all duration-200"
     class:checked
-    class:inversed={isInversed}
-  >
+    class:inversed={isInversed}>
     <label for={id} class:text-gray-900={!checked && !isInversed}>
       {labelLeft}
     </label>
-    <div class="relative flex items-center cursor-pointer">
+    <div class="relative flex cursor-pointer items-center">
       <input
         {id}
         type="checkbox"
         on:change
-        class="h-full w-full toggle"
+        class="toggle h-full w-full"
         data-analytics={`{"label":"` +
           labelLeft +
           ` <> ` +
           labelRight +
-          ` Toggle"}`}
-      />
+          ` Toggle"}`} />
     </div>
     <label for={id}>
       {labelRight}

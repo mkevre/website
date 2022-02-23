@@ -24,9 +24,8 @@
   data={{
     description: "Gitpod's imprint.",
     title: "Imprint",
-  }}
-/>
-<article class="max-w-[94vw] mt-20 mx-auto mb-8 leading-7 lg:w-[50rem]">
+  }} />
+<article class="mx-auto mt-20 mb-8 max-w-[94vw] leading-7 lg:w-[50rem]">
   <h1>Imprint</h1>
   <p class="mb-4">
     Gitpod&nbsp;GmbH

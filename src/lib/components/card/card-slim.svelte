@@ -7,6 +7,5 @@
 <Base
   {card}
   {...$$restProps}
-  class="py-small px-x-small rounded-5xl {$$restProps.class}"
-  iconClassNames="h-28"
-/>
+  class="rounded-5xl py-small px-x-small {$$restProps.class}"
+  iconClassNames="h-28" />

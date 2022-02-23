@@ -7,7 +7,6 @@
 <Base
   {card}
   {...$$restProps}
-  class="p-x-small rounded-2xl {$$restProps.class}"
+  class="rounded-2xl p-x-small {$$restProps.class}"
   titleClassNames="h5"
-  styles="max-width: 315px"
-/>
+  styles="max-width: 315px" />

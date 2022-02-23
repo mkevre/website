@@ -16,8 +16,7 @@
     title: "GitHub Student Developer Pack",
     description:
       "With the GitHub Student Developer Pack, you get the same features as with our usual plans but at a much better price. We’re happy to be able to empower student developers participating in it.",
-  }}
-/>
+  }} />
 
 <Header title="GitHub Student Developer Pack">
   <svelte:fragment slot="description">
@@ -39,6 +38,5 @@
   </svelte:fragment>
 </PricingOffers>
 <Headline
-  text="Stop wasting time with tedious setups, learn amazing programming skills instead!"
-/>
+  text="Stop wasting time with tedious setups, learn amazing programming skills instead!" />
 <Explore />

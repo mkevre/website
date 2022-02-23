@@ -5,7 +5,7 @@
 
 <style lang="postcss">
   :global(.code) {
-    @apply p-micro bg-white rounded-2xl text-base text-light-grey my-macro;
+    @apply my-macro rounded-2xl bg-white p-micro text-base text-light-grey;
   }
   :global(.code) :global(span) {
     color: #65a30d;
@@ -14,7 +14,7 @@
 
 {#if definition.list}
   <div class="flex flex-col justify-start px-8">
-    <ul class="list-disc list-outside ">
+    <ul class="list-outside list-disc ">
       {#each definition.list as item}
         <li class="">
           {@html item}

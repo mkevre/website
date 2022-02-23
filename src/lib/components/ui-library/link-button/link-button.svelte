@@ -32,7 +32,7 @@
   }
 
   .white {
-    @apply bg-off-white text-black hover:bg-white focus:bg-white hover:text-black focus:text-black;
+    @apply bg-off-white text-black hover:bg-white hover:text-black focus:bg-white focus:text-black;
   }
 
   .disabled {
@@ -40,15 +40,15 @@
   }
 
   .medium {
-    @apply py-2 px-6 text-btn-small leading-4 rounded-xl;
+    @apply rounded-xl py-2 px-6 text-btn-small leading-4;
   }
 
   .large {
-    @apply py-3 px-8 text-p-medium leading-[1.25] min-w-[10rem] rounded-2xl;
+    @apply min-w-[10rem] rounded-2xl py-3 px-8 text-p-medium leading-[1.25];
   }
 
   .small {
-    @apply py-1 px-4 text-p-xsmall rounded-xl;
+    @apply rounded-xl py-1 px-4 text-p-xsmall;
   }
 </style>
 
@@ -57,12 +57,11 @@
   {href}
   {disabled}
   class:disabled
-  class="transition-all duration-[50ms] inline-block text-center shadow-light font-semibold bg-none text-black {variant ===
+  class="inline-block bg-none text-center font-semibold text-black shadow-light transition-all duration-[50ms] {variant ===
   'unstyled'
     ? ''
     : variant} {size} {className}"
-  {...$$restProps}
->
+  {...$$restProps}>
   <slot name="image" />
   <slot />
 </a>

@@ -8,5 +8,4 @@
   class="{clazz} flex items-center justify-center"
   href="/#get-started"
   variant="tertiary"
-  size="medium">Sign Up</LinkButton
->
+  size="medium">Sign Up</LinkButton>

@@ -175,7 +175,7 @@
   .disabled {
     @apply transition-none;
     &::after {
-      @apply transition-none animate-none bg-light-grey scale-100;
+      @apply scale-100 animate-none bg-light-grey transition-none;
     }
   }
 
@@ -201,8 +201,7 @@
           {#each texts as { isVisible, text }}
             <span
               class:strikethrough={isVisible || disableAnimation}
-              class:disabled={disableAnimation}>{text}</span
-            >
+              class:disabled={disableAnimation}>{text}</span>
           {/each}
         </del>
       {/each}

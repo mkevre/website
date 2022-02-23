@@ -12,14 +12,12 @@
 </style>
 
 <a
-  class="inline-flex text-center py-2 px-4 text-btn-small leading-4 rounded-xl shadow-light font-semibold bg-off-white text-black hover:bg-white focus:bg-white"
+  class="inline-flex rounded-xl bg-off-white py-2 px-4 text-center text-btn-small font-semibold leading-4 text-black shadow-light hover:bg-white focus:bg-white"
   {href}
   target="_blank"
   rel="noopener"
   ><span class="">{icon}</span>
   <img
-    class="inline-block my-0 mx-2 h-3 w-3"
+    class="my-0 mx-2 inline-block h-3 w-3"
     src="/svg/external.svg"
-    alt="External"
-  /><slot /></a
->
+    alt="External" /><slot /></a>

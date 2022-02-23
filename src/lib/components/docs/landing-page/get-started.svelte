@@ -3,7 +3,7 @@
   import { getStartedItems } from "$lib/contents/docs/landing-page/get-started";
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-2 mb-16">
+<div class="mb-16 grid grid-cols-1 gap-2 md:grid-cols-3">
   {#each getStartedItems as item}
     <GetStartedItem getStartedItem={item} />
   {/each}

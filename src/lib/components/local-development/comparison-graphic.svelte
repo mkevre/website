@@ -14,24 +14,21 @@
 </style>
 
 <Section
-  class="flex flex-col py-small px-xx-small sm:px-small md:p-0 md:flex-row items-center max-w-lg md:max-w-6xl bg-white rounded-2xl sm:rounded-5xl shadow-normal mx-auto"
->
-  <div class="p-0 md:pl-small lgx:pl-large lgx:py-0">
+  class="mx-auto flex max-w-lg flex-col items-center rounded-2xl bg-white py-small px-xx-small shadow-normal sm:rounded-5xl sm:px-small md:max-w-6xl md:flex-row md:p-0">
+  <div class="p-0 md:pl-small lgx:py-0 lgx:pl-large">
     <h3 class="h3">Ready within seconds when working in the cloud</h3>
     <p class="text-large">
       {text}
     </p>
   </div>
-  <div class="pt-micro md:px-small md:py-x-small max-w-xl lgx:max-w-2xl">
+  <div class="max-w-xl pt-micro md:px-small md:py-x-small lgx:max-w-2xl">
     <img
       class="hidden md:block"
       src="/images/local-development/comparison.png"
-      alt={text}
-    />
+      alt={text} />
     <img
-      class="md:hidden max-h-96 mx-auto"
+      class="mx-auto max-h-96 md:hidden"
       src="/images/local-development/comparison-mobile.png"
-      alt={text}
-    />
+      alt={text} />
   </div>
 </Section>

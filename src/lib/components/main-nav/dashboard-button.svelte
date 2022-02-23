@@ -7,7 +7,6 @@
   size="medium"
   href="https://gitpod.io/"
   class="flex items-center justify-center"
-  data-analytics={`{"context":"dashboard"}`}
->
+  data-analytics={`{"context":"dashboard"}`}>
   Dashboard
 </LinkButton>

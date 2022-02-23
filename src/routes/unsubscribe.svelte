@@ -15,11 +15,11 @@
 
 <style lang="postcss">
   section {
-    @apply pb-0 mt-x-large sm:mt-large;
+    @apply mt-x-large pb-0 sm:mt-large;
   }
 
   .h4 {
-    @apply text-h4 mb-micro mt-0 !important;
+    @apply mb-micro mt-0 text-h4 !important;
   }
 </style>
 
@@ -28,14 +28,12 @@
     title: "Unsubscribed",
     description: "",
     norobots: true,
-  }}
-/>
+  }} />
 
 <section
-  class="p-xx-small sm:py-small sm:px-x-small md:p-medium rounded-2xl bg-off-white shadow-xl mb-medium text-center sm:mx-8"
->
+  class="mb-medium rounded-2xl bg-off-white p-xx-small text-center shadow-xl sm:mx-8 sm:py-small sm:px-x-small md:p-medium">
   <h1 class="h4">Unsubscribed</h1>
-  <p class="max-w-2xl text-large mx-auto">
+  <p class="text-large mx-auto max-w-2xl">
     You have been sucessfully unsubscribed. If you would like to revert it,
     please go to <a
       href="https://gitpod.io/notifications"

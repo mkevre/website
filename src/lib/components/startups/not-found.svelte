@@ -1,6 +1,6 @@
 <style lang="postcss">
   p {
-    @apply max-w-md mx-auto text-center;
+    @apply mx-auto max-w-md text-center;
 
     @media (max-width: 600px) {
       @apply ml-20 mr-0 text-left;

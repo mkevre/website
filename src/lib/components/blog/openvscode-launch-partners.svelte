@@ -5,11 +5,10 @@
 </script>
 
 <Section
-  class="text-center bg-off-white pt-small shadow-normal rounded-2xl px-small"
->
-  <div class="flex flex-wrap justify-around mt-small">
+  class="rounded-2xl bg-off-white px-small pt-small text-center shadow-normal">
+  <div class="mt-small flex flex-wrap justify-around">
     {#each brands as { logo, alt }}
-      <div class="flex justify-center mb-small w-32">
+      <div class="mb-small flex w-32 justify-center">
         <img src="/{logo}" {alt} class="h-7 w-28" />
       </div>
     {/each}

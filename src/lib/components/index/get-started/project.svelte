@@ -9,7 +9,7 @@
 </script>
 
 <LinkButton
-  class="flex h-14 items-center justify-between group"
+  class="group flex h-14 items-center justify-between"
   variant="cta"
   size="large"
   href={`https://gitpod.io#${githubUrl}`}
@@ -18,16 +18,14 @@
   data-analytics={`{"context":"example_workspace","label":"` +
     trackingName +
     `"}`}
-  rel="noopener"
->
+  rel="noopener">
   <div class="flex items-center">
     <img
       src={`/${logo}`}
       {alt}
-      class="mr-micro grayscale group-focus:grayscale-0 group-hover:grayscale-0"
+      class="mr-micro grayscale group-hover:grayscale-0 group-focus:grayscale-0"
       width="24"
-      height="24"
-    />
+      height="24" />
     <div class="text-black">
       {title}
     </div>
@@ -35,6 +33,5 @@
   <Button
     class="hidden group-hover:inline-block"
     variant="tertiary"
-    size="medium">Launch workspace</Button
-  >
+    size="medium">Launch workspace</Button>
 </LinkButton>

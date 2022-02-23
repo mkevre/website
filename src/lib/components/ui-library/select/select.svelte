@@ -21,25 +21,23 @@
   }
 
   .error {
-    @apply text-error border-error;
+    @apply border-error text-error;
   }
 </style>
 
 {#if label}
-  <label class:error={hasError} class="text-dark-grey block mb-2" for={label}
-    >{@html label}</label
-  >
+  <label class:error={hasError} class="mb-2 block text-dark-grey" for={label}
+    >{@html label}</label>
 {/if}
 <select
   class:error={hasError}
   bind:this={element}
   id={label}
-  class="box-border bg-off-white text-black border-divider border-[1px] px-4 py-2 rounded-lg appearance-none  w-full {className}"
+  class="box-border w-full appearance-none rounded-lg border-[1px] border-divider bg-off-white px-4 py-2  text-black {className}"
   name="cloudInfrastructure"
   bind:value
   on:change
-  {...$$restProps}
->
+  {...$$restProps}>
   <option disabled class="text-gray-800" value="">{placeholder}</option>
   {#each options as option}
     <option value={option}>
@@ -49,7 +47,6 @@
 </select>
 
 {#if hasError}
-  <legend class:error={hasError} class="block text-dark-grey text-xs mt-1 mb-2"
-    >Please select a value</legend
-  >
+  <legend class:error={hasError} class="mt-1 mb-2 block text-xs text-dark-grey"
+    >Please select a value</legend>
 {/if}

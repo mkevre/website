@@ -91,33 +91,29 @@
 </style>
 
 <div
-  class="mt-macro md:mt-0 md:absolute md:top-0 md:-right-1 lgx:-right-2 flex space-x-1 sm:space-x-2 md:space-x-0 justify-center md:w-min md:block space-y-0 md:space-y-2"
->
+  class="mt-macro flex justify-center space-x-1 space-y-0 sm:space-x-2 md:absolute md:top-0 md:-right-1 md:mt-0 md:block md:w-min md:space-x-0 md:space-y-2 lgx:-right-2">
   {#each ides as { name, availibility, label, icon, screenshots }}
     <button
-      class="block relative cursor-pointer"
+      class="relative block cursor-pointer"
       on:mouseenter={(e) => {
         handleMouseEnter(e, name);
       }}
       on:mouseleave={(e) => {
         handleMouseLeave(e);
       }}
-      class:hidden={ideType === "browser" && !screenshots.browser}
-    >
+      class:hidden={ideType === "browser" && !screenshots.browser}>
       <div
-        class="icon-box relative flex items-center justify-center bg-off-white rounded-lg md:rounded-xl lgx:rounded-2xl shadow-lg transition duration-200 linear"
+        class="icon-box linear relative flex items-center justify-center rounded-lg bg-off-white shadow-lg transition duration-200 md:rounded-xl lgx:rounded-2xl"
         class:grayed={!(activeByDefaultName === name) &&
           !(activeIdeName === "vscode")}
-        data-name={name}
-      >
+        data-name={name}>
         <img src="/svg/index/{icon}" alt={label} class="icon" />
       </div>
       {#if availibility}
         <div
-          class="hidden absolute -top-3 md:-top-1 left-1/2 -translate-x-1/2 md:transform-none md:-left-10 lg:left-3/4 items-center justify-center h-4 w-10 sm:h-5 sm:w-14 text-xs font-semibold text-gray-900 rounded-md sm:rounded-lg shadow-light"
+          class="absolute -top-3 left-1/2 hidden h-4 w-10 -translate-x-1/2 items-center justify-center rounded-md text-xs font-semibold text-gray-900 shadow-light sm:h-5 sm:w-14 sm:rounded-lg md:-top-1 md:-left-10 md:transform-none lg:left-3/4"
           class:bg-pink-900={availibility === "soon"}
-          class:bg-orange-700={availibility === "beta"}
-        >
+          class:bg-orange-700={availibility === "beta"}>
           {availibility.charAt(0).toUpperCase() + availibility.slice(1)}
         </div>
       {/if}

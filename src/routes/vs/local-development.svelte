@@ -18,7 +18,7 @@
     grid-template-columns: repeat(auto-fill, 316px);
 
     @media (max-width: 1460px) {
-      @apply max-w-4xl mx-auto;
+      @apply mx-auto max-w-4xl;
     }
 
     @media (max-width: 400px) {
@@ -33,15 +33,13 @@
     description:
       "Develop like Google, Facebook and Shopify. Spend less time worrying about brittle, local dev environments and leverage the power of the cloud to improve your team’s developer experience.",
     keywords: "local development, cloud, remote development, secure",
-  }}
-/>
+  }} />
 
 <Header
   title="Gitpod vs local development"
   text="Why should you move your dev environment to the cloud? Here is the answer."
-  fullWidth={true}
->
-  <div slot="content" class="grid gap-micro justify-center mt-small">
+  fullWidth={true}>
+  <div slot="content" class="mt-small grid justify-center gap-micro">
     {#each benefits as benefit}
       <CardSmall card={benefit} />
     {/each}
@@ -53,14 +51,12 @@
 <CalloutSecondary
   title="Feel the difference"
   text="Spin up fresh, automated dev environments for each task, in the cloud, in
-  seconds."
-/>
+  seconds." />
 
 <GitpodVsLocalDevelopmentPost
   title="Full blog post"
   text={`
   Read the full blog post by <a href="https://twitter.com/mikenikles" target="_blank">Mike Nikles</a>, our Senior Developer Success Engineer, sharing the story of moving to the cloud.
-  `}
-/>
+  `} />
 
 <Explore />

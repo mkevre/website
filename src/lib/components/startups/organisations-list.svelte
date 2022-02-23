@@ -5,7 +5,7 @@
 <style lang="postcss">
   ul {
     max-width: 250px;
-    @apply whitespace-nowrap mx-auto;
+    @apply mx-auto whitespace-nowrap;
 
     @media (max-width: 540px) {
       @apply ml-auto mr-0;
@@ -18,7 +18,7 @@
 
   li::before {
     content: "—";
-    @apply text-orange-800 mr-micro;
+    @apply mr-micro text-orange-800;
 
     @media (max-width: 540px) {
       @apply mr-macro;

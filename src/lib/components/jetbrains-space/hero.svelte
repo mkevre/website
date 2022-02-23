@@ -26,10 +26,10 @@
   }
 </style>
 
-<Section class="hero relative text-center lg:text-left pb-x-large lg:pb-0">
-  <div class="text-box lg:pt-x-large mx-auto lg:mx-0">
+<Section class="hero relative pb-x-large text-center lg:pb-0 lg:text-left">
+  <div class="text-box mx-auto lg:mx-0 lg:pt-x-large">
     <h1 class="h1">Gitpod vs JetBrains Space</h1>
-    <p class="mx-auto max-w-lg lg:mx-0 text-large">
+    <p class="text-large mx-auto max-w-lg lg:mx-0">
       Gitpod is the vendor neutral, open-source platform that integrates with
       your individual stack including all JetBrains IDEs.
     </p>
@@ -42,12 +42,10 @@
         window.analytics.track("product_cta_clicked", {
           context: "hero",
           destination: "#get-started",
-        })}>Try Now</LinkButton
-    >
+        })}>Try Now</LinkButton>
   </div>
   <img
-    class="absolute max-w-2xl right-0 top-1/2 -z-10 hidden lg:block"
+    class="absolute right-0 top-1/2 -z-10 hidden max-w-2xl lg:block"
     src="/images/jetbrains-space/git-providers.png"
-    alt="Git Providers"
-  />
+    alt="Git Providers" />
 </Section>

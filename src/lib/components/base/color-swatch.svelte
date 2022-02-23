@@ -3,5 +3,4 @@
 </script>
 
 <div
-  class={`rounded-full h-24 w-24 flex items-center justify-center ${clazz}`}
-/>
+  class={`rounded-full h-24 w-24 flex items-center justify-center ${clazz}`} />

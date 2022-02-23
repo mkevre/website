@@ -5,8 +5,7 @@
 </script>
 
 <ul
-  class="space-y-8 sticky top-24 self-start max-h-[calc(100vh-6rem)] pb-10 overflow-auto"
->
+  class="sticky top-24 max-h-[calc(100vh-6rem)] space-y-8 self-start overflow-auto pb-10">
   {#each MENU as menuItem}
     <MenuSection {menuItem} />
   {/each}

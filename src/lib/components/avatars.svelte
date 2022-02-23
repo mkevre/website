@@ -67,10 +67,9 @@
         href={getSocialMediaLink(username)}
         target="_blank"
         class:showAvatar
-        class="no-underline transition-none after:hidden leading-7 {socialMediaLinkClasses}"
+        class="leading-7 no-underline transition-none after:hidden {socialMediaLinkClasses}"
         rel="noreferrer"
-        data-analytics={`{"variant":"social_media"}`}
-      >
+        data-analytics={`{"variant":"social_media"}`}>
         <Avatar {username} {socialMediaImgClasses} />
         {displayNames[username]}
       </a>

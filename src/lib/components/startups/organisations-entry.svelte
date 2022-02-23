@@ -37,7 +37,7 @@
 <style lang="postcss">
   div {
     max-width: 250px;
-    @apply whitespace-nowrap mx-auto;
+    @apply mx-auto whitespace-nowrap;
 
     @media (max-width: 540px) {
       @apply ml-auto mr-0;

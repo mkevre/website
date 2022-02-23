@@ -29,10 +29,9 @@
   class="
     text-dark-grey
     no-underline
-    focus:text-black
     hover:text-black
+    focus:text-black
     {clazz}
-  "
->
+  ">
   <slot />
 </a>

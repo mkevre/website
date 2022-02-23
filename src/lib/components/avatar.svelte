@@ -10,5 +10,4 @@
   title="Avatar of {username}"
   height="28"
   width="28"
-  class="inline rounded-full border border-solid border-off-white {socialMediaImgClasses}"
-/>
+  class="inline rounded-full border border-solid border-off-white {socialMediaImgClasses}" />

@@ -62,6 +62,5 @@
     src={`/${logo}`}
     {alt}
     style={`transform: ${transform}`}
-    class={className}
-  />
+    class={className} />
 </div>

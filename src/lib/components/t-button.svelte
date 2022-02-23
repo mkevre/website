@@ -12,5 +12,4 @@
   rel="noopener"
   target="_blank"
   data-analytics={`{"context":"twitter_visit","variant":"social_media"}`}
-  class={clazz}>Follow us on Twitter</LinkButton
->
+  class={clazz}>Follow us on Twitter</LinkButton>
