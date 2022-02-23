@@ -21,18 +21,26 @@ The ClearURLs browser extension for [Google Chrome](https://chrome.google.com/we
 
 This issue can be resolved by disabling "ETag filtering" in ClearURLs’ settings. A [issue has been created](https://gitlab.com/KevinRoebert/ClearUrls/-/issues/977) that requests to whitelist Gitpod by default and we would apprciate your upvotes on the issue.
 
-### What version of VS Code is running in Gitpod (in the browser)?
+### What version of VS Code runs in Gitpod (in the browser)?
 
-Gitpod uses a fork of [VS Code](https://github.com/microsoft/vscode) called [openvscode-server](https://github.com/gitpod-io/openvscode-server). Gitpod release the latest version of VS Code very soon after the upstream repository is updated.
+VS Code in the browser in Gitpod uses a fork of [VS Code](https://github.com/microsoft/vscode) called [openvscode-server](https://github.com/gitpod-io/openvscode-server). Gitpod actively monitor the VS Code release cycle, and release the latest version of VS Code shortly after the upstream repository is updated. You can find more information about which version of VS Code is running in the browser by navigating to "Help > About" from a running Gitpod workspace.
 
-### Can I use both a desktop and a browser editor/IDE?
+### Can I use both a desktop IDE and a browser editor in Gitpod?
 
-You can. The browser editor loads inside your workspace, and has full access to your files and directories. When you connect via Desktop you can also access your workspace via your browser. The browser can be used either as a fall back, alterantive, or as a way to make quicker edits instead of opening your code on desktop.
+Yes, you can. Both desktop and browser IDE/editors have full access to files and directories within the workspace. So, when you connect to you Gitpod workspace from your Desktop you can also access your workspace via your browser. This means browser-based editing can either be used as your first-choice editor, or as a "fall back" alternative option for when you want to make edits on the move. With Gitpod, where and how you edit your code is very flexible.
+
+### Will Gitpod support all the JetBrains IDE's?
+
+Yes, the plan is to eventually support all of the JetBrains IDE's.
+
+### Is there a limit of IDE/editor connections to Gitpod?
+
+There is no hard-limit about how many IDE/editors can be connected to a running Gitpod workspace. All connected IDE/editors will have access to the same underlying file system and directories.
 
 ### What is the preferred IDE/editor for Gitpod?
 
-There is no preferred IDE/editor to use with Gitpod, use whatever you are comfortable with, or switch it up. Do note, however that JetBrains recommend [JetBrains Gateway](ides-and-editors/jetbrains-gateway) as an approach to opening JetBrains IDE's, instead of [JetBrains Projector](https://lp.jetbrains.com/projector/).
+There are many ways to edit your code in Gitpod, using [supported JetBrains IDE's](/docs/ides-and-editors) via [JetBrains Gateway](ides-and-editors/jetbrains-gateway), or by using [VS Code in the browser](/docs/ides-and-editors/vscode-browser) / [VS Code on desktop](/docs/ides-and-editors/vscode).
 
 ### Can I use JetBrains Projector with Gitpod?
 
-As Gitpod has support for [JetBrains Gateway](ides-and-editors/jetbrains-gateway), which is considered the primary tool for remote development when using JetBrains IDE's, Gitpod does not officially support [JetBrains Projector](https://lp.jetbrains.com/projector/). However, you can still run Projector IDE's using Gitpod by leveraging [Docker](/docs/config-docker).
+Gitpod does not officially support [JetBrains Projector](https://lp.jetbrains.com/projector/). Gitpod has support for [JetBrains Gateway](ides-and-editors/jetbrains-gateway), which is the primary tool for remote development when using JetBrains IDE's.
