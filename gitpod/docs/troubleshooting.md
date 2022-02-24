@@ -21,6 +21,13 @@ The ClearURLs browser extension for [Google Chrome](https://chrome.google.com/we
 
 This issue can be resolved by disabling "ETag filtering" in ClearURLs’ settings. A [issue has been created](https://gitlab.com/KevinRoebert/ClearUrls/-/issues/977) that requests to whitelist Gitpod by default and we would apprciate your upvotes on the issue.
 
+### JetBrains Gateway and Gitpod is not working as expected?
+
+If you are having issues opening your Gitpod workspace via JetBrains IDE:
+
+1. Ensure that you are using the latest ["release" version of JetBrains Gateway](https://www.jetbrains.com/help/idea/remote-development-a.html#gateway) (Not EAP)
+2. Ensure you are running [the latest version of the Gitpod JetBrains Gateway plugin](https://plugins.jetbrains.com/plugin/18438-gitpod-gateway)
+
 ### What version of VS Code runs in Gitpod (in the browser)?
 
 VS Code in the browser in Gitpod uses a fork of [VS Code](https://github.com/microsoft/vscode) called [openvscode-server](https://github.com/gitpod-io/openvscode-server). Gitpod actively monitor the VS Code release cycle, and release the latest version of VS Code shortly after the upstream repository is updated. You can find more information about which version of VS Code is running in the browser by navigating to "Help > About" from a running Gitpod workspace.
