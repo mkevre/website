@@ -38,7 +38,11 @@ Yes, you can. Both desktop and browser IDE/editors have full access to files and
 
 ### Will Gitpod support all the JetBrains IDE's?
 
-Yes, the plan is to eventually support all of the JetBrains IDE's.
+Yes, the plan is to eventually support all of the JetBrains IDE's. Please refer to the [Gitpod roadmap](https://www.gitpod.io/roadmap) for future updates.
+
+### Will Gitpod support JetBrains Fleet?
+
+[JetBrains Fleet](https://www.jetbrains.com/fleet/) is a next-generation IDE from JetBrains. The currently supported method of using JetBrains IDE's with Gitpod is on desktop via [JetBrains Gateway](docs/ides-and-editors/jetbrains-gateway), please refer to our documentation for current [IDE and editor support](docs/ides-and-editors) and the [Gitpod roadmap](https://www.gitpod.io/roadmap) for future updates.
 
 ### Is there a limit of IDE/editor connections to Gitpod?
 
