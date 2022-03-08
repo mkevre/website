@@ -6,6 +6,7 @@
   export let hasError: boolean = false;
   export let disabled: boolean = false;
   export { className as class };
+  export let testId: string = "";
 </script>
 
 <style lang="postcss">
@@ -57,7 +58,11 @@
   {...$$restProps}
 />
 {#if label}
-  <label class="flex cursor-pointer text-dark-grey mt-1 mb-2" for={label}
-    >{@html label}</label
+  <label
+    class="flex cursor-pointer text-dark-grey mt-1 mb-2"
+    for={label}
+    data-test-id={testId}
   >
+    {@html label}
+  </label>
 {/if}
