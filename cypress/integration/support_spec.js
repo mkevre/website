@@ -1,6 +1,6 @@
 describe("Test the support contact form", () => {
   it("Fills out the form data", () => {
-    cy.visit("localhost:3000/contact/support");
+    cy.visit("/contact/support");
     cy.wait(100);
     cy.get('[data-test-id="Abuse Report"]').click();
     cy.get('[data-test-id="name"]').type("Gitpod User");
