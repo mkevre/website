@@ -27,7 +27,8 @@
     "validate": "svelte-check",
     "prepare": "husky install",
     "generate:blog-post": "plop --plopfile ./generators/index.cjs blog-post",
-    "cypress:open": "cypress open --browser firefox"
+    "cypress:open": "cypress open --browser firefox",
+    "test:e2e": "cypress run --headless --browser firefox"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.5.0",
