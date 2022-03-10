@@ -232,10 +232,8 @@
                       value={subject}
                       name="subject"
                     />
-                    <label
-                      for="subject-{index}"
-                      data-test-id={subject}
-                      class="font-medium">{subject}</label
+                    <label for="subject-{index}" class="font-medium"
+                      >{subject}</label
                     >
                   </li>
                 {/each}
@@ -257,7 +255,6 @@
                   }}
                   options={cloudPlatforms}
                   placeholder="Which cloud infrastructure do you use?"
-                  data-test-id="cloud-platforms-select"
                 />
               </div>
             </li>
@@ -276,7 +273,6 @@
               }}
               type="text"
               autocomplete="name"
-              data-test-id="name"
             />
           </li>
           <li>
@@ -294,7 +290,6 @@
               }}
               type="email"
               autocomplete="email"
-              data-test-id="email"
             />
           </li>
           <li>
@@ -312,7 +307,6 @@
               }}
               type="text"
               autocomplete="organization"
-              data-test-id="website"
             />
           </li>
           <li>
@@ -328,7 +322,6 @@
                   formData.noOfEngineers.el.checkValidity();
               }}
               options={noOfEngineers}
-              data-test-id="no-of-engineers-select"
             />
           </li>
           <li>
@@ -345,7 +338,6 @@
               }}
               cols="30"
               rows="10"
-              data-test-id="message"
             />
           </li>
           <li>
@@ -369,7 +361,6 @@
               on:click={handleClick}
               type="submit"
               disabled={isFormDirty && !isFormValid}
-              data-test-id="send"
             >
               Send message
             </Button>

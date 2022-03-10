@@ -3,14 +3,19 @@ describe("Test the sales contact form", () => {
     cy.visit("/contact/sales");
     cy.wait(100);
     cy.findByText("Self-hosting").click();
-    // cy.get('[data-test-id="Self-hosting"]').click();
-    // cy.get('[data-test-id="cloud-platforms-select"]').select("Kubernetes");
-    // cy.get('[data-test-id="name"]').type("Gitpod User");
-    // cy.get('[data-test-id="email"]').type("gitpoduser@gitpod.io");
-    // cy.get('[data-test-id="website"]').type("www.gitpod.io");
-    // cy.get('[data-test-id="no-of-engineers-select"]').select("2-5");
-    // cy.get('[data-test-id="message"]').type("Gitpod is Awesome!");
-    // cy.get('[data-test-id="consent"]').click();
-    // cy.get('[data-test-id="send"]').click();
+    cy.findByDisplayValue("Which cloud infrastructure do you use?").select(
+      "Kubernetes"
+    );
+    cy.findByLabelText(/name/i).click().type("Gitpod User");
+    cy.findByLabelText(/mail/i).click().type("gitpoduser@gitpod.io");
+    cy.findByLabelText(/company website/i)
+      .click()
+      .type("www.gitpod.io");
+    cy.findByDisplayValue(/number of engineers/i).select("1-10");
+    cy.findByLabelText(/message/i)
+      .click()
+      .type("Gitpod is Awesome!");
+    cy.findByTestId("consent").click();
+    cy.findByRole("button", { name: /send/i }).click();
   });
 });

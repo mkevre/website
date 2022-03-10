@@ -202,11 +202,7 @@
                       value={subject}
                       name="subject"
                     />
-                    <label
-                      for="subject-{index}"
-                      class="font-medium"
-                      data-test-id={subject}
-                    >
+                    <label for="subject-{index}" class="font-medium">
                       {subject}
                     </label>
                   </li>
@@ -228,7 +224,6 @@
               }}
               type="text"
               autocomplete="name"
-              data-test-id="name"
             />
           </li>
           <li class:error={isFormDirty && !formData.email.valid}>
@@ -250,7 +245,6 @@
               }}
               type="email"
               autocomplete="email"
-              data-test-id="email"
             />
           </li>
           <li>
@@ -267,7 +261,6 @@
               }}
               cols="30"
               rows="10"
-              data-test-id="message"
             />
           </li>
           <li>
@@ -292,7 +285,6 @@
               type="submit"
               class="btn"
               disabled={isFormDirty && !isFormValid}
-              data-test-id="send"
               >Send message
             </Button>
             {#if isFormDirty && !isFormValid}
