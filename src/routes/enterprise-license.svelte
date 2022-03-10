@@ -14,6 +14,7 @@
   import { countryList } from "$lib/contents/license-key";
   import type { Email } from "../functions/submit-form";
   import Header from "$lib/components/header.svelte";
+  import { noOfEngineers } from "$lib/contents/contact";
 
   const formData: Form = {
     firstName: {
@@ -134,6 +135,7 @@
           label="First Name*"
           hasError={isFormDirty && !formData.firstName.valid}
           name="first-name"
+          id="first-name"
           type="text"
           bind:value={formData.firstName.value}
           bind:element={formData.firstName.el}
@@ -149,6 +151,7 @@
           hasError={isFormDirty && !formData.lastName.valid}
           label="Last Name*"
           name="last-name"
+          id="last-name"
           type="text"
           bind:value={formData.lastName.value}
           bind:element={formData.lastName.el}
@@ -165,6 +168,7 @@
           hasError={isFormDirty && !formData.email.valid}
           type="email"
           name="e-mail"
+          id="email"
           bind:value={formData.email.value}
           bind:element={formData.email.el}
           on:change={() => {
@@ -179,6 +183,7 @@
           hasError={isFormDirty && !formData.company.valid}
           label="Company*"
           name="company"
+          id="company"
           bind:value={formData.company.value}
           bind:element={formData.company.el}
           on:change={() => {
@@ -209,8 +214,8 @@
       <div>
         <Select
           placeholder="Select..."
-          options={["1 - 100", "101 - 250", "251 - 500", "500 - 1000", "+1000"]}
-          label="Total Number of Developers*"
+          options={noOfEngineers}
+          label="Total number of engineers*"
           hasError={isFormDirty && !formData.noOfDevelopers.valid}
           name="noOfDevelopers"
           bind:value={formData.noOfDevelopers.value}
@@ -232,6 +237,7 @@
         bind:value={formData.message.value}
         bind:element={formData.message.el}
         name="message"
+        id="message"
       />
       <div class="mt-4">
         <Button
