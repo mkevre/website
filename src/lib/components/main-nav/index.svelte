@@ -12,6 +12,7 @@
   import SignUpButtonTablet from "./sign-up-button-tablet.svelte";
   import AnnouncementBanner from "$lib/components/banners/announcement.svelte";
   import ContactLink from "./contact-link.svelte";
+  import SkipToContent from "../skip-to-content.svelte";
 
   let scroll: number;
 
@@ -111,6 +112,7 @@
   class:bg-open-state={$menuState}
 >
   <AnnouncementBanner />
+  <SkipToContent />
   <div
     class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-micro md:px-x-small"
   >

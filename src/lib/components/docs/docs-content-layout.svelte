@@ -32,7 +32,7 @@
 />
 <AnnouncementBanner />
 <EditInGitpod />
-<div class="flex">
+<div class="flex" id="docs-content">
   <div class="content-docs prose max-w-none flex-auto min-w-0 xl:w-2/3">
     <slot />
   </div>
