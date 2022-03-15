@@ -9,7 +9,7 @@
   <LinkButton
     variant="white"
     href={isADocsPage ? "#docs-content" : "#main-content"}
-    class="absolute left-1.5 top-1.5 -translate-y-full -mt-1.5 focus:translate-y-0 border-2 border-solid border-black"
+    class="absolute left-2.5 top-2.5 -translate-y-full -mt-2.5 focus:mt-0 focus:translate-y-0 border-2 border-solid border-black"
     >Skip to Content</LinkButton
   >
 </div>
