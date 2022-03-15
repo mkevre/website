@@ -111,8 +111,8 @@
   class:scrolled-out={scroll > 0}
   class:bg-open-state={$menuState}
 >
-  <AnnouncementBanner />
   <SkipToContent />
+  <AnnouncementBanner />
   <div
     class="wrapper flex items-center justify-between mx-auto h-16 md:h-20 px-micro md:px-x-small"
   >
