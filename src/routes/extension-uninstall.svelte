@@ -93,7 +93,8 @@
 
 <OpenGraph
   data={{
-    description: "The browser extension has been uninstalled.",
+    description:
+      "The Gitpod browser extension has been successfully uninstalled.",
     title: "Extension Uninstall",
     norobots: true,
   }}
