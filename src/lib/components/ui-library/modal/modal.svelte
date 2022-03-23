@@ -1,9 +1,29 @@
 <script lang="ts">
   import { showHideOverflowY } from "$lib/components/ui-library/utils/show-hide-overflow-y";
 
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher, onMount } from "svelte";
 
   export let isOpen: boolean = false;
+
+  onMount(() => {
+    window.addEventListener("keydown", () => {
+      const wrapper = document.querySelector(".content-wrapper");
+      console.log(wrapper);
+      // if(e.key === "Tab") {
+      //   if(e.shiftKey) {
+      //     if(document.activeElement === firstEl) {
+      //       lastEl.focus();
+      //       e.preventDefault();
+      //     }
+      //   } else {
+      //     if (document.activeElement === lastEl) {
+      //       firstEl.focus();
+      //       e.preventDefault()
+      //     }
+      //   }
+      // }
+    });
+  });
 
   $: {
     if (typeof document !== "undefined") {
@@ -52,7 +72,7 @@
     class="modal fixed top-0 left-0 w-full h-screen z-50 flex justify-center items-center"
     on:click={closeModal}
   >
-    <div class="flex justify-center items-center relative">
+    <div class="content-wrapper flex justify-center items-center relative">
       <button
         class="absolute right-6 top-6 z-10 h-10 w-10 md:h-5 md:w-5 flex items-center justify-center"
         bind:this={closeEl}
