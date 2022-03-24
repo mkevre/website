@@ -56,6 +56,8 @@
 
   const open = () => {
     details.style.height = `${details.offsetHeight}px`;
+    content.style.opacity = "1";
+    content.style.transform = "scale(1)";
     isActive = true;
 
     window.requestAnimationFrame(() => expand());
@@ -65,6 +67,8 @@
     isClosing = true;
     const startHeight = `${details.offsetHeight}px`;
     const endHeight = `${summary.offsetHeight}px`;
+    content.style.opacity = "0";
+    content.style.transform = "scale(0)";
 
     if (animation) {
       animation.cancel();
@@ -100,6 +104,9 @@
 
   onMount(() => {
     isActive = fragment === window.location.hash.substring(1);
+    content.style.opacity = "0";
+    content.style.transform = "scale(0)";
+    content.style.transition = "all 800ms cubic-bezier(0.16, 1, 0.3, 1)";
   });
 </script>
 
