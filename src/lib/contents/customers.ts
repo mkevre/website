@@ -26,7 +26,7 @@ export const quotes: Quote[] = [
       alt: "Shares.io",
     },
     img: {
-      src: "/images/customers/shares-io/quote.png",
+      src: "/images/customers/shares-io/quote.svg",
       alt: "Shares.io",
     },
     link: {
@@ -43,7 +43,7 @@ export const quotes: Quote[] = [
       alt: "Vizlib",
     },
     img: {
-      src: "/images/customers/vizlib/quote.png",
+      src: "/images/customers/vizlib/quote.svg",
       alt: "Vizlib",
     },
     link: {
@@ -60,8 +60,8 @@ export const quotes: Quote[] = [
       alt: "Redwoodjs",
     },
     img: {
-      src: "/images/customers/redwoodjs/quote.png",
-      alt: "Shares.io",
+      src: "/images/customers/redwoodjs/quote.svg",
+      alt: "Redwood",
     },
     link: {
       href: "/customers/redwoodjs",
