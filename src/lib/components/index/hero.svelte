@@ -141,7 +141,7 @@
     <div class="hero__action">
       <div class="hero__try-now text-small">
         <div>
-          <LinkButton variant="primary" href="#get-started" size="large"
+          <LinkButton variant="primary" href="https://gitpod.io/" size="large"
             >Try Now</LinkButton
           >
         </div>
